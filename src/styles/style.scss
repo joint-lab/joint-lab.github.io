@@ -1,0 +1,45 @@
+
+.mdx-content {
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl pt-6 pb-3;
+	}
+	h3 {
+		@apply text-lg font-bold text-green-700;
+	}
+	a {
+		@apply text-green-600 hover:text-green-800
+	}
+	p {
+		@apply text-gray-800;
+	}
+	ul {
+		list-style-position: inside;
+		list-style-type: disc;
+	}
+}
+
+svg {
+    pointer-events: none;
+}
+
+path{
+    pointer-events: auto;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: .05;
+  }
+}
+
+@keyframes ping-finite {
+  75%, 100% {
+    transform: scale(2);
+  }
+}
