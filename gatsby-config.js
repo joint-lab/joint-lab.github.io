@@ -4,7 +4,7 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.uvm.me",
+    siteUrl: "https://www.joint-lab.github.io",
     title: "The Joint Lab",
     description: "The official website",
     twitter: "https://github.com/joint-lab"
