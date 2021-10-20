@@ -41,7 +41,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                 <FlexLayout.Item size="sm">
                   <div className='mb-4 sm:flex lg:block sticky top-0 lg:pt-6'>
                     <div className='w-full xs:w-2/6 lg:w-full px-12 max-w-xs sm:px-0 mx-auto'>
-                      <div className='aspect-w-1 aspect-h-1 mb-4 rounded-lg bg-gray-100'>
+                      <div className=' mb-4 rounded-lg bg-gray-100'>
                         {image ?<GatsbyImage image={image} alt={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
                       </div>
                     </div>
