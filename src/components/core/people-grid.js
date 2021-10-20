@@ -23,9 +23,9 @@ function PersonThumbnail({ firstName, lastName, role, imageUrl, slug, githubURL,
   const image = imageUrl? getImage(imageUrl): null;
   return <li className="py-4 px-0 rounded-lg xl:px-3 xl:text-left space-y-4 justify-start justify-items-start">
           <Link to={slug} >
-            <div className="bg-gray-100 rounded-lg overflow-hidden">
-              {image ?<GatsbyImage image={image} alt={firstName+" "+lastName} imgClassName="rounded-lg"/>:null}
-            </div>
+              {image?<GatsbyImage image={image} alt={firstName+" "+lastName} imgClassName="rounded-lg "/>:
+              <div className="aspect-w-1 aspect-h-1 bg-gray-100 rounded-lg overflow-hidden">
+               </div>}
           </Link>
           <div className="">
             <Link to={slug}>

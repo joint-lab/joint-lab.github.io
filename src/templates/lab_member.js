@@ -40,10 +40,9 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
               <FlexLayout>
                 <FlexLayout.Item size="sm">
                   <div className='mb-4 sm:flex lg:block sticky top-0 lg:pt-6'>
-                    <div className='w-full xs:w-2/6 lg:w-full px-12 max-w-xs sm:px-0 mx-auto'>
-                      <div className=' mb-4 rounded-lg bg-gray-100'>
-                        {image ?<GatsbyImage image={image} alt={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
-                      </div>
+                    <div className='w-full xs:w-2/6 lg:w-full px-12 max-w-xs sm:px-0 mx-auto mb-4'>
+                      {image ?<GatsbyImage image={image} alt={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
+                      {!image?<div className='aspect-w-1 aspect-h-1 rounded-lg bg-gray-100'/>: null}
                     </div>
                     <div className='w-full text-center sm:text-left sm:w-4/6 lg:w-full px-3 sm:px-8 lg:px-0'>
                       {/* Name & Role */}
