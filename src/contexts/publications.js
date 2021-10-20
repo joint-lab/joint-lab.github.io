@@ -80,7 +80,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications 
       const author = params.get('author');
       updateAuthors(author);
     }
-  }, [query, updateAuthors]);
+  }, [query]);
 
   return (
     <PublicationsContext.Provider value={{ publications, filters, publicationTypes:publicationTypes.current, updateQuery, updateType, updateAuthors, updateYear, labMembers: people}}>
