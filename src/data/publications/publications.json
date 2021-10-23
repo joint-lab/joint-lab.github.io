@@ -1,7 +1,7 @@
 [
     {
         "title": "Clustering of heterogeneous populations of networks",
-        "authors": "A. Kirkley, M. E. J. Newman",
+        "authors": "J.-G. Young, A. Kirkley, M. E. J. Newman",
         "year": 2021,
         "type": "preprint",
         "arxivURL": "https://arxiv.org/abs/2107.07489"
@@ -136,7 +136,7 @@
     },
     {
         "title": "Exact analytical solution of irreversible binary dynamics on networks",
-        "authors": "E. Laurence,  J.-G. Young, S. Melnik, L. J. Dubé",
+        "authors": "E. Laurence, J.-G. Young, S. Melnik, L. J. Dubé",
         "reference": "Phys. Rev. E 97, 032302",
         "year": 2018,
         "type": "article",
