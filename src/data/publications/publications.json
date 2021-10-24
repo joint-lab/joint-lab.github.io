@@ -925,5 +925,13 @@
         "textURL": "https://www.sfipress.org/books-coming-soon/the-complex-alternative",
         "type": "other edited work",
         "journal": "In: The Complex Alternative, SFI Press",
+    },
+    {
+        "title": "On the dynamics and structure of multiple strain epidemic models and genotype networks",
+        "authors": "Blake J. M. Williams",
+        "year": 2020,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1318/",
+        "type": "thesis",
+        "degree": "M.Sc."
     }
 ]
