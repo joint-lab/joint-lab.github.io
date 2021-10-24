@@ -150,13 +150,14 @@ export const query = graphql`
         node {
           id
           location
+          journal
           journalURL
-          isOpenSource
+          isOpenAccess
+          preprintURL
+          flavor
           degree
           conference
           authors
-          biorxivURL
-          arxivURL
           textURL
           year
           type

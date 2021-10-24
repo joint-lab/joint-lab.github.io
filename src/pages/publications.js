@@ -55,13 +55,14 @@ export const IndexQuery = graphql`
         node {
           id
           location
+          journal
           journalURL
-          isOpenSource
+          isOpenAccess
           degree
           conference
           authors
-          biorxivURL
-          arxivURL
+          preprintURL
+          flavor
           textURL
           year
           type

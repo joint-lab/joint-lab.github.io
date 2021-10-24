@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { CheckboxList, RadioList } from 'components/core/forms';
 import { Dropdown } from 'components/core/dropdown';
 import { EmptyView } from 'components/core/empty_view';
+import { FiUnlock } from 'react-icons/fi';
 
 // Contexts
 import { PublicationsContext } from 'contexts/publications';
@@ -15,17 +16,19 @@ import { capitalizeFirstLetter } from 'utils/capitalize';
 /*
 Main view for publication row.
 */
-function Publication({ title, year, authors, journal, conference, location, type, arxivURL, biorxivURL, textURL, slidesURL, journalURL, software }){
+function Publication({ title, year, authors, journal, conference, location, type, preprintURL, textURL, proceedingsURL, slidesURL, journalURL, isOpenAccess, flavor, software }){
   const { updateAuthors, filters } = useContext(PublicationsContext);
 
   return <div className='py-5'>
+          {flavor? <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 my-2">{flavor}</div>: null}
           <div className='flex'>
             <div className={classnames("text-xs uppercase text-green-600")}>{year} |</div>
             <div className={classnames("ml-1 text-xs uppercase text-gray-600")}>{type}</div>
+            {isOpenAccess?<div className={classnames("ml-auto inline text-xs uppercase flex space-x-2 text-gray-600")}><FiUnlock/><span>Open access</span></div>: null}
           </div>
 
           <h3 className='font-medium sm:text-lg'>{title}</h3>
-          <div className='text-gray-600'>
+          <div className='text-gray-600 mb-2'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
                 <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-100 text-green-700':'hover:bg-gray-100 text-green-600'}>
@@ -40,10 +43,10 @@ function Publication({ title, year, authors, journal, conference, location, type
           {journal?<div className='text-gray-500'>{journal}</div>:null}
           {conference?<div className='text-gray-500'>{conference}, {location}</div>:null}
           <div className='flex space-x-2 '>
-            {arxivURL? <a href={arxivURL} className={classnames("text-green-600 hover:underline")}>arxiv</a>: null}
-            {biorxivURL? <a href={biorxivURL} className={classnames("text-green-600 hover:underline")}>biorxiv</a>: null}
+            {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>preprint</a>: null}
             {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>text</a>: null}
             {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>slides</a>: null}
+            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-green-600 hover:underline")}>proceedings</a>: null}
             {journalURL? <a href={journalURL} className={classnames("text-green-600 hover:underline")}>journal</a>: null}
             {software? <a href={software} className={classnames("text-green-600 hover:underline")}>software</a>: null}
            </div>
