@@ -204,7 +204,8 @@
         "year": 2016,
         "type": "article",
         "preprintURL": "http://arxiv.org/abs/1310.0112",
-        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.93.032304"
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.93.032304",
+        "flavor": "Editor's pick"
     },
     {
         "title": "Complex networks as an emerging property of hierarchical preferential attachment",
@@ -243,7 +244,8 @@
         "year": 2014,
         "type": "article",
         "preprintURL": "http://arxiv.org/abs/1309.7983",
-        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.89.022801"
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.89.022801",
+        "flavor": "Editor's pick"
     },
     {
         "title": "Percolation on random networks with arbitrary k-core structure",
@@ -849,5 +851,98 @@
         "journalURL": "http://dx.doi.org/10.1103/PhysRevE.82.036115",
         "preprintURL": "http://arxiv.org/abs/1005.1397",
         "type": "article"
+    },
+    {
+        "title": "On the growth and structure of social systems following preferential attachment",
+        "authors": "L. Hébert-Dufresne",
+        "year": 2014,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/25331",
+        "type": "thesis",
+        "degree": "Ph.D."
+    },
+    {
+        "title": "La structure communautaire comme paradigme d'organisation des réseaux complexes",
+        "authors": "L. Hébert-Dufresne",
+        "year": 2011,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/23165",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
+    {
+        "title": "Dossier: Bifurcation",
+        "authors": "L. Hébert-Dufresne, and J.-M. Fontan",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/dossier/bifurcation",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
+    },
+    {
+        "title": "ALIFE 2020: The 2020 Conference on Artificial Life",
+        "authors": "J. Bongard, J. Lovato, L. Hébert-Dufresne, R. Dasari, and L. Soros",
+        "year": 2020,
+        "journalURL": "https://www.mitpressjournals.org/toc/isal/32",
+        "type": "other edited work",
+        "journal": "MIT Press",
+    },
+    {
+        "title": "The Social Zombie: Modelling undead outbreaks on social networks",
+        "authors": "L. Hébert-Dufresne, V. Marceau, P.-A. Noël, A. Allard, and L. J. Dubé",
+        "year": 2014,
+        "textURL": "http://www.press.uottawa.ca/mathematical-modelling-of-zombies",
+        "type": "other edited work",
+        "journal": "In: Mathematical Modelling of Zombies, University of Ottawa Press",
+    },
+    {
+        "title": "Face aux changements environnementaux, la transdisciplinarité : le cas des cryonoses",
+        "authors": "S. Crabtree, and L. Hébert-Dufresne",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/face-aux-changements-environnementaux-transdisciplinarite-cas",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
+    },
+    {
+        "title": "La modélisation mathématique pour cartographier le complexe et l’inconnu",
+        "authors": "A. Allard, L. J. Dubé, and L. Hébert-Dufresne",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/modelisation-mathematique-cartographier-complexe-inconnu",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
+    },
+    {
+        "title": "Misinformation about an outbreak like COVID-19 is important public health data",
+        "authors": "L. Hébert-Dufresne, and V. C. Yang",
+        "year": 2020,
+        "journalURL": "https://www.statnews.com/2020/04/07/misinformation-outbreak-is-important-public-health-data/",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "STAT",
+    },
+    {
+        "title": "Halting the spread of COVID-19 and escaping the madness of crowds",
+        "authors": "L. Hébert-Dufresne",
+        "year": 2021,
+        "textURL": "https://www.sfipress.org/books-coming-soon/the-complex-alternative",
+        "type": "other edited work",
+        "journal": "In: The Complex Alternative, SFI Press",
+    },
+    {
+        "title": "On the dynamics and structure of multiple strain epidemic models and genotype networks",
+        "authors": "B. J. M. Williams",
+        "year": 2020,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1318/",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
+    {
+        "title": "Dossier bifurcation : conversation éditoriale",
+        "authors": "L. Hébert-Dufresne, and J.-M. Fontan",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/dossier-bifurcation-conversation-editoriale",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
     }
 ]
