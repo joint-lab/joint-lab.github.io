@@ -870,7 +870,7 @@
     },
     {
         "title": "Dossier: Bifurcation",
-        "authors": "L. Hébert-Dufresne, and J.-Marc Fontan",
+        "authors": "L. Hébert-Dufresne, and J.-M. Fontan",
         "year": 2020,
         "journalURL": "https://www.acfas.ca/publications/magazine/dossier/bifurcation",
         "type": "other edited work",
@@ -904,7 +904,7 @@
     },
     {
         "title": "La modélisation mathématique pour cartographier le complexe et l’inconnu",
-        "authors": "Antoine Allard, Louis J. Dubé, and Laurent Hébert-Dufresne",
+        "authors": "A. Allard, L. J. Dubé, and L. Hébert-Dufresne",
         "year": 2020,
         "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/modelisation-mathematique-cartographier-complexe-inconnu",
         "type": "other edited work",
@@ -913,7 +913,7 @@
     },
     {
         "title": "Misinformation about an outbreak like COVID-19 is important public health data",
-        "authors": "Laurent Hébert-Dufresne, and V. C. Yang",
+        "authors": "L. Hébert-Dufresne, and V. C. Yang",
         "year": 2020,
         "journalURL": "https://www.statnews.com/2020/04/07/misinformation-outbreak-is-important-public-health-data/",
         "type": "other edited work",
@@ -935,5 +935,14 @@
         "textURL": "https://scholarworks.uvm.edu/graddis/1318/",
         "type": "thesis",
         "degree": "M.Sc."
+    },
+    {
+        "title": "Dossier bifurcation : conversation éditoriale",
+        "authors": "L. Hébert-Dufresne, and J.-M. Fontan",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/dossier-bifurcation-conversation-editoriale",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
     }
 ]
