@@ -204,7 +204,8 @@
         "year": 2016,
         "type": "article",
         "preprintURL": "http://arxiv.org/abs/1310.0112",
-        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.93.032304"
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.93.032304",
+        "flavor": "Editor's pick"
     },
     {
         "title": "Complex networks as an emerging property of hierarchical preferential attachment",
@@ -243,7 +244,8 @@
         "year": 2014,
         "type": "article",
         "preprintURL": "http://arxiv.org/abs/1309.7983",
-        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.89.022801"
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.89.022801",
+        "flavor": "Editor's pick"
     },
     {
         "title": "Percolation on random networks with arbitrary k-core structure",
