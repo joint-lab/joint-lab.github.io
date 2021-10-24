@@ -1,100 +1,894 @@
 [
-  {
-    "title": "Clustering of heterogeneous populations of networks",
-    "authors": "J.-G. Young, A. Kirkley, and M. E. J. Newman",
-    "arxivURL": "https://arxiv.org/abs/2107.07489",
-    "year": 2021,
-    "type": "article"
-  },
-  {
-    "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
-    "authors": "A. B. Kao, A. K. Hund, F. P. Santos, J.-G. Young, D. Bhat, J. Garland, R. A. Oomen, and H. F. McCreery",
-    "biorxivURL": "https://doi.org/10.1101/2020.03.17.994343",
-    "year": 2021,
-    "type": "article"
-  },
-  {
-    "title": "Reconstruction of plant–pollinator networks from observational data",
-    "authors": "J.-G. Young, F. S. Valdovinos, and M. E. J. Newman",
-    "journal": "Nat. Commun. 12, 3911",
-    "year": 2021,
-    "biorxivURL": "https://www.biorxiv.org/content/10.1101/754077v2",
-    "journalURL": "https://doi.org/10.1038/s41467-021-24149-x",
-    "software": "https://github.com/jg-you/plant-pollinator-inference",
-    "isOpenSource": true,
-    "type": "article"
-  },
-  {
-    "title": "Inférence et réseaux complexes",
-    "authors": "J.-G. Young",
-    "year": 2018,
-    "textURL": "https://dynamicalab.github.io/assets/pdf/theses/young18_thesis.pdf",
-    "type": "thesis",
-    "degree": "Ph.D."
-  },
-  {
-    "title": "Predicting synchronization regimes with reduced dimensional dynamics on modular graphs",
-    "authors": "V. Thibeault, X. Roy-Pomerleau, G. St-Onge, J.-G. Young, L. J. Dubé, P. Desrosiers",
-    "year": 2018,
-    "conference": "Mediterranean School of Complex Networks",
-    "location": "Salina, Italy",
-    "slidesURL": "https://dynamicalab.github.io/assets/pdf/slides/Thibeault_Vincent_MSCx2018_slide_final.pdf",
-    "type": "conference"
-  },
-  {
-    "title": "Reconstruction of plant–pollinator networks from observational data",
-    "authors": "J.-G. Young, F. S. Valdovinos, and M. E. J. Newman",
-    "journal": "Nat. Commun. 12, 3911",
-    "year": 2021,
-    "biorxivURL": "https://www.biorxiv.org/content/10.1101/754077v2",
-    "journalURL": "https://doi.org/10.1038/s41467-021-24149-x",
-    "software": "https://github.com/jg-you/plant-pollinator-inference",
-    "isOpenSource": true,
-    "type": "article"
-  },
-  {
-    "title": "Inférence et réseaux complexes",
-    "authors": "J.-G. Young",
-    "year": 2018,
-    "textURL": "https://dynamicalab.github.io/assets/pdf/theses/young18_thesis.pdf",
-    "type": "thesis",
-    "degree": "Ph.D."
-  },
-  {
-    "title": "Predicting synchronization regimes with reduced dimensional dynamics on modular graphs",
-    "authors": "V. Thibeault, X. Roy-Pomerleau, G. St-Onge, J.-G. Young, L. J. Dubé, P. Desrosiers",
-    "year": 2018,
-    "conference": "Mediterranean School of Complex Networks",
-    "location": "Salina, Italy",
-    "slidesURL": "https://dynamicalab.github.io/assets/pdf/slides/Thibeault_Vincent_MSCx2018_slide_final.pdf",
-    "type": "conference"
-  },
-  {
-    "title": "Reconstruction of plant–pollinator networks from observational data",
-    "authors": "J.-G. Young, F. S. Valdovinos, and M. E. J. Newman",
-    "journal": "Nat. Commun. 12, 3911",
-    "year": 2021,
-    "biorxivURL": "https://www.biorxiv.org/content/10.1101/754077v2",
-    "journalURL": "https://doi.org/10.1038/s41467-021-24149-x",
-    "software": "https://github.com/jg-you/plant-pollinator-inference",
-    "isOpenSource": true,
-    "type": "article"
-  },
-  {
-    "title": "Inférence et réseaux complexes",
-    "authors": "J.-G. Young",
-    "year": 2018,
-    "textURL": "https://dynamicalab.github.io/assets/pdf/theses/young18_thesis.pdf",
-    "type": "thesis",
-    "degree": "Ph.D."
-  },
-  {
-    "title": "Predicting synchronization regimes with reduced dimensional dynamics on modular graphs",
-    "authors": "V. Thibeault, X. Roy-Pomerleau, G. St-Onge, J.-G. Young, L. J. Dubé, P. Desrosiers",
-    "year": 2018,
-    "conference": "Mediterranean School of Complex Networks",
-    "location": "Salina, Italy",
-    "slidesURL": "https://dynamicalab.github.io/assets/pdf/slides/Thibeault_Vincent_MSCx2018_slide_final.pdf",
-    "type": "conference"
-  }
+    {
+        "title": "Clustering of heterogeneous populations of networks",
+        "authors": "J.-G. Young, A. Kirkley, M. E. J. Newman",
+        "year": 2021,
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2107.07489",
+        "flavor": "Editor's pick"
+    },
+    {
+        "title": "Impact and dynamics of hate and counter speech online",
+        "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, M. Galesic",
+        "year": 2020,
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2009.08392"
+    },
+    {
+        "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
+        "authors": "A. B. Kao, A. K. Hund, F. P. Santos, J.-G. Young, D. Bhat, J. Garland, R. A. Oomen, H. F. McCreery",
+        "year": 2020,
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.1101/2020.03.17.994343"
+    },
+    {
+        "title": "Reconstruction of plant–pollinator networks from observational data",
+        "authors": "J.-G. Young, F. S. Valdovinos, M. E. J. Newman",
+        "year": 2021,
+        "type": "article",
+        "preprintURL": "https://www.biorxiv.org/content/10.1101/754077v2",
+        "journalURL": "https://doi.org/10.1038/s41467-021-24149-x",
+        "isOpenAccess": true,
+        "software": "https://github.com/jg-you/plant-pollinator-inference"
+    },
+    {
+        "title": "Hypergraph reconstruction from network data",
+        "authors": "J.-G. Young, G. Petri, T. P. Peixoto",
+        "year": 2021,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2008.04948",
+        "journalURL": "https://doi.org/10.1038/s42005-021-00637-w",
+        "isOpenAccess": true,
+        "software": "https://graph-tool.skewed.de/static/doc/inference.html#graph_tool.inference.clique_decomposition.CliqueState"
+    },
+    {
+        "title": "A clarified typology of core-periphery structure in networks",
+        "authors": "R. J. Gallagher, J.-G. Young, B. Foucault Welles",
+        "journal": "Sci. Adv. 7, abc9800",
+        "year": 2021,
+        "type": "article",
+        "isOpenAccess": true,
+        "preprintURL": "https://arxiv.org/abs/2005.10191",
+        "journalURL": "https://doi.org/10.1126/sciadv.abc9800",
+        "software": "https://github.com/ryanjgallagher/core_periphery_sbm"
+    },
+    {
+        "title": "Bayesian inference of network structure from unreliable data",
+        "authors": "J.-G. Young, G. T. Cantwell, M. E. J. Newman",
+        "journal": "J. Complex Netw. 8, cnaa046",
+        "year": 2021,
+        "type": "article",
+        "isOpenAccess": true,
+        "preprintURL": "https://arxiv.org/abs/2008.03334",
+        "journalURL": "https://doi.org/10.1093/comnet/cnaa046",
+        "software": "https://github.com/jg-you/noisy-networks-measurements"
+    },
+    {
+        "title": "Inference, model selection, and the combinatorics of growing trees",
+        "authors": "G. T. Cantwell, G. St-Onge, J.-G. Young",
+        "journal": "Phys. Rev. Lett. 126, 038301",
+        "year": 2021,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1910.04788",
+        "journalURL": "https://doi.org/10.1103/PhysRevLett.126.038301",
+        "software": "https://github.com/gcant/temporal-recovery-tree-py"
+    },
+    {
+        "title": "Networks beyond pairwise interactions: structure and dynamics",
+        "authors": "F. Battiston, G. Cencetti, I. Iacopini, V. Latora, M. Lucas, A. Patania, J.-G. Young, G. Petri",
+        "journal": "Phys. Rep. 874",
+        "year": 2020,
+        "type": "article",
+        "isOpenAccess": true,
+        "preprintURL": "https://arxiv.org/abs/2006.01764",
+        "journalURL": "https://doi.org/10.1016/j.physrep.2020.05.004"
+    },
+    {
+        "title": "Improved mutual information measure for classification and community detection",
+        "authors": "M. E. J. Newman, G. T. Cantwell, J.-G. Young",
+        "journal": "Phys. Rev. E 101, 042304",
+        "year": 2020,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1907.12581",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.101.042304"
+    },
+    {
+        "title": "Macroscopic patterns of interacting contagions are indistinguishable from social reinforcement",
+        "authors": "L. Hébert-Dufresne, S. V. Scarpino, J.-G. Young",
+        "journal": "Nat. Phys. 16, 426",
+        "year": 2020,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1906.01147",
+        "journalURL": "https://doi.org/10.1038/s41567-020-0791-2",
+        "software": "https://github.com/jg-you/complex-coinfection-inference/",
+        "slidesURL": "https://speakerdeck.com/jgyou/bayesian-inference-of-effective-contagion-models-from-population-level-data"
+    },
+    {
+        "title": "Phase transition in the recoverability of network history",
+        "authors": "J.-G. Young, G. St-Onge, E. Laurence, C. Murphy, L. Hébert-Dufresne, P. Desrosiers",
+        "journal": "Phys. Rev. X 9, 041056",
+        "year": 2019,
+        "type": "article",
+        "isOpenAccess": true,
+        "preprintURL": "https://arxiv.org/abs/1803.09191",
+        "journalURL": "https://doi.org/10.1103/PhysRevX.9.041056",
+        "software": "https://github.com/jg-you/network-archaeology",
+        "slidesURL": "https://speakerdeck.com/jgyou/network-archaeology-phase-transition-in-the-recoverability-of-network-history"
+    },
+    {
+        "title": "Efficient sampling of spreading processes on complex networks using a composition and rejection algorithm",
+        "authors": "G. St-Onge, J.-G. Young, L. Hébert-Dufresne, L. J. Dubé",
+        "journal": "Comput. Phys. Commun. 240, 30",
+        "year": 2019,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1808.05859",
+        "journalURL": "https://doi.org/10.1016/j.cpc.2019.02.008",
+        "software": "https://github.com/gstonge/spreading_CR"
+    },
+    {
+        "title": "Universality of the stochastic block model",
+        "authors": "J.-G. Young, G. St-Onge, P. Desrosiers, L. J. Dubé",
+        "journal": "Phys. Rev. E 98, 032309",
+        "year": 2018,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1806.04214",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.98.032309",
+        "slidesURL": "https://speakerdeck.com/jgyou/on-the-universality-of-the-stochastic-block-model"
+    },
+    {
+        "title": "Exact analytical solution of irreversible binary dynamics on networks",
+        "authors": "E. Laurence, J.-G. Young, S. Melnik, L. J. Dubé",
+        "journal": "Phys. Rev. E 97, 032302",
+        "year": 2018,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1711.02721",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.97.032302",
+        "slidesURL": "https://github.com/laurencee9/exact_binary_dynamics"
+    },
+    {
+        "title": "Phase transition of the susceptible-infected-susceptible dynamics on time-varying configuration model networks",
+        "authors": "G. St-Onge, J.-G. Young, E. Laurence, C. Murphy, L. J. Dubé",
+        "journal": "Phys. Rev. E 97, 022305",
+        "year": 2018,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1709.09257",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.97.022305",
+        "slidesURL": "https://github.com/laurencee9/exact_binary_dynamics"
+    },
+    {
+        "title": "Construction of and efficient sampling from the simplicial configuration model",
+        "authors": "J.-G. Young, G. Petri, F. Vaccarino, A. Patania",
+        "journal": "Phys. Rev. E 96, 032312",
+        "year": 2017,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1705.10298",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.96.032312",
+        "slidesURL": "https://speakerdeck.com/jgyou/construction-of-and-efficient-sampling-from-the-simplicial-configuration-model",
+        "software": "https://github.com/jg-you/scm"
+    },
+    {
+        "title": "Strategic tradeoffs in competitor dynamics on adaptive networks",
+        "authors": "L. Hébert-Dufresne, A. Allard, P.-A. Noël, J.-G. Young, E. Libby",
+        "journal": "Sci. Rep. 7, 7576",
+        "year": 2017,
+        "isOpenAccess": true,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1607.04632",
+        "journalURL": "http://dx.doi.org/10.1038/s41598-017-07621-x"
+    },
+    {
+        "title": "Finite size analysis of the detectability limit of the stochastic block model",
+        "authors": "J.-G. Young, P. Desrosiers, L. Hébert-Dufresne, E. Laurence, L. J. Dubé",
+        "journal": "Phys. Rev. E 95, 062304",
+        "year": 2017,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/1701.00062",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.95.062304",
+        "software": "https://github.com/jg-you/sbm_canonical_mcmc"
+    },
+    {
+        "title": "Growing networks of overlapping communities with internal structure",
+        "authors": "J.-G. Young, L. Hébert-Dufresne, A. Allard, L. J. Dubé",
+        "journal": "Phys. Rev. E 94, 022317",
+        "year": 2016,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1603.05566",
+        "journalURL": "http://dx.doi.org/10.1103/physreve.94.022317",
+        "slidesURL": "https://speakerdeck.com/jgyou/structural-preferential-attachment-of-community-structure-and-its-relation-to-dunbars-number",
+        "software": "https://github.com/spa-networks/spa"
+    },
+    {
+        "title": "Constrained growth of complex scale-independent systems",
+        "authors": "L. Hébert-Dufresne, A. Allard, J.-G. Young, L. J. Dubé",
+        "journal": "Phys. Rev. E 93, 032304",
+        "year": 2016,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1310.0112",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.93.032304"
+    },
+    {
+        "title": "Complex networks as an emerging property of hierarchical preferential attachment",
+        "authors": "L. Hébert-Dufresne, E. Laurence, A. Allard, J.-G. Young, L. J. Dubé",
+        "journal": "Phys. Rev. E 92, 062809",
+        "year": 2015,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1312.0171",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.92.062809",
+        "software": "https://github.com/spa-networks/hpa"
+    },
+    {
+        "title": "General and exact approach to percolation on random graphs",
+        "authors": "A. Allard, L. Hébert-Dufresne, J.-G. Young, L. J. Dubé",
+        "journal": "Phys. Rev. E 92, 062807",
+        "year": 2015,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1509.01207",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.92.062807"
+    },
+    {
+        "title": "A shadowing problem in the detection of overlapping communities: lifting the resolution limit through a cascading procedure",
+        "authors": "J.-G. Young, A. Allard, L. Hébert-Dufresne, L. J. Dubé",
+        "journal": "PLOS ONE 10, e0140133",
+        "year": 2015,
+        "isOpenAccess": true,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1211.1364",
+        "journalURL": "http://dx.doi.org/10.1371/journal.pone.0140133",
+        "software": "https://github.com/jg-you/cascading_detection"
+    },
+    {
+        "title": "Coexistence of phases and the observability of random graphs",
+        "authors": "A. Allard, L. Hébert-Dufresne, J.-G. Young, L. J. Dubé",
+        "journal": "Phys. Rev. E 89, 022801",
+        "year": 2014,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1309.7983",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.89.022801"
+    },
+    {
+        "title": "Percolation on random networks with arbitrary k-core structure",
+        "authors": "L. Hébert-Dufresne, A. Allard, J.-G. Young, L. J. Dubé",
+        "journal": "Phys. Rev. E 88, 062820",
+        "year": 2013,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1308.6537",
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.88.062820"
+    },
+    {
+        "title": "Global efficiency of local immunization on complex networks",
+        "authors": "L. Hébert-Dufresne, A. Allard, J.-G. Young, L. J. Dubé",
+        "journal": "Sci. Rep. 3, 2171",
+        "year": 2013,
+        "isOpenAccess": true,
+        "type": "article",
+        "preprintURL": "http://arxiv.org/abs/1208.5768",
+        "journalURL": "http://dx.doi.org/10.1038/srep02171"
+    },
+    {
+        "title": "Which contributions count? Analysis of attribution in open source",
+        "authors": "J.-G. Young, A. Casari, K. McLaughlin, M. Z. Trujillo, L. Hébert-Dufresne, J. P. Bagrow ",
+        "year": 2021,
+        "type": "proceedings",
+        "conference": "2021 IEEE/ACM 17th International Conference on Mining Software Repositories",
+        "location": "Madrid, Spain",
+        "preprintURL": "http://arxiv.org/abs/2103.11007",
+        "journalURL": "https://www.computer.org/csdl/proceedings-article/msr/2021/871000a242/1tB7jssgRpu",
+        "software": "https://doi.org/10.6084/m9.figshare.13966898.v1"
+    },
+    {
+        "title": "Countering hate on social media: Large scale classification of hate and counter speech",
+        "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, M. Galesic",
+        "year": 2020,
+        "type": "proceedings",
+        "conference": "ACL, Fourth Workshop on Online Abuse and Harm",
+        "preprintURL": "http://arxiv.org/abs/2006.01974",
+        "journalURL": "https://www.aclweb.org/anthology/2020.alw-1.13/"
+    },
+    {
+        "title": "Connected graphs with a given degree sequence: efficient sampling, correlations, community detection and robustness",
+        "authors": "J. H. Ring IV, J.-G. Young, L. Hébert-Dufresne",
+        "year": 2020,
+        "type": "proceedings",
+        "conference": "NetSci-X 2020: Sixth International Winter School and Conference on Network Science",
+        "location": "Tokyo, Japan",
+        "preprintURL": "http://www.jgyoung.ca/assets/CCM.pdf",
+        "journalURL": "https://link.springer.com/chapter/10.1007%2F978-3-030-38965-9_3"
+    },
+    {
+        "title": "Open source ecosystems need equitable credit across contributions",
+        "authors": "A. Casari, K. McLaughlin, M. Z. Trujillo, J.-G. Young, J. P. Bagrow, L. Hébert-Dufresne",
+        "year": 2021,
+        "type": "other edited work",
+        "journal": "Nat. Comput. Sci. 1, 2",
+        "isOpenAccess": true,
+        "journalURL": "https://www.nature.com/articles/s43588-020-00011-w"
+    },
+    {
+        "title": "Inférence et réseaux complexes",
+        "authors": "J.-G. Young",
+        "year": 2018,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/31824",
+        "type": "thesis",
+        "degree": "Ph.D."
+    },
+    {
+        "title": "De la détection de la structure communautaire des réseaux complexes",
+        "authors": "J.-G. Young",
+        "year": 2014,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/25472",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
+    {
+        "title": "On the accuracy of message-passing approaches to percolation in complex networks",
+        "authors": "A. Allard, and L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/1906.10377",
+        "year": 2019,
+        "type": "preprint"
+    },
+    {
+        "title": "The role of directionality, heterogeneity and correlations in epidemic risk and spread",
+        "authors": "A. Allard, C. Moore, S. V. Scarpino, B. M. Althouse, and L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/2005.11283",
+        "year": 2020,
+        "type": "preprint"
+    },
+    {
+        "title": "Coordinated support for local action: A modeling study of strategies to facilitate behavior adoption in urban poor communities of Liberia for sustained COVID-19 suppression",
+        "authors": "L. A. Skrip, M. P. Fallah, J. Bedson, L. Hébert-Dufresne, and B. M. Althouse",
+        "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.08.11.20172031v1",
+        "year": 2020,
+        "type": "preprint"
+    },
+    {
+        "title": "The unintended consequences of inconsistent pandemic control policies",
+        "authors": "B. M. Althouse, B. Wallace, B. Case, S. V. Scarpino, A. Berdahl, E. R. White, and L. Hébert-Dufresne",
+        "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.08.21.20179473v1",
+        "year": 2020,
+        "type": "preprint"
+    },
+    {
+        "title": "A review & framework for modeling complex engineered system development processes",
+        "authors": "J. Meluso, J. Austin-Breneman, J. P. Bagrow, and L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/2103.12820",
+        "year": 2021,
+        "type": "preprint"
+    },
+    {
+        "title": "Impact and dynamics of hate and counter speech online",
+        "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, and M. Galesic",
+        "preprintURL": "https://arxiv.org/abs/2009.08392",
+        "year": 2020,
+        "type": "preprint"
+    },
+    {
+        "title": "Limits of individual consent and models of distributed consent in online social networks",
+        "authors": "J. Lovato, A. Allard, R. Harp, L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/2006.16140",
+        "year": 2020,
+        "type": "preprint"
+    },
+    {
+        "title": "The penumbra of open source: projects outside of centralized platforms are longer maintained, more academic and more collaborative",
+        "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. P. Bagrow",
+        "preprintURL": "https://arxiv.org/abs/2106.15611",
+        "year": 2021,
+        "type": "preprint"
+    },
+    {
+        "title": "Predicting the diversity of early epidemic spread on networks",
+        "authors": "A. J. Allen, M. C. Boudreau, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/2107.03334",
+        "year": 2021,
+        "type": "preprint"
+    },
+    {
+        "title": "Source-sink cooperation dynamics constrain institutional evolution in a group-structured society",
+        "authors": "L. Hébert-Dufresne, T. M. Waring, G. St-Onge, M. T. Niles, L. K. Corlew, M. P. Dube, S. J. Miller, N. Gotelli and B. J. McGill",
+        "preprintURL": "https://arxiv.org/abs/2109.08106",
+        "year": 2021,
+        "type": "preprint"
+    },
+    {
+        "title": "Immunity-induced criticality of the genotype network of influenza A (H3N2) hemagglutinin",
+        "authors": "B. J. M. Williams, C. B. Ogbunugafor, B. M. Althouse, and L. Hébert-Dufresne",
+        "preprintURL": "https://arxiv.org/abs/2109.12407",
+        "year": 2021,
+        "type": "preprint"
+    },
+    {
+        "title": "Influential groups for seeding and sustaining hypergraph contagions",
+        "authors": "G. St-Onge, I. Iacopini, V. Latora, A. Barrat, G. Petri, A. Allard, and L. Hébert-Dufresne",
+        "journal": "Commun. Phys. (in press)",
+        "year": 2021,
+        "journalURL": "https://arxiv.org/abs/2105.07092",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks",
+        "authors": "G. St-Onge, H. Sun, A. Allard, L. Hébert-Dufresne, and G. Bianconi",
+        "journal": "Phys. Rev. Lett. 127, 158301",
+        "year": 2021,
+        "journalURL": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.158301",
+        "preprintURL": "https://arxiv.org/abs/2101.07229",
+        "type": "article"
+    },
+    {
+        "title": "Masculinity contest cultures and inclusive cultures: insights from an agent-based model of organizational socialization and promotion",
+        "authors": "J. Meluso, L. Hébert-Dufresne, J. P. Bagrow, and R. Razzante",
+        "journal": "Res. Soc. Issues Manag. (in press)",
+        "year": 2021,
+        "preprintURL": "https://bit.ly/meluso-et-al-mcc-ic",
+        "type": "article"
+    },
+    {
+        "title": "Flowers as dirty doorknobs: Demonstration of a virus transmission mechanism between Apis mellifera and Bombus impatiens",
+        "authors": "P. Burnham, S. Alger, B. Case, H. Boncristiani, L. Hébert-Dufresne, and A. Brody",
+        "journal": "J. Appl. Ecol., 58, 2065",
+        "year": 2021,
+        "journalURL": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13962",
+        "type": "article"
+    },
+    {
+        "title": "When the echo chamber shatters: Examining the use of community-specific language post-subreddit ban",
+        "authors": "M. Z. Trujillo, S. F. Rosenblatt, G. de Anda Jáuregui, E. Moog, L. Hébert-Dufresne, and A. M. Roth",
+        "conference": "ACL Workshop Online Abuse Harms",
+        "year": 2021,
+        "journalURL": "https://ieeexplore.ieee.org/document/9463079",
+        "location": "Madrid, Spain",
+        "preprintURL": "https://arxiv.org/abs/2106.16207",
+        "type": "proceedings"
+    },
+    {
+        "title": "A review and agenda for integrated disease models including social and behavioral factors",
+        "authors": "J. Bedson, L. A. Skrip, D. Pedi, S. Abramowitz, S. Carter, M. F. Jalloh, S. Funk, N. Gobat, T. Giles-Vernick, G. Chowell, J. Rangel de Almeida, R. Elessawi, S. V. Scarpino, R. A. Hammond, S. Briand, J. M. Epstein, L. Hébert-Dufresne, and B. M. Althouse",
+        "journal": "Nat. Hum. Behav. 5, 834",
+        "year": 2021,
+        "journalURL": "https://www.nature.com/articles/s41562-021-01136-2",
+        "type": "article"
+    },
+    {
+        "title": "Seeding COVID-19 across Sub-Saharan Africa: An Analysis of Reported Importation Events across 49 Countries",
+        "authors": "L. A. Skrip, P. Selvaraj, B. Hagedorn, A. Lin Ouédraogo, N. Noori, A. Orcutt, D. Mistry, J. Bedson, L. Hébert-Dufresne, S. V. Scarpino, and B. M. Althouse",
+        "journal": "Am. J. Trop. Med. Hyg. 104, 1694",
+        "year": 2021,
+        "journalURL": "https://www.ajtmh.org/view/journals/tpmd/aop/article-10.4269-ajtmh.20-1502/article-10.4269-ajtmh.20-1502.xml",
+        "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.04.01.20050203v1",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Social confinement and mesoscopic localization of epidemics on networks",
+        "authors": "G. St-Onge, V. Thibeault, A. Allard, L. J. Dubé, and L. Hébert-Dufresne",
+        "journal": "Phys. Rev. Lett. 126, 098301",
+        "year": 2021,
+        "journalURL": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.098301",
+        "preprintURL": "https://arxiv.org/abs/2003.05924",
+        "type": "article"
+    },
+    {
+        "title": "Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks",
+        "authors": "G. St-Onge, V. Thibeault, A. Allard, L. J. Dubé, and L. Hébert-Dufresne",
+        "journal": "Phys. Rev. E 103, 032301",
+        "year": 2021,
+        "journalURL": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.032301",
+        "preprintURL": "https://arxiv.org/abs/2004.10203",
+        "type": "article"
+    },
+    {
+        "title": "The effectiveness of backward contact tracing in networks ",
+        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-. Ahn",
+        "journal": "Nat. Phys. 17, 652",
+        "year": 2021,
+        "journalURL": "https://www.nature.com/articles/s41567-021-01187-2",
+        "preprintURL": "http://arxiv.org/abs/2005.02362",
+        "type": "article"
+    },
+    {
+        "title": "The effectiveness of backward contact tracing in networks",
+        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-Y. Ahn",
+        "journal": "Nat. Phys. 17, 652",
+        "year": 2021,
+        "journalURL": "https://www.nature.com/articles/s41567-021-01187-2",
+        "preprintURL": "http://arxiv.org/abs/2005.02362",
+        "type": "article"
+    },
+    {
+        "title": "Localization, epidemic transitions, and unpredictability of multistrain epidemics with an underlying genotype network",
+        "authors": "B. J. M. Williams, G. St-Onge, and L. Hébert-Dufresne",
+        "journal": "PLOS Comput. Biol. 17, e1008606",
+        "year": 2021,
+        "journalURL": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008606",
+        "preprintURL": "https://arxiv.org/abs/2007.07429",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Containing future epidemics with trustworthy federated systems for ubiquitous warning and response",
+        "authors": "D. Carrillo, L. D. Nguyen, P. H. J. Nardelli, E. Pournaras, P. Morita, D. Z. Rodríguez, M. Dzaferagic, H. Siljak, A Jung, L. Hébert-Dufresne, I. Macaluso, M. Ullah, G. Fraidenraich, and P. Popovski",
+        "journal": "Front. Comms. Net. 2, 621264",
+        "year": 2021,
+        "journalURL": "https://www.frontiersin.org/articles/10.3389/frcmn.2021.621264/full",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Superspreading events in the transmission dynamics of SARS-CoV-2: opportunities for interventions and control",
+        "authors": "B. M. Althouse, E. A. Wenger, J. C. Miller, S. V. Scarpino, A. Allard, L. Hébert-Dufresne, and H. Hu",
+        "journal": "PLOS Biol. 18, e3000897",
+        "year": 2020,
+        "journalURL": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000897",
+        "preprintURL": "https://arxiv.org/abs/2005.13689",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Modeling the impact of school reopening on SARS-CoV-2 transmission",
+        "authors": "B. Lee, J. P. Hanley, S. Nowak, J. H. T. Bates, and L. Hébert-Dufresne",
+        "journal": "BMC Public Health",
+        "year": 2020,
+        "journalURL": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000897",
+        "preprintURL": "https://arxiv.org/abs/2005.13689",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Beyond R0: Heterogeneity in secondary infections and probabilistic epidemic forecasting",
+        "authors": "B. Lee, J. P. Hanley, S. Nowak, J. H. T. Bates, and L. Hébert-Dufresne",
+        "journal": "J. R. Soc. Interface 17, 172",
+        "year": 2020,
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rsif.2020.0393",
+        "preprintURL": "https://arxiv.org/abs/2002.04004",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Network comparison and the within-ensemble graph distance",
+        "authors": "H. Hartle, B. Klein, S. McCabe, A. Daniels, G. St-Onge, C. Murphy, and L. Hébert-Dufresne",
+        "journal": "Proc. R. Soc. Lond. A 476, 2243",
+        "year": 2020,
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rspa.2019.0744",
+        "preprintURL": "https://arxiv.org/abs/2008.02415",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "State-level variation of initial COVID-19 dynamics in the United States",
+        "authors": "E. R. White, and L. Hébert-Dufresne",
+        "journal": "PLOS ONE 15, e0240648",
+        "year": 2020,
+        "journalURL": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240648",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Spread of infectious disease and social awareness as parasitic contagions on clustered networks",
+        "authors": "L. Hébert-Dufresne, D. Mistry, and B. M. Althouse",
+        "journal": "Phys. Rev. Res. 2, 033306",
+        "year": 2020,
+        "journalURL": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033306",
+        "preprintURL": "https://arxiv.org/abs/2003.10604",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Community Engagement during outbreak response: standards, approaches, and lessons from the Ebola outbreak in Sierra Leone",
+        "authors": "J. Bedson, M. F. Jalloh, D. Pedi, S. Bah, K. Owen, A. Oniba, M. Sangarie, J. S. Fofanah, M. B. Jalloh, P. Sengeh, L. A. Skrip, B. M. Althouse, L. Hébert-Dufresne",
+        "journal": "BMJ Glob. Health 5, e002145",
+        "year": 2020,
+        "journalURL": "https://gh.bmj.com/content/5/8/e002145",
+        "preprintURL": "https://www.biorxiv.org/content/10.1101/661959v1",
+        "isOpenAccess": true,
+        "dataURL": "https://figshare.com/articles/Social_Mobilization_Action_Consortium_Community_Engagement_data_from_the_2014-2016_Sierra_Leone_Ebola_outbreak/8247002",
+        "type": "article"
+    },
+    {
+        "title": "Immunization strategies in networks with missing data",
+        "authors": "S. F. Rosenblatt, J. A. Smith, G. R. Gauthier, and L. Hébert-Dufresne",
+        "journal": "PLOS Comput. Biol. 16, e1007897",
+        "year": 2020,
+        "journalURL": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007897",
+        "preprintURL": "https://arxiv.org/abs/2005.07632",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Unmet needs and behaviour during the Ebola response in Sierra Leone: a retrospective, mixed-methods analysis of community feedback from the Social Mobilization Action Consortium ",
+        "authors": "L. A. Skrip, J. Bedson, S. Abramowitz, M. B. Jalloh, S. Bah., M. F. Jalloh, O. Demian Langle-Chimal, N. Cheney, L. Hébert-Dufresne, B. M. Althouse",
+        "journal": "Lancet Planet. Health 4, e74",
+        "year": 2020,
+        "journalURL": "https://www.sciencedirect.com/science/article/pii/S2542519620300085",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Effective implementation of energy aware polarization diversity for IoT networks using eigenvector centrality",
+        "authors": "S. Chowdhury, L. Hébert-Dufresne, and J. Frolik",
+        "conference": "NetSci-X 2020: Sixth International Winter School on Network Science",
+        "year": 2020,
+        "journalURL": "https://link.springer.com/chapter/10.1007/978-3-030-38965-9_17",
+        "location": "Tokyo, Japan",
+        "type": "proceedings"
+    },
+    {
+        "title": "Effective implementation of energy aware polarization diversity for IoT networks using eigenvector centrality",
+        "authors": "A. Berdahl, C. Brelsford, C. De Bacco, M. Dumas, V. Ferdinand, J. A. Grochow, L. Hébert-Dufresne, Y. Kallus, C. P. Kempes, A. Kolchinsky, D. B. Larremore, E. Libby, E. A. Power, C. A. Stern, and B. D. Tracey",
+        "journal": "Sci. Rep. 9, 15093",
+        "year": 2019,
+        "journalURL": "https://www.nature.com/articles/s41598-019-50039-w",
+        "preprintURL": "https://arxiv.org/abs/1604.02096",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Smeared phase transitions in percolation on real complex networks",
+        "authors": "L. Hébert-Dufresne, and A. Allard",
+        "journal": "Phys. Rev. Res. 1, 013009",
+        "year": 2019,
+        "journalURL": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.013009",
+        "preprintURL": "https://arxiv.org/abs/1810.00735",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Syntrophy emerges spontaneously in complex metabolic systems",
+        "authors": "E. Libby, L. Hébert-Dufresne, S.-R. Hosseini and A. Wagner",
+        "journal": "PLOS Comput. Biol. 15, e1007169",
+        "year": 2019,
+        "journalURL": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007169",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Percolation and the effective structure of complex networks",
+        "authors": "A. Allard, and L. Hébert-Dufresne",
+        "journal": "Phys. Rev. X 9, 011023",
+        "year": 2019,
+        "journalURL": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.011023",
+        "preprintURL": "https://arxiv.org/abs/1804.09633",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "The symptoms at the center: Examining the comorbidity of posttraumatic stress dDisorder, generalized anxiety disorder, and depression with network analysis",
+        "authors": "M. Price, A. C. Legrand, Z. M. F. Brier, and L. Hébert-Dufresne",
+        "journal": "J. Psychiatr. Res. 109, 52",
+        "year": 2019,
+        "journalURL": "https://www.sciencedirect.com/science/article/pii/S0022395618307088",
+        "type": "article"
+    },
+    {
+        "title": "Edge fires drive the shape and stability of tropical forests",
+        "authors": "L. Hébert-Dufresne, A. F. A. Pellegrini, U. Bhat, S. Redner, S. W. Pacala and A. Berdahl",
+        "journal": "Ecol. Lett. 21, 794",
+        "year": 2018,
+        "journalURL": "https://onlinelibrary.wiley.com/doi/10.1111/ele.12942",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "The risk of sustained sexual transmission of Zika is underestimated",
+        "authors": "A. Allard, B. M. Althouse, L. Hébert-Dufresne, and S. V. Scarpino",
+        "journal": "PLoS Pathog 13, e1006633",
+        "year": 2017,
+        "journalURL": "http://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006633",
+        "preprintURL": "http://biorxiv.org/content/early/2017/02/22/090324",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Asymmetric percolation drives a double transition in sexual contact networks",
+        "authors": "A. Allard, B. M. Althouse, S. V. Scarpino, and L. Hébert-Dufresne",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 114, 34",
+        "year": 2017,
+        "journalURL": "http://www.pnas.org/content/early/2017/08/07/1703073114.full",
+        "preprintURL": "https://arxiv.org/abs/1702.06224",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Exotic phase transitions of k-cores in clustered networks",
+        "authors": "U. Bhat, M. Shrestha, and L. Hébert-Dufresne",
+        "journal": "Phys. Rev. E 95, 012314",
+        "year": 2017,
+        "journalURL": "http://journals.aps.org/pre/abstract/10.1103/PhysRevE.95.012314",
+        "preprintURL": "https://arxiv.org/abs/1607.08637",
+        "type": "article"
+    },
+    {
+        "title": "Network structure at multiple scales via a new network statistic: the onion decomposition",
+        "authors": "L. Hébert-Dufresne, J. A. Grochow and A. Allard",
+        "journal": "Sci. Rep. 6, 31708",
+        "year": 2016,
+        "journalURL": "http://www.nature.com/articles/srep31708",
+        "preprintURL": "http://arxiv.org/abs/1510.08542",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "The effect of a prudent adaptive behaviour on disease transmission",
+        "authors": "S. V. Scarpino, A. Allard, and L. Hébert-Dufresne",
+        "journal": "Nat. Phys. 12, 1042",
+        "year": 2016,
+        "journalURL": "http://www.nature.com/nphys/journal/v12/n11/full/nphys3832.html",
+        "preprintURL": "http://arxiv.org/abs/1509.00801",
+        "type": "article"
+    },
+    {
+        "title": "Enhancing disease surveillance with novel data streams: challenges and opportunities",
+        "authors": "B. M. Althouse, S. V. Scarpino, L. Ancel Meyers, J. W. Ayers, M. Bargsten, J. Baumbach, J. S. Brownstein, L. Castro, H. Clapham, D. A. T. Cummings, S. Del Valle, S. Eubank, G. Fairchild, L. Finelli, N. Generous, D George, D. R. Harper, L. Hébert-Dufresne, M. A. Johansson, K. Konty, M. Lipsitch, G. Milinovich, J. D. Miller, E. O. Nsoesie, D. R. Olson, M. Paul, P. M. Polgreen, R. Priedhorsky, J. M. Read, I. Rodríguez-Barraquer, D. J. Smith, C. Stefansen, D. L. Swerdlow, D. Thompson, A. Vespignani and A. Wesolowski",
+        "journal": "EPJ Data Sci. 4, 17",
+        "year": 2015,
+        "journalURL": "http://www.epjdatascience.com/content/4/1/17",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Complex dynamics of synergistic coinfections on realistically clustered networks",
+        "authors": "L. Hébert-Dufresne, and B. M. Althouse",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 112, 33",
+        "year": 2015,
+        "journalURL": "http://www.pnas.org/content/early/2015/07/16/1507820112.abstract",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Spreading dynamics on complex networks: a general stochastic approach",
+        "authors": "P.-A. Noël, A. Allard, L. Hébert-Dufresne, V. Marceau and L. J. Dubé",
+        "journal": "J Math Biol 69, 1627",
+        "year": 2014,
+        "journalURL": "http://link.springer.com/article/10.1007/s00285-013-0744-9",
+        "preprintURL": "http://arxiv.org/abs/1201.0296",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Epidemic Cycles Driven by Host Behavior",
+        "authors": "B. M. Althouse, and L. Hébert-Dufresne",
+        "journal": "J. R. Soc. Interface 11, 20140575",
+        "year": 2014,
+        "journalURL": "http://rsif.royalsocietypublishing.org/content/11/99/20140575.full",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Optimizing treatment regimes to hinder antiviral resistance in influenza across time scales",
+        "authors": "O. Patterson-Lomba, B. M. Althouse, G. M. Goerg, and L. Hébert-Dufresne",
+        "journal": "PLOS ONE 8, e59529",
+        "year": 2013,
+        "journalURL": "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0059529",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Pathogen mutation modeled by competition between site and bond percolation",
+        "authors": "L. Hébert-Dufresne, O. Patterson-Lomba, G. M. Goerg and B. M. Althouse",
+        "journal": "Phys. Rev. Lett. 110, 108103 ",
+        "year": 2013,
+        "journalURL": "http://prl.aps.org/abstract/PRL/v110/i10/e108103",
+        "type": "article"
+    },
+    {
+        "title": "Targeting and timing of treatment influences the emergence of influenza resistance in structured populations",
+        "authors": "B. M. Althouse, O. Patterson-Lomba, G. M. Goerg, and L. Hébert-Dufresne",
+        "journal": "PLOS Comput. Biol. 9, e1002912",
+        "year": 2013,
+        "journalURL": "http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1002912",
+        "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "Bond percolation on a class of correlated and clustered random graphs",
+        "authors": "A. Allard, L. Hébert-Dufresne, P.-A. Noël, V. Marceau and L. J. Dubé",
+        "journal": "J. Phys. A: Math. Theor. 45405005",
+        "year": 2012,
+        "journalURL": "http://iopscience.iop.org/1751-8121/45/40/405005/",
+        "preprintURL": "http://arxiv.org/abs/1201.4602",
+        "type": "article"
+    },
+    {
+        "title": "Exact solution of bond percolation on small arbitrary graphs",
+        "authors": "A. Allard, L. Hébert-Dufresne, P.-A. Noël, V. Marceau and L. J. Dubé",
+        "journal": "EPL 98, 16001",
+        "year": 2012,
+        "journalURL": "http://iopscience.iop.org/0295-5075/98/1/16001/",
+        "preprintURL": "http://arxiv.org/abs/1201.4369",
+        "type": "article"
+    },
+    {
+        "title": "Propagation on networks: an exact alternative perspective",
+        "authors": "P.-A. Noël, A. Allard, L. Hébert-Dufresne, V. Marceau and L. J. Dubé",
+        "journal": "Phys. Rev. E 85, 031118",
+        "year": 2012,
+        "journalURL": "http://pre.aps.org/abstract/PRE/v85/i3/e031118",
+        "preprintURL": "http://arxiv.org/abs/1102.0987",
+        "type": "article"
+    },
+    {
+        "title": "Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems",
+        "authors": "L. Hébert-Dufresne, A. Allard, V. Marceau, P.-A. Noël, and L. J. Dubé",
+        "journal": "Phys. Rev. E 85, 026108",
+        "year": 2012,
+        "journalURL": "http://pre.aps.org/abstract/PRE/v85/i2/e026108",
+        "preprintURL": "http://arxiv.org/abs/1109.0034",
+        "type": "article"
+    },
+    {
+        "title": "Structural Preferential Attachment: Network organization beyond the link",
+        "authors": "L. Hébert-Dufresne, A. Allard, V. Marceau, P.-A. Noël, and L. J. Dubé",
+        "journal": "Phys. Rev. Lett. 107, 158702",
+        "year": 2011,
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevLett.107.158702",
+        "preprintURL": "http://arxiv.org/abs/1105.5980",
+        "type": "article"
+    },
+    {
+        "title": "Modeling the dynamical interaction between epidemics on overlay networks",
+        "authors": "V. Marceau, P.-A. Noël, L. Hébert-Dufresne, A. Allard, and L. J. Dubé",
+        "journal": "Phys. Rev. E 84, 026105",
+        "year": 2011,
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.84.026105",
+        "preprintURL": "http://arxiv.org/abs/1103.4059",
+        "type": "article"
+    },
+    {
+        "title": "Adaptive networks: Coevolution of disease and topology",
+        "authors": "V. Marceau, P.-A. Noël, L. Hébert-Dufresne, A. Allard, and L. J. Dubé",
+        "journal": "Phys. Rev. E 82, 036116",
+        "year": 2010,
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.82.036116",
+        "preprintURL": "http://arxiv.org/abs/1005.1299",
+        "type": "article"
+    },
+    {
+        "title": "Propagation dynamics on networks featuring complex topologies",
+        "authors": "L. Hébert-Dufresne, P.-A. Noël, V. Marceau, A. Allard, and L. J. Dubé",
+        "journal": "Phys. Rev. E 82, 036115",
+        "year": 2010,
+        "journalURL": "http://dx.doi.org/10.1103/PhysRevE.82.036115",
+        "preprintURL": "http://arxiv.org/abs/1005.1397",
+        "type": "article"
+    },
+    {
+        "title": "On the growth and structure of social systems following preferential attachment",
+        "authors": "L. Hébert-Dufresne",
+        "year": 2014,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/25331",
+        "type": "thesis",
+        "degree": "Ph.D."
+    },
+    {
+        "title": "La structure communautaire comme paradigme d'organisation des réseaux complexes",
+        "authors": "L. Hébert-Dufresne",
+        "year": 2011,
+        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/23165",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
+    {
+        "title": "Dossier: Bifurcation",
+        "authors": "L. Hébert-Dufresne, and J.-Marc Fontan",
+        "year": 2020,
+        "journalURL": "https://www.acfas.ca/publications/magazine/dossier/bifurcation",
+        "type": "other edited work",
+        "isOpenAccess": true,
+        "journal": "Magazine de l'ACFAS",
+    },
+    {
+        "title": "ALIFE 2020: The 2020 Conference on Artificial Life",
+        "authors": "J. Bongard, J. Lovato, L. Hébert-Dufresne, R. Dasari, and L. Soros",
+        "year": 2020,
+        "journalURL": "https://www.mitpressjournals.org/toc/isal/32",
+        "type": "other edited work",
+        "journal": "MIT Press",
+    },
+    {
+        "title": "The Social Zombie: Modelling undead outbreaks on social networks",
+        "authors": "L. Hébert-Dufresne, V. Marceau, P.-A. Noël, A. Allard, and L. J. Dubé",
+        "year": 2014,
+        "textURL": "http://www.press.uottawa.ca/mathematical-modelling-of-zombies",
+        "type": "other edited work",
+        "journal": "Mathematical Modelling of Zombies",
+    },
 ]
