@@ -101,7 +101,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                 <ContainerFull className='bg-gray-50 border-t py-6 lg:py-12'> 
                   <Container >
                     <h3 className='text-2xl'>{publications.totalCount>3? "Latest publications": "Publications"}</h3>
-                    <PublicationsList/>
+                    <PublicationsList hidePublicationCount/>
                     <ButtonToAllPublications alias={mdx.frontmatter.alias}/>
                   </Container>
                 </ContainerFull>

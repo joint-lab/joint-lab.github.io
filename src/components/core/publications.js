@@ -56,7 +56,7 @@ function Publication({ title, year, authors, journal, conference, location, type
 /*
 Uncontrolled list of publications. The data comes from PublicationsContext.
 */
-export function PublicationsList({ emptyView }){
+export function PublicationsList({ emptyView, hidePublicationCount }){
   const { publications } = useContext(PublicationsContext);
   if (publications.length===0){
     if (emptyView){
@@ -67,9 +67,11 @@ export function PublicationsList({ emptyView }){
           </div>
   }
   return <div>
-          <div className="uppercase text-xs text-green-600 border-b-2 border-gray-800">
-             {publications.length} result{publications.length>1? 's': ''}
-          </div>
+          {hidePublicationCount? <div className="border-b-2 border-gray-800"/>:
+            <div className="uppercase text-xs text-green-600 border-b-2 border-gray-800">
+               {publications.length} result{publications.length>1? 's': ''}
+            </div>
+          }
           <div className='divide-y '>
             {publications.map(data=><Publication key={data.id} {...data}/>)}
           </div>
