@@ -85,20 +85,20 @@ export function PublicationFilters(){
   const yearOptions = [
     {
       title: 'Any time',
-      onClick: ((e)=>updateYear(0, e.currentTarget.checked))
+      onClick: ((e)=>updateYear([0, 9999], e.currentTarget.checked)),
+      checked: filters.date[0]===0
     },
     {
       title: 'Since 2021',
-      onClick: ((e)=>updateYear(2021, e.currentTarget.checked))
+      onClick: ((e)=>updateYear([2021, 9999], e.currentTarget.checked)),
+      checked: filters.date[0]===2021
     },
     {
       title: 'Since 2020',
-      onClick: ((e)=>updateYear(2020, e.currentTarget.checked))
+      onClick: ((e)=>updateYear([2020, 9999], e.currentTarget.checked)),
+      checked: filters.date[0]===2020
     },
-    {
-      title: 'Since 2018',
-      onClick: ((e)=>updateYear(2018, e.currentTarget.checked))
-    }
+    ...[...Array(10).keys()].map(d=>({title: `${2019-d}`, checked: filters.date[0]===2019-d, onClick: ((e)=>updateYear([2019-d, 2019-d], e.currentTarget.checked))}))
   ]
 
   return <div className=''>
@@ -108,7 +108,8 @@ export function PublicationFilters(){
                           values={publicationTypes.map(type=>({name: type,  readOnly:true, checked: filters.types.includes(type), title: capitalizeFirstLetter(type), onClick:((e)=>{updateType(type)})}))}/>
             </div>
             <div className=''>
-              <RadioList title={'Since'} 
+              <RadioList title={'Date'} 
+                          numValuesShown={3}
                           values={yearOptions}/>
             </div>
             <div className='pt-8'>

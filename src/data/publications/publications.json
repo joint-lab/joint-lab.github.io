@@ -4,8 +4,7 @@
         "authors": "J.-G. Young, A. Kirkley, M. E. J. Newman",
         "year": 2021,
         "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2107.07489",
-        "flavor": "Editor's pick"
+        "preprintURL": "https://arxiv.org/abs/2107.07489"
     },
     {
         "title": "Impact and dynamics of hate and counter speech online",
@@ -875,7 +874,7 @@
         "journalURL": "https://www.acfas.ca/publications/magazine/dossier/bifurcation",
         "type": "other edited work",
         "isOpenAccess": true,
-        "journal": "Magazine de l'ACFAS",
+        "journal": "Magazine de l'ACFAS"
     },
     {
         "title": "ALIFE 2020: The 2020 Conference on Artificial Life",
@@ -883,7 +882,7 @@
         "year": 2020,
         "journalURL": "https://www.mitpressjournals.org/toc/isal/32",
         "type": "other edited work",
-        "journal": "MIT Press",
+        "journal": "MIT Press"
     },
     {
         "title": "The Social Zombie: Modelling undead outbreaks on social networks",
@@ -891,7 +890,7 @@
         "year": 2014,
         "textURL": "http://www.press.uottawa.ca/mathematical-modelling-of-zombies",
         "type": "other edited work",
-        "journal": "In: Mathematical Modelling of Zombies, University of Ottawa Press",
+        "journal": "In: Mathematical Modelling of Zombies, University of Ottawa Press"
     },
     {
         "title": "Face aux changements environnementaux, la transdisciplinarité : le cas des cryonoses",
@@ -900,7 +899,7 @@
         "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/face-aux-changements-environnementaux-transdisciplinarite-cas",
         "type": "other edited work",
         "isOpenAccess": true,
-        "journal": "Magazine de l'ACFAS",
+        "journal": "Magazine de l'ACFAS"
     },
     {
         "title": "La modélisation mathématique pour cartographier le complexe et l’inconnu",
@@ -909,7 +908,7 @@
         "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/modelisation-mathematique-cartographier-complexe-inconnu",
         "type": "other edited work",
         "isOpenAccess": true,
-        "journal": "Magazine de l'ACFAS",
+        "journal": "Magazine de l'ACFAS"
     },
     {
         "title": "Misinformation about an outbreak like COVID-19 is important public health data",
@@ -918,7 +917,7 @@
         "journalURL": "https://www.statnews.com/2020/04/07/misinformation-outbreak-is-important-public-health-data/",
         "type": "other edited work",
         "isOpenAccess": true,
-        "journal": "STAT",
+        "journal": "STAT"
     },
     {
         "title": "Halting the spread of COVID-19 and escaping the madness of crowds",
@@ -926,7 +925,7 @@
         "year": 2021,
         "textURL": "https://www.sfipress.org/books-coming-soon/the-complex-alternative",
         "type": "other edited work",
-        "journal": "In: The Complex Alternative, SFI Press",
+        "journal": "In: The Complex Alternative, SFI Press"
     },
     {
         "title": "On the dynamics and structure of multiple strain epidemic models and genotype networks",
@@ -943,6 +942,6 @@
         "journalURL": "https://www.acfas.ca/publications/magazine/2020/09/dossier-bifurcation-conversation-editoriale",
         "type": "other edited work",
         "isOpenAccess": true,
-        "journal": "Magazine de l'ACFAS",
+        "journal": "Magazine de l'ACFAS"
     }
 ]

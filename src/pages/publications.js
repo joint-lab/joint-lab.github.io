@@ -50,7 +50,9 @@ export default function Index({ data, location }){
   
 export const IndexQuery = graphql`
   query {
-    publications: allPublicationsJson {
+    publications: allPublicationsJson(
+      sort: {fields: year}
+    ) {
       edges {
         node {
           id

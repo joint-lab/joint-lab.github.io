@@ -100,16 +100,15 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
               {publications.totalCount>0?
                 <ContainerFull className='bg-gray-50 border-t py-6 lg:py-12'> 
                   <Container >
-                    <h3 className='text-2xl'>Latest publications</h3>
+                    <h3 className='text-2xl'>{publications.totalCount>3? "Latest publications": "Publications"}</h3>
                     <PublicationsList/>
-                    {publications.totalCount>3? <ButtonToAllPublications alias={mdx.frontmatter.alias}/>: null}
+                    <ButtonToAllPublications alias={mdx.frontmatter.alias}/>
                   </Container>
                 </ContainerFull>
                 : null}
             </Page>
           </PublicationsContextProvider>
 }
-
 
 /*
   Includes elements in the query to get

@@ -3,14 +3,14 @@ import React, { useState, useEffect, useCallback, useRef, createContext } from "
 const PublicationsContext = createContext({publications: [], updateType:null, updateQuery: null, publicationTypes: [], filters: {}});
 
 function splitAuthors(publications, people){
-  return publications.map(d=>{
-    const authors = d.authors.replace(', and ', ', ').split(', ');
-    const memberAliases = people.map(d=>d.alias);
+  return publications.map(publi=>{
+    const authors = publi.authors.replace(' and ', ' ').split(', ');
+    const memberAliases = people.map(d=>d.alias.trim());
     const extendedAuthors = authors.map(d=>{
       const index = memberAliases.indexOf(d.trim());
       return {alias: d, isLabMember: index!==-1, info: people[index]}
     })
-    return {...d, authors: extendedAuthors}
+    return {...publi, authors: extendedAuthors}
   })
 }
 
@@ -23,7 +23,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications 
   const processedPublications = useRef(splitAuthors(allPublications, people));
   const publicationTypes = useRef(getUniquePublicationTypes(allPublications));
   const [publications, setPublications] = useState([]);
-  const [filters, setFilters] = useState({authors: [], query: '', since: 0, types: []});
+  const [filters, setFilters] = useState({authors: [], query: '', date: [0,9999], types: []});
 
   const updateQuery = useCallback((query)=>{
     setFilters({...filters, query});
@@ -51,8 +51,8 @@ const PublicationsContextProvider = ({ children, query, people, allPublications 
     }
   }, [filters]);
 
-  const updateYear = useCallback((since)=>{
-    setFilters({...filters, since});
+  const updateYear = useCallback((date)=>{
+    setFilters({...filters, date});
   }, [filters]);
 
   useEffect(()=>{
@@ -65,7 +65,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications 
       // Check the intersection between the authors and filters.authors
       const authorsAliases = d.authors.map(d=>d.alias);
       if (filters.authors && filters.authors.length>0){ _bool = _bool*(filters.authors.filter(a=> authorsAliases.includes(a)).length===filters.authors.length)}
-      if (filters.since){ _bool = _bool*(d.year>=filters.since)}
+      if (filters.date){ _bool = _bool*(d.year>=filters.date[0])*(d.year<=filters.date[1])}
       return _bool
     })
 

@@ -12,7 +12,8 @@ const sizes =   {
   md: 'px-4 py-2 text-sm',
   lg: 'px-4 py-2 text-base',
   xl: 'px-6 py-3 text-base',
-  none: 'px-0 py-0 text-base'
+  none: 'px-0 py-0 text-base',
+  noneXS: 'px-0 py-0 text-xs'
 };
 
 const colors =   {
