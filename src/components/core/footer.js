@@ -14,13 +14,14 @@ export function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <p className="text-gray-700 text-base">
-              We are a research group dedicated to the understanding of the structure and of the dynamics of complex systems.
+
+              <h3 className="text-sm  text-gray-400 tracking-wider uppercase">The Joint Lab</h3>
+              Collaborative explorations across sciences with models and data.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm  text-gray-400 tracking-wider uppercase">Location</h3>
                 <p className="text-gray-500 text-base">
                   University of Vermont
                 </p>

@@ -23,7 +23,7 @@ export function LSDIcon(){
           </svg>
 }
 
-export function OGYIcon(){
+export function CDLIcon(){
   return <svg
             className="transform opacity-60 rotate-60 scale-75 overflow-visible"
             width={100}
