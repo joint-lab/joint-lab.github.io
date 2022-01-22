@@ -1,18 +1,56 @@
 [
     {
-        "title": "Clustering of heterogeneous populations of networks",
-        "authors": "J.-G. Young, A. Kirkley, M. E. J. Newman",
+        "title": "Cutting through the noise to infer autonomous system topology",
+        "authors": "K. G. Leyba, J. J. Daymude, J.-G. Young, M. E. J. Newman, J. Rexford, and S. Forrest",
+        "year": 2022,
+        "type": "proceedings",
+        "conference": "INFOCOM 2022, IEEE Conference on Computer Communications",
+        "location": "Virtual Conference",
+        "preprintURL": "https://arxiv.org/abs/2201.07328"
+    },
+    {
+        "title": "The network epidemiology of an Ebola epidemic",
+        "authors": "L. Hébert-Dufresne, J.-G. Young, J. Bedson, L. Skrip, D. Pedi, M. F. Jalloh, B. Raulier, O. Lapointe-Gagné, A. Jambai, A. Allard, and B. M. Althouse",
         "year": 2021,
+        "date": "2021-10-16",
         "type": "preprint",
-        "date": "2021-07-19",
-        "preprintURL": "https://arxiv.org/abs/2107.07489"
+        "preprintURL": "https://arxiv.org/abs/2111.08686"
+    },
+    {
+        "title": "Spatial epidemiology and adaptive targeted sampling to manage the Chagas disease vector Triatoma dimidiata",
+        "authors": "B. K. M. Case, J.-G. Young, D. Penados, L. Hébert-Dufresne, and L. Stevens",
+        "year": 2021,
+        "date": "2021-10-10",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2111.05964"
+    },
+    {
+        "title": "Latent network models to account for noisy, multiply-reported social network data",
+        "authors": "C. De Bacco, M. Contisciani, J. Cardoso-Silva, H. Safdari, D. Baptista, T. Sweet, J.-G. Young, J. Koster, C. T. Ross, R. McElreath, D. Redhead, and E. A. Power",
+        "year": 2021,
+        "date": "2021-12-21",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2112.11396",
+        "software": "https://github.com/latentnetworks/vimure"
     },
     {
         "title": "Impact and dynamics of hate and counter speech online",
         "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, M. Galesic",
-        "year": 2020,
+        "year": 2021,
+        "date": "2021-09-05",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2009.08392"
+    },
+    {
+        "title": "Clustering of heterogeneous populations of networks",
+        "authors": "J.-G. Young, A. Kirkley, M. E. J. Newman",
+        "year": 2022,
+        "type": "article",
+        "date": "2022-01-21",
+        "journal": "Phys. Rev. E 105, 014312",
+        "preprintURL": "https://arxiv.org/abs/2107.07489",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.105.014312",
+        "software": "https://github.com/aleckirkley/Clustering-network-populations"
     },
     {
         "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
@@ -24,11 +62,13 @@
     {
         "title": "Reconstruction of plant–pollinator networks from observational data",
         "authors": "J.-G. Young, F. S. Valdovinos, M. E. J. Newman",
+        "journal": "Nat. Commun. 12, 3911",
         "year": 2021,
         "type": "article",
+        "isOpenAccess": true,
+        "date": "2022-06-13",
         "preprintURL": "https://www.biorxiv.org/content/10.1101/754077v2",
         "journalURL": "https://doi.org/10.1038/s41467-021-24149-x",
-        "isOpenAccess": true,
         "software": "https://github.com/jg-you/plant-pollinator-inference"
     },
     {
@@ -36,6 +76,7 @@
         "authors": "J.-G. Young, G. Petri, T. P. Peixoto",
         "year": 2021,
         "type": "article",
+        "journal": "Commun. Phys. 4, 135 ",
         "preprintURL": "https://arxiv.org/abs/2008.04948",
         "journalURL": "https://doi.org/10.1038/s42005-021-00637-w",
         "isOpenAccess": true,
@@ -344,7 +385,7 @@
     },
     {
         "title": "The unintended consequences of inconsistent pandemic control policies",
-        "authors": "B. M. Althouse, B. Wallace, B. Case, S. V. Scarpino, A. Berdahl, E. R. White, and L. Hébert-Dufresne",
+        "authors": "B. M. Althouse, B. Wallace, B. K. M. Case, S. V. Scarpino, A. Berdahl, E. R. White, and L. Hébert-Dufresne",
         "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.08.21.20179473v1",
         "year": 2020,
         "type": "preprint"
@@ -426,7 +467,7 @@
     },
     {
         "title": "Flowers as dirty doorknobs: Demonstration of a virus transmission mechanism between Apis mellifera and Bombus impatiens",
-        "authors": "P. Burnham, S. Alger, B. Case, H. Boncristiani, L. Hébert-Dufresne, and A. Brody",
+        "authors": "P. Burnham, S. Alger, B. K. M. Case, H. Boncristiani, L. Hébert-Dufresne, and A. Brody",
         "journal": "J. Appl. Ecol., 58, 2065",
         "year": 2021,
         "journalURL": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13962",
@@ -480,7 +521,7 @@
     },
     {
         "title": "The effectiveness of backward contact tracing in networks ",
-        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-. Ahn",
+        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-Y. Ahn",
         "journal": "Nat. Phys. 17, 652",
         "year": 2021,
         "journalURL": "https://www.nature.com/articles/s41567-021-01187-2",
@@ -531,13 +572,12 @@
         "journal": "BMC Public Health",
         "year": 2020,
         "journalURL": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000897",
-        "preprintURL": "https://arxiv.org/abs/2005.13689",
         "isOpenAccess": true,
         "type": "article"
     },
     {
         "title": "Beyond R0: Heterogeneity in secondary infections and probabilistic epidemic forecasting",
-        "authors": "B. Lee, J. P. Hanley, S. Nowak, J. H. T. Bates, and L. Hébert-Dufresne",
+        "authors": "L. Hébert-Dufresne, B. M. Althouse, S. V. Scarpino, and A. Allard",
         "journal": "J. R. Soc. Interface 17, 172",
         "year": 2020,
         "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rsif.2020.0393",
