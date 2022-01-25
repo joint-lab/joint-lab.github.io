@@ -30,11 +30,11 @@ function ButtonToAllPublications({ alias }){
 Template page for each lab member
 */
 export default function LabMemberPage({ data: {mdx, publications}, location }){
-  const image = getImage(mdx.frontmatter.imageUrl)
-  console.log(mdx.frontmatter.imageUrl)
+  const image = getImage(mdx.frontmatter.imageURL)
+  console.log(mdx.frontmatter.imageURL)
 
   return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
-          <Page location={location} light title={`Joint Lab Member: ${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageUrl? mdx.frontmatter.imageUrl.childImageSharp.gatsbyImageData.images.fallback.src: null}>
+          <Page location={location} light title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageURL? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src: null}>
             <SubHero/>
             <Container className='mt-4 sm:mt-8 -mt-16'>
               <FlexLayout>
@@ -46,8 +46,16 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                     </div>
                     <div className='w-full text-center sm:text-left sm:w-4/6 lg:w-full px-3 sm:px-8 lg:px-0'>
                       {/* Name & Role */}
+                      {mdx.frontmatter.group==="alumni"?
+                        <p className="text-sm uppercase text-green-600">Alumni</p>:null}
+
                       <h4 className='font-bold text-xl sm:text-3xl lg:mb-1'>{mdx.frontmatter.firstName} {mdx.frontmatter.lastName}</h4>
-                      <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>
+                      {mdx.frontmatter.nextRole?
+                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.nextRole}</p>:null}
+                      {mdx.frontmatter.group==="alumni"?
+                        <p className="text-base text-gray-600 text-medium mb-3">Previously {mdx.frontmatter.role}</p>:
+                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>}
+
                       {mdx.frontmatter.lab? 
                         mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with {l}'s lab</div>):null
                       }
@@ -122,16 +130,18 @@ export const query = graphql`
       frontmatter {
         firstName
         lastName
-        imageUrl {
+        imageURL {
           childImageSharp {
             gatsbyImageData(placeholder: DOMINANT_COLOR)
           }
         }
         role
+        nextRole
         lab
         alias
         githubURL
         personalURL
+        group
         twitterURL
         email
         scholarURL

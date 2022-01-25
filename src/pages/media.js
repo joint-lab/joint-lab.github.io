@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { graphql } from "gatsby"
 
 // Components
 import { Page, Container, ToolBar, TwoColumnLayout } from "components/core/layout";
 import { SlideOver } from "components/core/slide_over";
-import { PublicationsList, PublicationFilters } from 'components/core/publications';
+import { MediasList, MediaFilters } from 'components/core/media';
 import { FiMoreHorizontal } from 'react-icons/fi'; 
 import { SubHero } from 'components/core/sub-hero';
 
 // Contexts
-import { PublicationsContextProvider } from 'contexts/publications';
+import { MediaContextProvider } from 'contexts/media';
 
 /*
  URL: /publications 
@@ -18,13 +18,13 @@ import { PublicationsContextProvider } from 'contexts/publications';
 */
 export default function Index({ data, location }){
   const [open, setOpen] = useState(false);
-  return  <PublicationsContextProvider query={location.search} 
-                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))} 
-                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))} 
-                                      allPublications={data.publications.edges.map(n=>({...n.node}))}>
+  const media = useMemo(()=>data.media.edges.map(d=>d.node), [data]);
+  const people = useMemo(()=>data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields})), [data])
+
+  return  <MediaContextProvider media={media} people={people}>
             <Page location={location} light >
-              <SubHero title="Publications"/>
-              <ToolBar className="block lg:hidden border-t bg-gray-100">
+            <SubHero title="Media"/>
+             <ToolBar className="block lg:hidden border-t bg-gray-100">
                   <div className="flex w-full">
                     <button onClick={()=>setOpen(true)} className="ml-auto rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:text-green-600 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
@@ -35,69 +35,45 @@ export default function Index({ data, location }){
               <Container className="pt-8 lg:pt-16">
                 <TwoColumnLayout >
                 <TwoColumnLayout.Secondary first className={'hidden lg:block w-full lg:w-72'}>
-                   <PublicationFilters/>
+                   <MediaFilters/>
                 </TwoColumnLayout.Secondary>
                 <TwoColumnLayout.Main last>
-                  <PublicationsList/>
+                  <MediasList/>
                 </TwoColumnLayout.Main>
                 </TwoColumnLayout>
               </Container>
               <SlideOver open={open} setOpen={setOpen} size="sm" title="Filters">
                 <Container className="pb-4">
-                  <PublicationFilters/>
+                  <MediaFilters/>
                 </Container>
               </SlideOver>
             </Page>
-          </PublicationsContextProvider>
+          </MediaContextProvider>
 }
   
 export const IndexQuery = graphql`
   query {
-    publications: allPublicationsJson(
+    media: allMediaJson(
       sort: {fields: year}
     ) {
       edges {
         node {
           id
-          location
-          journal
-          journalURL
-          isOpenAccess
-          degree
-          conference
+          url
           authors
-          preprintURL
-          flavor
-          textURL
-          year
-          type
-          software
-          slidesURL
           title
-        }
-      }
-    }
-    highlightPublications: allPublicationsJson(
-      sort: {fields: date}, limit: 4
-    ) {
-      edges {
-        node {
-          id
-          location
-          journal
-          journalURL
-          isOpenAccess
-          degree
-          conference
-          authors
-          preprintURL
-          flavor
-          textURL
-          year
           type
-          software
-          slidesURL
-          title
+          description,
+          year
+          imageURL {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: DOMINANT_COLOR
+                  aspectRatio: 2
+                  transformOptions: {cropFocus: CENTER}
+                )
+              }
+            }
         }
       }
     }

@@ -19,7 +19,7 @@ export default function Index({ data, location }){
                                       allPublications={[]}>
             <Page location={location} contentOverNav light>
               <IndexHero/>
-              <Container>
+              <Container className="py-16">
                 <div className="font-medium text-center my-3 lg:mt-6 text-lg">
                   News from the lab
                 </div>
@@ -29,8 +29,8 @@ export default function Index({ data, location }){
                 <RowNewsContainer news={data.archivedNews.edges} />
                 <ButtonToAllNews/>
               </Container>
-              <div className="bg-gray-50 border-t shadow">
-                <Container className="py-6">
+              <div className="bg-white border-b">
+                <Container className="py-12">
                   <HighlightedPublicationListIndex/>
                   <ButtonToAllPublications/>
                 </Container>

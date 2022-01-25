@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback, useRef, createContext } from "react";
+import React, { useState, useEffect, useMemo, useCallback,  createContext } from "react";
 
 const PublicationsContext = createContext({publications: [], updateType:null, updateQuery: null, publicationTypes: [], filters: {}});
 
-function splitAuthors(publications, people){
+export function splitAuthors(publications, people){
   if (!publications){return;}
   return publications.map(publi=>{
     const authors = publi.authors.replace(' and ', ' ').split(', ');
@@ -21,9 +21,10 @@ function getUniquePublicationTypes(publications){
 }
 
 const PublicationsContextProvider = ({ children, query, people, allPublications, allHighlightPublications }) => {
-  const processedPublications = useRef(splitAuthors(allPublications, people));
-  const processedHighlightedPublications = useRef(splitAuthors(allHighlightPublications, people));
-  const publicationTypes = useRef(getUniquePublicationTypes(allPublications));
+
+  const processedPublications = useMemo(()=>splitAuthors(allPublications, people), [allPublications, people]);
+  const processedHighlightedPublications = useMemo(()=>splitAuthors(allHighlightPublications, people), [allHighlightPublications, people]);
+  const publicationTypes = useMemo(()=>getUniquePublicationTypes(allPublications), [allPublications]);
   const [publications, setPublications] = useState([]);
   const [highlightPublications, setHighlightPublications] = useState([]);
   const [filters, setFilters] = useState({authors: [], query: '', date: [0,9999], types: []});
@@ -60,7 +61,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
 
   useEffect(()=>{
     // Filter allPublications
-    const filteredPublications = processedPublications.current.filter(d=>{
+    const filteredPublications = processedPublications.filter(d=>{
       var _bool = d.title.includes(filters.query);
       // If type is activated
       if (filters.types && filters.types.length>0){ _bool = _bool*(filters.types.includes(d.type))}
@@ -74,9 +75,9 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
     const sortedFilteredPublications = filteredPublications.sort((a,b)=>b.year-a.year);
     setPublications(sortedFilteredPublications);
 
-    if (!processedHighlightedPublications.current){return;}
+    if (!processedHighlightedPublications){return;}
     // Filter highlightedPubalications
-    const filteredHighlightedPublications = processedHighlightedPublications.current.filter(d=>{
+    const filteredHighlightedPublications = processedHighlightedPublications.filter(d=>{
       var _bool = d.title.includes(filters.query);
       // If type is activated
       if (filters.types && filters.types.length>0){ _bool = _bool*(filters.types.includes(d.type))}
@@ -90,7 +91,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
     const sortedFilteredHighlightedPublications = filteredHighlightedPublications.sort((a,b)=>b.year-a.year);
     setHighlightPublications(sortedFilteredHighlightedPublications);
 
-  }, [filters])
+  }, [filters, processedHighlightedPublications, processedPublications])
 
   // Fetch the author as query parameter
   useEffect(()=>{
@@ -101,8 +102,15 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
     }
   }, [query]);
 
+  const activeLabMembers = useMemo(()=>{
+    if (people){
+      return people.filter(d=>d.group!=="alumni")
+    }
+    return [];
+  }, [people]);
+
   return (
-    <PublicationsContext.Provider value={{ publications, highlightedPublications: highlightPublications, filters, publicationTypes:publicationTypes.current, updateQuery, updateType, updateAuthors, updateYear, labMembers: people}}>
+    <PublicationsContext.Provider value={{ publications, highlightedPublications: highlightPublications, filters, publicationTypes:publicationTypes, updateQuery, updateType, updateAuthors, updateYear, labMembers: activeLabMembers}}>
       {children}
     </PublicationsContext.Provider>
   );

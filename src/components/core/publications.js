@@ -30,10 +30,10 @@ function Publication({ title, year, authors, journal, conference, location, type
           </div>
 
           <h3 className='font-medium sm:text-lg'>{title}</h3>
-          <div className='text-gray-600 mb-2'>
+          <div className='text-gray-600'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
-                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-100 text-green-700':'hover:bg-gray-100 text-green-600'}>
+                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-green-600'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
@@ -42,15 +42,15 @@ function Publication({ title, year, authors, journal, conference, location, type
               }
               <span className='mr-1'>{(index===authors.length-2)? ', and': ((index===authors.length-1)? '': ',')}</span></span>))}
           </div>
-          {journal?<div className='text-gray-500'>{journal}</div>:null}
-          {conference?<div className='text-gray-500'>{conference}, {location}</div>:null}
-          <div className='flex space-x-2 '>
-            {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>preprint</a>: null}
-            {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>text</a>: null}
-            {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>slides</a>: null}
-            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-green-600 hover:underline")}>proceedings</a>: null}
-            {journalURL? <a href={journalURL} className={classnames("text-green-600 hover:underline")}>journal</a>: null}
-            {software? <a href={software} className={classnames("text-green-600 hover:underline")}>software</a>: null}
+          {journal?<div className='text-gray-600 font-medium'>{journal}</div>:null}
+          {conference?<div className='text-gray-600'>{conference}, {location}</div>:null}
+          <div className='flex space-x-2 md:space-x-4'>
+            {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>Preprint</a>: null}
+            {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>Text</a>: null}
+            {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>Slides</a>: null}
+            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-green-600 hover:underline")}>Proceedings</a>: null}
+            {journalURL? <a href={journalURL} className={classnames("text-green-600 hover:underline")}>Journal</a>: null}
+            {software? <a href={software} className={classnames("text-green-600 hover:underline")}>Software</a>: null}
            </div>
          </div>
 }
@@ -73,7 +73,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
           <div className='text-gray-600 mb-2'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
-                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-100 text-green-700':'hover:bg-gray-100 text-green-600'}>
+                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-green-600'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
@@ -84,7 +84,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
           </div>
           {journal?<div className='text-gray-500'>{journal}</div>:null}
           {conference?<div className='text-gray-500'>{conference}, {location}</div>:null}
-          <div className='flex space-x-2 '>
+          <div className='flex space-x-2 md:space-x-4'>
             {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>preprint</a>: null}
             {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>text</a>: null}
             {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>slides</a>: null}
@@ -94,7 +94,6 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
            </div>
          </div>
 }
-
 
 /*
 Uncontrolled list of highlighted publications. The data comes from PublicationsContext.
@@ -111,7 +110,6 @@ export function HighlightedPublicationListIndex(){
          
         </div>
 }
-
 
 /*
 Uncontrolled list of publications. The data comes from PublicationsContext.
@@ -186,7 +184,7 @@ export function PublicationFilters(){
           <div className='my-8 lg:my-0 lg:mb-8'>
             <div className='mb-8'>
               <CheckboxList title={'Types'} 
-                          values={publicationTypes.map(type=>({name: type,  readOnly:true, checked: filters.types.includes(type), title: capitalizeFirstLetter(type), onClick:((e)=>{updateType(type)})}))}/>
+                          values={publicationTypes.map(type=>({name: type,  readOnly:true, checked: filters.types.includes(type), title: capitalizeFirstLetter(type), onClick:((e)=>updateType(type))}))}/>
             </div>
             <div className=''>
               <RadioList title={'Date'} 
@@ -194,8 +192,8 @@ export function PublicationFilters(){
                           values={yearOptions}/>
             </div>
             <div className='pt-8'>
-              <CheckboxList title={'Authors'} 
-                          values={labMembers.map(member=>({name: member.alias, readOnly: true, checked: filters.authors.includes(member.alias), title: member.alias, onClick:(()=>{updateAuthors(member.alias)})}))}/>
+              <CheckboxList title={'Active members'} 
+                          values={labMembers.map(member=>({name: member.alias, readOnly: true, checked: filters.authors.includes(member.alias), title: member.alias, onClick:(()=>updateAuthors(member.alias))}))}/>
             </div>
           </div>
          </div>

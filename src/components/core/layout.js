@@ -14,7 +14,7 @@ import MetaImage from '../../images/meta-image.png';
 export const navigation = [
   { name: 'People', href: '/people', Icon: FiUsers, description: 'Discover the active members and alumni.' },
   { name: 'Publications', href: '/publications', Icon: FiFileText,  description: 'Check all of articles, thesis, and conferences.'},
-  { name: 'Media', href: '/media/1', Icon: FiGrid, description: 'Navigate throught media links of our science.' },
+  { name: 'Media', href: '/media', Icon: FiGrid, description: 'Navigate throught media links of our science.' },
   { name: 'Lab', href: '/lab', Icon: FiHeart, description: 'Read what defines our lab.' },
   { name: 'News', href: '/news/1', Icon: FiCoffee, description: 'Get the latest news from the lab.' },
 ]

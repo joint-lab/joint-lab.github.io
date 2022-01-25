@@ -33,7 +33,7 @@ export const IndexQuery = graphql`
           frontmatter {
             firstName
             lastName
-            imageUrl {
+            imageURL {
               childImageSharp {
                 gatsbyImageData(
                   placeholder: DOMINANT_COLOR
@@ -66,6 +66,7 @@ export const IndexQuery = graphql`
             firstName
             lastName
             role
+            nextRole
             alias
             githubURL
             personalURL
