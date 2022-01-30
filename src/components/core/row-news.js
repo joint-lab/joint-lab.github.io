@@ -9,10 +9,10 @@ export function ButtonToAllNews({ page }){
 }
 
 export function RowNews({ title, date, excerpt, slug }){
-  return <div className='px-3 lg:px-6 py-3 lg:py-6 rounded hover:bg-gray-100'>
+  return <div className='px-3 lg:px-6 py-3 lg:py-6 rounded group'>
             <Link to={slug} className=''>
               <p className='text-gray-400 uppercase text-sm w-52'>{date}</p>
-              <p className='font-medium'>{title} </p>
+              <p className='font-medium text-lg text-green-600 group-hover:underline'>{title} </p>
               <p className='text-gray-700 hidden lg:block'>{excerpt} </p>
             </Link>
           </div>

@@ -18,7 +18,7 @@ import { capitalizeFirstLetter } from 'utils/capitalize';
 /*
 Main view for media row.
 */
-function Media({ title, description, year, authors, type, imageURL, url }){
+function Media({ title, description, year, authors, type, imageURL, youtubeID, url }){
   const { updateAuthors, filters } = useContext(MediaContext);
   const image = useMemo(()=>imageURL? getImage(imageURL): null, [imageURL]);
   return <div className='py-12'>
@@ -43,6 +43,7 @@ function Media({ title, description, year, authors, type, imageURL, url }){
 
           {image?<Link to={url}><GatsbyImage image={image} alt={title} imgClassName="rounded-lg mb-2"/></Link>:null}
           {type==="simplecast"? <iframe title="simplecast" height="200px" width="100%" frameborder="no" scrolling="no" seamless="" src={url}/>:null}
+          {youtubeID? <div className="aspect-w-16 aspect-h-9"><iframe className="w-full " src={`https://www.youtube.com/embed/${youtubeID}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/></div>:null}
          </div>
 }
 
@@ -71,7 +72,7 @@ export function MediasList({ emptyView, hideMediaCount }){
  View to show the medias filters. The filter selection is passed to MediaContext.
 */
 export function MediaFilters(){
-  const { filters, updateType, updateYear, types, updateAuthors, labMembers } = useContext(MediaContext);
+  const { filters, unfilteredMedia, updateType, updateYear, types, updateAuthors, labMembers } = useContext(MediaContext);
 
   const yearOptions = useMemo(()=>
     [
@@ -94,7 +95,7 @@ export function MediaFilters(){
         readOnly: true
       },
       ...[...Array(10).keys()].map(d=>({title: `${2019-d}`, checked: filters.date[0]===2019-d, onClick: ((e)=>updateYear([2019-d, 2019-d], e.currentTarget.checked))}))
-    ],[updateYear]);
+    ],[updateYear,]);
 
   return <div className=''>
           <div className='my-8 lg:my-0 lg:mb-8'>

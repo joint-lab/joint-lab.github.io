@@ -65,6 +65,7 @@ export const IndexQuery = graphql`
           type
           description,
           year
+          youtubeID
           imageURL {
               childImageSharp {
                 gatsbyImageData(

@@ -31,7 +31,6 @@ Template page for each lab member
 */
 export default function LabMemberPage({ data: {mdx, publications}, location }){
   const image = getImage(mdx.frontmatter.imageURL)
-  console.log(mdx.frontmatter.imageURL)
 
   return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
           <Page location={location} light title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageURL? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src: null}>

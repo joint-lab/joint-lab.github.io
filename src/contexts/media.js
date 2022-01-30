@@ -61,7 +61,7 @@ const MediaContextProvider = ({ children, people, media }) => {
   }, [processedMedia, filters]);
 
   return (
-    <MediaContext.Provider value={{ media:filteredMedia, labMembers, types, updateType, updateAuthors, updateYear, filters }}>
+    <MediaContext.Provider value={{ media:filteredMedia, unfilteredMedia: media, labMembers, types, updateType, updateAuthors, updateYear, filters }}>
       {children}
     </MediaContext.Provider>
   );

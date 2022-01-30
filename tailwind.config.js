@@ -13,6 +13,9 @@ module.exports = {
         'ping-xxslow-finite': 'ping-finite 3s cubic-bezier(0, 0.2, 0.5, 1);',
         'ping-xxxslow': 'ping 7.2s cubic-bezier(0, 0, 0.2, 1) infinite;'
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
     fontFamily: {
       'serif': ['lora']

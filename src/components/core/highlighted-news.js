@@ -6,11 +6,11 @@ import { FlexLayout } from 'components/core/layout';
 import { Link } from 'gatsby';
 
 export function HighlightedNews({ title, date, excerpt, slug, imgSrc, className }){
-  return  <div className={classnames('bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 shadow px-3 py-3 lg:px-6 lg:py-6 rounded h-full flex items-end', className)}>
+  return  <div className={classnames('bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 shadow px-3 py-3 lg:px-6 lg:py-6 rounded h-full flex items-end group', className)}>
               <Link to={slug}>
                 {/*<img src={imgSrc} alt={'news-highlight'}/>*/}  
                 <p className='mt-3 text-gray-500 text-sm uppercase'>{date}</p>
-                <p className='font-medium text-xl'>{title} </p>
+                <p className='font-medium text-xl text-green-600 group-hover:underline'>{title} </p>
                 <p className='mb-3 text-gray-700'>
                    {excerpt}
                 </p>

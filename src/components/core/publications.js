@@ -101,9 +101,6 @@ Uncontrolled list of highlighted publications. The data comes from PublicationsC
 export function HighlightedPublicationListIndex(){
   const { highlightedPublications } = useContext(PublicationsContext);
   return <div>
-              <div className="font-medium text-center mb-3 text-lg">
-                Latest publications
-              </div>
               <div className="divide-y ">
                 {highlightedPublications.map(d=><Publication key={d.id} {...d}/>)}
               </div>
