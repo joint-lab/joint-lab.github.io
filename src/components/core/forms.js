@@ -68,8 +68,9 @@ export function RadioList({ title, values, numValuesShown }){
                 {values.slice(0,showMore? values.length: numValuesShown).map(v=><RadioItem key={v.title} name={title} {...v}/>)}
               </fieldset>
             </form>
-            <Button size="noneXS" color="clear" onClick={()=>setShowMore(!showMore)}>
-              {showMore? "Show less": "Show more"}
-            </Button>
+            {values.length>numValuesShown?
+              <Button size="noneXS" color="clear" onClick={()=>setShowMore(!showMore)}>
+                {showMore? "Show less": "Show more"}
+              </Button>:null}
           </div>)
 }

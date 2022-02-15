@@ -8,8 +8,8 @@ import { Container } from 'components/core/layout';
 
 function LabTag({ lab }){
   const styles = {
-    LSD: 'text-red-800 border-red-800',
-    CDL: 'text-gray-800 border-gray-800',
+    LSD: 'text-uvm-deep-blue border-uvm-deep-blue font-medium',
+    CDL: 'text-uvm-bright-green border-uvm-bright-green font-medium',
   }
   if (lab){
     return <div>{lab.map(val=><div key={val} className={classnames("border-b-2 inline-flex items-center mr-2.5 py-0.5 text-sm uppercase", styles[val])}>{val}</div>)}</div>

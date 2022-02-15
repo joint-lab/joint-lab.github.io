@@ -1,7 +1,6 @@
 import React from "react";
 import { Page } from "components/core/layout";
 import { SubHero } from 'components/core/sub-hero';
-import { FiAlertOctagon } from 'react-icons/fi';
 import { StaticImage } from "gatsby-plugin-image"
 
 /*

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby"
 
 // Components
-import { Page, Container } from "components/core/layout";
+import { Page, FlexLayout, ContainerLarger } from "components/core/layout";
 import { IndexHero } from "components/core/hero";
 import { HighlightedNewsContainer } from 'components/core/highlighted-news';
 import { RowNewsContainer, ButtonToAllNews} from 'components/core/row-news';
@@ -19,25 +19,29 @@ export default function Index({ data, location }){
                                       allPublications={[]}>
             <Page location={location} contentOverNav light>
               <IndexHero/>
-              <Container className="py-8">
-                <div className="font-medium text-center my-3 lg:mt-6 text-2xl">
-                  News from the lab
-                </div>
-                <HighlightedNewsContainer news={[...data.topNew.edges, ...data.highlightedNews.edges]} />
-              </Container>
-              <Container className="mb-8">
-                <RowNewsContainer news={data.archivedNews.edges} />
-                <ButtonToAllNews/>
-              </Container>
-              <div className="bg-gray-50 border-b border-t">
-                <Container className="py-12">
-                  <div className="font-medium text-center my-3 lg:mt-6 text-2xl">
-                    Latest publications
+              <ContainerLarger className="py-8">
+                <FlexLayout>
+                <FlexLayout.Item size="8/12" className="lg:px-6 pb-6 lg:pb-0">
+                  <div className="font-medium text-center text-uvm-green my-3 lg:mt-6 text-2xl">
+                    News from the lab
                   </div>
-                  <HighlightedPublicationListIndex/>
-                  <ButtonToAllPublications/>
-                </Container>
-              </div>
+                  <HighlightedNewsContainer news={[...data.topNew.edges, ...data.highlightedNews.edges]} />
+                  <RowNewsContainer news={data.archivedNews.edges} />
+                  <ButtonToAllNews/>
+                </FlexLayout.Item>
+
+                <FlexLayout.Item size="4/12" className="lg:border-l-2 border-dashed ">
+                  <div className="pt-6 border-t-2 border-dashed lg:border-t-0 lg:pt-0 lg:px-6">
+                        <div className="font-medium text-center text-uvm-green my-3 lg:mt-6 text-2xl">
+                          Latest publications
+                        </div>
+                        <HighlightedPublicationListIndex/>
+                        <ButtonToAllPublications/>
+                  </div>
+                </FlexLayout.Item>
+
+                </FlexLayout>
+              </ContainerLarger>
             </Page>
           </PublicationsContextProvider>;
 }

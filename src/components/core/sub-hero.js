@@ -23,7 +23,7 @@ export function PulseCircle({ dark }){
 export function SubHero({ title, className, children }){
   return <div className={classnames('relative z-0 items-center text-gray-900 -mt-16 pt-16 lg:pt-32 bg-gradient-to-r from-gray-600 to-gray-800 overflow-hidden', className)}>
           <Container className={"justify-center py-8 lg:py-16"}>
-            <div className='text-xl lg:text-4xl tracking-wide text-gray-200 font-light'>
+            <div className='text-xl lg:text-4xl tracking-wide text-uvm-sky-blue  font-light'>
               {title}
             </div>
             { children }

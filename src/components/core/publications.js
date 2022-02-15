@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useMemo, useContext } from 'react';
 import classnames from 'classnames';
 
 // Components
@@ -7,7 +7,7 @@ import { Dropdown } from 'components/core/dropdown';
 import { EmptyView } from 'components/core/empty_view';
 import { FiUnlock, FiArrowRight } from 'react-icons/fi';
 import { Transition } from '@headlessui/react'
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 // Contexts
 import { PublicationsContext } from 'contexts/publications';
@@ -24,7 +24,7 @@ function Publication({ title, year, authors, journal, conference, location, type
   return <div className='py-5'>
           {flavor? <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 my-2">{flavor}</div>: null}
           <div className='flex'>
-            <div className={classnames("text-xs uppercase text-green-600")}>{year} |</div>
+            <div className={classnames("text-xs uppercase text-uvm-green")}>{year} |</div>
             <div className={classnames("ml-1 text-xs uppercase text-gray-600")}>{type}</div>
             {isOpenAccess?<div className={classnames("ml-auto inline text-xs uppercase flex space-x-2 text-gray-600")}><FiUnlock/><span>Open access</span></div>: null}
           </div>
@@ -33,7 +33,7 @@ function Publication({ title, year, authors, journal, conference, location, type
           <div className='text-gray-600'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
-                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-green-600'}>
+                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-uvm-green'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
@@ -45,12 +45,12 @@ function Publication({ title, year, authors, journal, conference, location, type
           {journal?<div className='text-gray-600 font-medium'>{journal}</div>:null}
           {conference?<div className='text-gray-600'>{conference}, {location}</div>:null}
           <div className='flex space-x-2 md:space-x-4'>
-            {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>Preprint</a>: null}
-            {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>Text</a>: null}
-            {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>Slides</a>: null}
-            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-green-600 hover:underline")}>Proceedings</a>: null}
-            {journalURL? <a href={journalURL} className={classnames("text-green-600 hover:underline")}>Journal</a>: null}
-            {software? <a href={software} className={classnames("text-green-600 hover:underline")}>Software</a>: null}
+            {preprintURL? <a href={preprintURL} className={classnames("text-uvm-green hover:underline")}>Preprint</a>: null}
+            {textURL? <a href={textURL} className={classnames("text-uvm-green hover:underline")}>Text</a>: null}
+            {slidesURL? <a href={slidesURL} className={classnames("text-uvm-green hover:underline")}>Slides</a>: null}
+            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-uvm-green hover:underline")}>Proceedings</a>: null}
+            {journalURL? <a href={journalURL} className={classnames("text-uvm-green hover:underline")}>Journal</a>: null}
+            {software? <a href={software} className={classnames("text-uvm-green hover:underline")}>Software</a>: null}
            </div>
          </div>
 }
@@ -64,7 +64,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
   return <div className='bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 shadow px-3 py-3 lg:px-6 lg:py-6 rounded h-full  '>
           {flavor? <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 my-2">{flavor}</div>: null}
           <div className='flex'>
-            <div className={classnames("text-xs uppercase text-green-600")}>{year} |</div>
+            <div className={classnames("text-xs uppercase text-uvm-green")}>{year} |</div>
             <div className={classnames("ml-1 text-xs uppercase text-gray-600")}>{type}</div>
             {isOpenAccess?<div className={classnames("ml-auto inline text-xs uppercase flex space-x-2 text-gray-600")}><FiUnlock/><span>Open access</span></div>: null}
           </div>
@@ -73,7 +73,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
           <div className='text-gray-600 mb-2'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
-                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-green-600'}>
+                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-uvm-green'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
@@ -85,12 +85,12 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
           {journal?<div className='text-gray-500'>{journal}</div>:null}
           {conference?<div className='text-gray-500'>{conference}, {location}</div>:null}
           <div className='flex space-x-2 md:space-x-4'>
-            {preprintURL? <a href={preprintURL} className={classnames("text-green-600 hover:underline")}>preprint</a>: null}
-            {textURL? <a href={textURL} className={classnames("text-green-600 hover:underline")}>text</a>: null}
-            {slidesURL? <a href={slidesURL} className={classnames("text-green-600 hover:underline")}>slides</a>: null}
-            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-green-600 hover:underline")}>proceedings</a>: null}
-            {journalURL? <a href={journalURL} className={classnames("text-green-600 hover:underline")}>journal</a>: null}
-            {software? <a href={software} className={classnames("text-green-600 hover:underline")}>software</a>: null}
+            {preprintURL? <a href={preprintURL} className={classnames("text-uvm-green hover:underline")}>preprint</a>: null}
+            {textURL? <a href={textURL} className={classnames("text-uvm-green hover:underline")}>text</a>: null}
+            {slidesURL? <a href={slidesURL} className={classnames("text-uvm-green hover:underline")}>slides</a>: null}
+            {proceedingsURL? <a href={proceedingsURL} className={classnames("text-uvm-green hover:underline")}>proceedings</a>: null}
+            {journalURL? <a href={journalURL} className={classnames("text-uvm-green hover:underline")}>journal</a>: null}
+            {software? <a href={software} className={classnames("text-uvm-green hover:underline")}>software</a>: null}
            </div>
          </div>
 }
@@ -101,7 +101,7 @@ Uncontrolled list of highlighted publications. The data comes from PublicationsC
 export function HighlightedPublicationListIndex(){
   const { highlightedPublications } = useContext(PublicationsContext);
   return <div>
-              <div className="divide-y ">
+              <div className="grid grid-cols-1  gap-4">
                 {highlightedPublications.map(d=><Publication key={d.id} {...d}/>)}
               </div>
          
@@ -139,7 +139,7 @@ export function PublicationsList({ emptyView, hidePublicationCount }){
               </div>
           </Transition>
           {hidePublicationCount? <div className="border-b-2 border-gray-800"/>:
-            <div className="uppercase text-xs text-green-600 border-b-2 border-gray-800">
+            <div className="uppercase text-xs text-uvm-green border-b-2 border-gray-800">
                {publications.length} result{publications.length>1? 's': ''}
             </div>
           }
@@ -154,28 +154,26 @@ export function PublicationsList({ emptyView, hidePublicationCount }){
 */
 export function PublicationFilters(){
   const { filters, updateType, updateYear, publicationTypes, updateAuthors, labMembers } = useContext(PublicationsContext);
+  const { allPublicationsJson } = useStaticQuery(graphql`
+    query distinctYears {
+      allPublicationsJson {
+        distinct(field: year)
+      }
+    }
+  `)
 
-  const yearOptions = [
-    {
-      title: 'Any time',
-      onClick: ((e)=>updateYear([0, 9999], e.currentTarget.checked)),
-      checked: filters.date[0]===0,
-      readOnly: true
-    },
-    {
-      title: 'Since 2021',
-      onClick: ((e)=>updateYear([2021, 9999], e.currentTarget.checked)),
-      checked: filters.date[0]===2021,
-      readOnly: true
-    },
-    {
-      title: 'Since 2020',
-      onClick: ((e)=>updateYear([2020, 9999], e.currentTarget.checked)),
-      checked: filters.date[0]===2020,
-      readOnly: true
-    },
-    ...[...Array(10).keys()].map(d=>({title: `${2019-d}`, checked: filters.date[0]===2019-d, onClick: ((e)=>updateYear([2019-d, 2019-d], e.currentTarget.checked))}))
-  ]
+  const yearOptions = useMemo(()=>{
+    if (!allPublicationsJson) return [];
+    return [
+             {
+              title: 'Any time',
+              onClick: ((e)=>updateYear([0, 9999], e.currentTarget.checked)),
+              checked: filters.date[0]===0,
+              readOnly: true
+            },
+            ...allPublicationsJson.distinct.sort((a,b)=>parseInt(b)-parseInt(a))
+            .map(d=>({title: d, onClick: (e=>updateYear([parseInt(d), parseInt(d)])), checked: parseInt(filters.date[0])===parseInt(d)}))]
+  }, [allPublicationsJson, updateYear, filters])
 
   return <div className=''>
           <div className='my-8 lg:my-0 lg:mb-8'>

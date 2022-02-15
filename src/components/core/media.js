@@ -6,7 +6,7 @@ import { CheckboxList, RadioList } from 'components/core/forms';
 import { Dropdown } from 'components/core/dropdown';
 import { EmptyView } from 'components/core/empty_view';
 import { FiArrowRight } from 'react-icons/fi';
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Contexts
@@ -31,7 +31,7 @@ function Media({ title, description, year, authors, type, imageURL, youtubeID, u
           <div className='text-gray-600 mb-3'>
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
-                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-green-600'}>
+                <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-uvm-green':'hover:bg-gray-100 text-green-600'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All medias'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
@@ -72,30 +72,29 @@ export function MediasList({ emptyView, hideMediaCount }){
  View to show the medias filters. The filter selection is passed to MediaContext.
 */
 export function MediaFilters(){
-  const { filters, unfilteredMedia, updateType, updateYear, types, updateAuthors, labMembers } = useContext(MediaContext);
+  const { filters, updateType, updateYear, types, updateAuthors, labMembers } = useContext(MediaContext);
 
-  const yearOptions = useMemo(()=>
-    [
-      {
-        title: 'Any time',
-        onClick: ((e)=>updateYear([0, 9999], e.currentTarget.checked)),
-        checked: filters.date[0]===0,
-        readOnly: true
-      },
-      {
-        title: 'Since 2021',
-        onClick: ((e)=>updateYear([2021, 9999], e.currentTarget.checked)),
-        checked: filters.date[0]===2021,
-        readOnly: true
-      },
-      {
-        title: 'Since 2020',
-        onClick: ((e)=>updateYear([2020, 9999], e.currentTarget.checked)),
-        checked: filters.date[0]===2020,
-        readOnly: true
-      },
-      ...[...Array(10).keys()].map(d=>({title: `${2019-d}`, checked: filters.date[0]===2019-d, onClick: ((e)=>updateYear([2019-d, 2019-d], e.currentTarget.checked))}))
-    ],[updateYear,]);
+    const { allMediaJson } = useStaticQuery(graphql`
+    query distinctMediaYears {
+      allMediaJson {
+        distinct(field: year)
+      }
+    }
+  `)
+
+  const yearOptions = useMemo(()=>{
+    if (!allMediaJson) return [];
+    return [
+             {
+              title: 'Any time',
+              onClick: ((e)=>updateYear([0, 9999], e.currentTarget.checked)),
+              checked: filters.date[0]===0,
+              readOnly: true
+            },
+            ...allMediaJson.distinct.sort((a,b)=>parseInt(b)-parseInt(a))
+            .map(d=>({title: d, onClick: (e=>updateYear([parseInt(d), parseInt(d)])), checked: parseInt(filters.date[0])===parseInt(d)}))]
+  }, [allMediaJson, updateYear, filters])
+
 
   return <div className=''>
           <div className='my-8 lg:my-0 lg:mb-8'>
@@ -119,5 +118,5 @@ export function MediaFilters(){
 
 
 export function ButtonToAllMedias({ page }){
-  return <Link to={'/medias'}><div className='flex items-center space-x-1 inline-flex text-green-700 hover:text-green-900'><span>Explore more medias</span><FiArrowRight/></div></Link>
+  return <Link to={'/medias'}><div className='flex items-center space-x-1 inline-flex text-uvm-green hover:opacity-80'><span>Explore more medias</span><FiArrowRight/></div></Link>
 }

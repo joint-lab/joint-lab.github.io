@@ -130,6 +130,10 @@ export function Container({ children, className, ...props }){
   return (<div className={classnames("max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", className)} {...props}><div className="mx-auto">{children}</div></div>)
 }
 
+export function ContainerLarger({ children, className, ...props }){
+  return (<div style={{maxWidth: "88em"}}className={classnames("mx-auto px-4 sm:px-6 lg:px-8", className)} {...props}><div className="mx-auto">{children}</div></div>)
+}
+
 export function ContainerFull({ children, className, ...props }){
   return (<div className={classnames("w-full", className)} {...props}><div className="mx-auto">{children}</div></div>)
 }
@@ -168,6 +172,10 @@ export function FlexLayout({ className, noMargin, border, children }){
 function FlexLayoutItem({ className, size, children }){
   const sizes = {
     'sm': 'lg:w-3/12',
+    '4/12': 'lg:w-4/12',
+    '5/12': 'lg:w-5/12',
+    '7/12': 'lg:w-7/12',
+    '8/12': 'lg:w-8/12',
     'md': 'lg:w-6/12',
     'lg': 'lg:w-9/12',
     'full': 'w-full',
