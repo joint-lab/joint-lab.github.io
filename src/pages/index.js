@@ -32,11 +32,11 @@ export default function Index({ data, location }){
 
                 <FlexLayout.Item size="4/12" className="lg:border-l-2 border-dashed ">
                   <div className="pt-6 border-t-2 border-dashed lg:border-t-0 lg:pt-0 lg:px-6">
-                        <div className="font-medium text-center text-uvm-green my-3 lg:mt-6 text-2xl">
-                          Latest publications
-                        </div>
-                        <HighlightedPublicationListIndex/>
-                        <ButtonToAllPublications/>
+                    <div className="font-medium text-center text-uvm-green my-3 lg:mt-6 text-2xl">
+                      Latest publications
+                    </div>
+                    <HighlightedPublicationListIndex/>
+                    <ButtonToAllPublications/>
                   </div>
                 </FlexLayout.Item>
 
