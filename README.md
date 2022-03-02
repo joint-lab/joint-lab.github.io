@@ -6,11 +6,15 @@
 	- [Building locally the website](#building-locally-the-website)
 	- [Deployment](#deployment)
 - [Helpful Tips for Deployment in more detail](#helpful-tips-for-deployment-in-more-detail)
+- [1. As stated above, once you are satisfied with this, you can go back to the Github UI and make a Pull request from `dev-src` to `src` to apply the changes in production. It is best practice to make sure to build the website locally before doing this step, because otherwise you may potentially be merging broken code into the production branch. And that's it!](#1-as-stated-above-once-you-are-satisfied-with-this-you-can-go-back-to-the-github-ui-and-make-a-pull-request-from-dev-src-to-src-to-apply-the-changes-in-production-it-is-best-practice-to-make-sure-to-build-the-website-locally-before-doing-this-step-because-otherwise-you-may-potentially-be-merging-broken-code-into-the-production-branch-and-thats-it)
 - [More tips](#more-tips)
+- [Building locally the website](#building-locally-the-website-1)
+- [More tips](#more-tips-1)
 - [Content](#content)
 	- [Media](#media)
 	- [News](#news)
 	- [People](#people)
+		- [Possible fields for lab members](#possible-fields-for-lab-members)
 	- [Publications](#publications)
 
 <!-- /MarkdownTOC -->
@@ -56,7 +60,18 @@ If you plan doing important modifications, it is useful to build the website loc
 1. To pull down the new remote changes, run the following command: `git pull origin dev-build --rebase --allow-unrelated-histories`. WITHOUT THOSE FLAGS you will likely run into problems pulling the remote changes.
 1. Now, you should be able to run `python3 -m http.server` or whatever version of python you want to use.
 1. Then you can visit `http://localhost:8000/` in a browswer and should be viewing the latest version of the development website. 
+<<<<<<< HEAD
 1. As stated above, once you are satisfied with this, you can go back to the Github UI and make a Pull request from `dev-src` to `src` to apply the changes in production. It is best practice to make sure to build the website locally before doing this step, because otherwise you may potentially be merging broken code into the production branch. And that's it!
+=======
+1. As stated above, once you are satisfied with this, you can go back to the Github UI and make a Pull request from `dev-src` to `src` to apply the changes in production. It is best practice to make sure to build the website locally before doing this step, because otherwise you may potentially be merging broken code into the production branch. And That's it!
+
+## More tips
+1. It is useful to make running `git status` common practice so you can see what changes you have made, committed locally, etc.
+1. Additionally, `git log` will show you the latest commits that you have pulled locally, which can help you understand if you are up to date or behind, as well as what your local commits are that you need to push.
+
+## Building locally the website
+If you plan doing important modifications, it is useful to build the website locally.
+>>>>>>> dev-src
 
 ## More tips
 1. It is useful to make running `git status` common practice so you can see what changes you have made, committed locally, etc.

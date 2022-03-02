@@ -18,7 +18,10 @@ import { PublicationsContextProvider } from 'contexts/publications';
 */
 export default function Index({ data, location }){
   const [open, setOpen] = useState(false);
-  return  <PublicationsContextProvider query={location.search} people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))} allPublications={data.publications.edges.map(n=>({...n.node}))}>
+  return  <PublicationsContextProvider query={location.search} 
+                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))} 
+                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))} 
+                                      allPublications={data.publications.edges.map(n=>({...n.node}))}>
             <Page location={location} light >
               <SubHero title="Publications"/>
               <ToolBar className="block lg:hidden border-t bg-gray-100">
@@ -50,18 +53,45 @@ export default function Index({ data, location }){
   
 export const IndexQuery = graphql`
   query {
-    publications: allPublicationsJson {
+    publications: allPublicationsJson(
+      sort: {fields: year}
+    ) {
       edges {
         node {
           id
           location
+          journal
           journalURL
-          isOpenSource
+          isOpenAccess
           degree
           conference
           authors
-          biorxivURL
-          arxivURL
+          preprintURL
+          flavor
+          textURL
+          year
+          type
+          software
+          slidesURL
+          title
+        }
+      }
+    }
+    highlightPublications: allPublicationsJson(
+      sort: {fields: date}, limit: 4
+    ) {
+      edges {
+        node {
+          id
+          location
+          journal
+          journalURL
+          isOpenAccess
+          degree
+          conference
+          authors
+          preprintURL
+          flavor
           textURL
           year
           type
@@ -73,7 +103,7 @@ export const IndexQuery = graphql`
     }
     people: allMdx(
         sort: {fields: frontmatter___lastName}
-        filter: {fields: {source: {eq: "people"}}, frontmatter: {group: {ne: "alumni"}}}
+        filter: {fields: {source: {eq: "people"}}}
       ) {
         edges {
           node {
@@ -84,10 +114,12 @@ export const IndexQuery = graphql`
               firstName
               lastName
               alias
+              group
             }
           }
         }
-      }
+    }
+
   }
 
 `;

@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Complexity podcast from the Santa Fe Institute",
+        "year": 2020,
+        "authors": "L. Hébert-Dufresne",
+        "type": "simplecast",
+        "url": "https://player.simplecast.com/7ec07c50-5eb1-4340-98fd-3095731addfd?dark=false"
+    },
+    {
+        "title": "Introduction to network epidemiology",
+        "description": "Net-COVID online series",
+        "year": 2020,
+        "authors": "L. Hébert-Dufresne",
+        "type": "youtube",
+        "youtubeID": "5NGFDnJKiKA",
+        "url": "https://www.youtube.com/watch?v=5NGFDnJKiKA"
+    },
+    {
+        "title": "Halthing the Spread of COVID-19 and Escaping the Madness of Crowds",
+        "description": "A nice book",
+        "year": 2021,
+        "authors": "L. Hébert-Dufresne",
+        "type": "communication",
+        "imageURL": "../../images/media/CA_SFI.png",
+        "url": "https://www.sfipress.org/books/the-complex-alternative"
+    },
+    {
+        "title": "Officials worry about virus spread at restaurants, but failed contact tracing leaves diners in the dark",
+        "description": "USA Today",
+        "year": 2021,
+        "authors": "L. Hébert-Dufresne",
+        "type": "news",
+        "url": "https://eu.usatoday.com/story/news/health/2020/11/26/officials-worry-covid-19-restaurants-but-need-better-data/6411671002/"
+    }
+]

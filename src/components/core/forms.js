@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Button } from 'components/core/buttons';
 
 function CheckboxItem({ name, title, description, ...props }){
   return (<div className="relative flex items-start">
@@ -57,11 +59,18 @@ function RadioItem({ name, title, description, ...props }){
             </div>)
 }
 
-export function RadioList({ title, values }){
-  return (<form>
-            <fieldset className="space-y-2">
-              <legend className="text-lg font-medium text-gray-900">{ title }</legend>
-              {values.map(v=><RadioItem key={v.title} name={title} {...v}/>)}
-            </fieldset>
-          </form>)
+export function RadioList({ title, values, numValuesShown }){
+  const [showMore, setShowMore] = useState(false);
+  return (<div>
+            <form>
+              <fieldset className="space-y-2">
+                <legend className="text-lg font-medium text-gray-900">{ title }</legend>
+                {values.slice(0,showMore? values.length: numValuesShown).map(v=><RadioItem key={v.title} name={title} {...v}/>)}
+              </fieldset>
+            </form>
+            {values.length>numValuesShown?
+              <Button size="noneXS" color="clear" onClick={()=>setShowMore(!showMore)}>
+                {showMore? "Show less": "Show more"}
+              </Button>:null}
+          </div>)
 }

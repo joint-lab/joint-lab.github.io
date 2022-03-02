@@ -10,7 +10,8 @@
 		@apply text-lg font-bold text-green-700;
 	}
 	a {
-		@apply text-green-600 hover:text-green-800
+		color: #007155;
+		@apply  hover:opacity-80 hover:underline
 	}
 	p {
 		@apply text-gray-800;

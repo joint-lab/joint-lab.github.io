@@ -2,3 +2,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-uvm-green {
+	color: #007155;
+}
+
+.text-uvm-bright-green {
+	color: #66AC47;
+}
+
+.text-uvm-light-green {
+	color: #B2D23E;
+}
+
+.text-uvm-sky-blue {
+	color: #A7D4EE;
+}
+
+.text-uvm-deep-blue {
+	color: #1375AF;
+}
+.text-uvm-dark-green {
+	color: #01533F;
+}
+
+.border-uvm-deep-blue {
+	border-color: #1375AF;
+}
+.border-uvm-dark-green {
+	border-color: #01533F;
+}
+
+.border-uvm-bright-green {
+	border-color: #66AC47;
+}

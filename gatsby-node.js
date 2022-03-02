@@ -19,47 +19,6 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
-  // Media
-  const mediaPaginated = await graphql(
-    `
-      {
-        allMdx(
-          sort: {fields: frontmatter___date, order: DESC}
-          filter: {fields: {source: {eq: "media"}}}
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  if (mediaPaginated.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-
-  const allMedia = mediaPaginated.data.allMdx.edges
-  const itemsPerPage = 25
-  const numPages = Math.ceil((allMedia.length) / itemsPerPage)
-
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: `/media/${i + 1}`,
-      component: path.resolve("./src/templates/paginated_media_list.js"),
-      context: {
-        limit: itemsPerPage,
-        skip: i * itemsPerPage,
-        numPages,
-        currentPage: i + 1,
-      },
-    })
-  })
-
   // Lab members
   const labMembersData = await graphql(`
     query {

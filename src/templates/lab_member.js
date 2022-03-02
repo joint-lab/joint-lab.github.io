@@ -13,7 +13,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { AiOutlineGithub, AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { IoMdMailOpen } from 'react-icons/io';
 
 // Contexts
@@ -23,60 +23,71 @@ import { PublicationsContextProvider } from 'contexts/publications';
 const shortcodes = { Link, List, ListItem, EducationList, EducationItem, ScholarshipList, ScholarshipItem } 
 
 function ButtonToAllPublications({ alias }){
-  return <Link to={`/publications?author=${encodeURIComponent(alias)}`}><div className='flex items-center space-x-1 inline-flex text-green-700 hover:text-green-900'><span>See all publications</span><FiArrowRight/></div></Link>
+  return <Link to={`/publications?author=${encodeURIComponent(alias)}`}><div className='flex items-center space-x-1 inline-flex text-uvm-green hover:opacity-90'><span>See all publications</span><FiArrowRight/></div></Link>
 }
 
 /*
 Template page for each lab member
 */
 export default function LabMemberPage({ data: {mdx, publications}, location }){
-  const image = getImage(mdx.frontmatter.imageUrl)
-  console.log(mdx.frontmatter.imageUrl)
+  const image = getImage(mdx.frontmatter.imageURL)
 
   return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
-          <Page location={location} light title={`Joint Lab Member: ${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageUrl? mdx.frontmatter.imageUrl.childImageSharp.gatsbyImageData.images.fallback.src: null}>
+          <Page location={location} light title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageURL? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src: null}>
             <SubHero/>
             <Container className='mt-4 sm:mt-8 -mt-16'>
               <FlexLayout>
                 <FlexLayout.Item size="sm">
+                  <div className="hidden lg:block -mt-8 pb-0">
+                    <Link to={`/people`}><div className='inline-flex flex items-center space-x-1  text-uvm-green hover:opacity-90'><FiArrowLeft/><span>Back to all members</span></div></Link>
+                  </div>
                   <div className='mb-4 sm:flex lg:block sticky top-0 lg:pt-6'>
+
                     <div className='w-full xs:w-2/6 lg:w-full px-12 max-w-xs sm:px-0 mx-auto mb-4'>
                       {image ?<GatsbyImage image={image} alt={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
                       {!image?<div className='aspect-w-1 aspect-h-1 rounded-lg bg-gray-100'/>: null}
                     </div>
                     <div className='w-full text-center sm:text-left sm:w-4/6 lg:w-full px-3 sm:px-8 lg:px-0'>
                       {/* Name & Role */}
+                      {mdx.frontmatter.group==="alumni"?
+                        <p className="text-sm uppercase text-uvm-green">Alumni</p>:null}
+
                       <h4 className='font-bold text-xl sm:text-3xl lg:mb-1'>{mdx.frontmatter.firstName} {mdx.frontmatter.lastName}</h4>
-                      <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>
+                      {mdx.frontmatter.nextRole?
+                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.nextRole}</p>:null}
+                      {mdx.frontmatter.group==="alumni"?
+                        <p className="text-base text-gray-600 text-medium mb-3">Previously {mdx.frontmatter.role}</p>:
+                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>}
+
                       {mdx.frontmatter.lab? 
                         mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with {l}'s lab</div>):null
                       }
                       {/* Social */}
-                      <div className='inline-flex space-x-6 text-lg sm:text-base mt-3 text-gray-800 0 sm:block sm:space-x-0 sm:divide-y text-center '>
+                      <div className='inline-flex space-x-6 text-lg sm:text-base mt-3 text-gray-800 0 sm:block sm:space-x-0 sm:divide-y text-center text-uvm-green'>
                         {mdx.frontmatter.githubURL? 
-                          <a className="hover:text-green-800 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.githubURL}>
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.githubURL}>
                             <AiOutlineGithub/> 
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.githubURL.split('/').slice(-1)}</span>
                           </a>: null}
                         {mdx.frontmatter.personalURL? 
-                          <a className="hover:text-green-800 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.personalURL}>
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.personalURL}>
                             <AiOutlineGlobal/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.personalURL.split('//').slice(-1)}</span>
                           </a>: null}
                         {mdx.frontmatter.twitterURL? 
-                          <a className="hover:text-green-800 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.twitterURL}>
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.twitterURL}>
                             <AiOutlineTwitter/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.twitterURL.split('/').slice(-1)}</span>
                           </a>: null}
                         {mdx.frontmatter.email? 
-                          <a className="hover:text-green-800 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>
                             <IoMdMailOpen/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.email}</span>
                           </a>: null}
                       </div>
-                      <div className="hidden md:block">
-                        <Link to={`/people`}><div className='inline-flex flex items-center space-x-1 py-5 text-green-700 hover:text-green-900'><span>Back to all members</span><FiArrowRight/></div></Link>
-                      </div>
+                      <div className="hidden md:block lg:hidden">
+                    <Link to={`/people`}><div className='inline-flex flex items-center space-x-1  text-uvm-green hover:opacity-90'><FiArrowLeft/><span>Back to all members</span></div></Link>
+                  </div>
 
                     </div>
                   </div>
@@ -92,7 +103,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
 
                <Link to={`/people`}>
                <div className="w-full bg-gray-100 hover:bg-gray-200 rounded-lg text-center md:hidden my-3">
-                 <div className='inline-flex flex items-center space-x-1 py-3 text-green-700 hover:text-green-900'><span>Back to all members</span><FiArrowRight/></div>
+                 <div className='inline-flex flex items-center space-x-1 py-3 text-uvm-green hover:opacity-90'><FiArrowLeft/><span>Back to all members</span></div>
                 </div>
               </Link>
 
@@ -100,16 +111,15 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
               {publications.totalCount>0?
                 <ContainerFull className='bg-gray-50 border-t py-6 lg:py-12'> 
                   <Container >
-                    <h3 className='text-2xl'>Latest publications</h3>
-                    <PublicationsList/>
-                    {publications.totalCount>3? <ButtonToAllPublications alias={mdx.frontmatter.alias}/>: null}
+                    <h3 className='text-2xl'>{publications.totalCount>3? "Latest publications": "Publications"}</h3>
+                    <PublicationsList hidePublicationCount/>
+                    <ButtonToAllPublications alias={mdx.frontmatter.alias}/>
                   </Container>
                 </ContainerFull>
                 : null}
             </Page>
           </PublicationsContextProvider>
 }
-
 
 /*
   Includes elements in the query to get
@@ -123,16 +133,18 @@ export const query = graphql`
       frontmatter {
         firstName
         lastName
-        imageUrl {
+        imageURL {
           childImageSharp {
             gatsbyImageData(placeholder: DOMINANT_COLOR)
           }
         }
         role
+        nextRole
         lab
         alias
         githubURL
         personalURL
+        group
         twitterURL
         email
         scholarURL
@@ -150,13 +162,14 @@ export const query = graphql`
         node {
           id
           location
+          journal
           journalURL
-          isOpenSource
+          isOpenAccess
+          preprintURL
+          flavor
           degree
           conference
           authors
-          biorxivURL
-          arxivURL
           textURL
           year
           type
