@@ -35,7 +35,7 @@ export default function Index({ data, location }){
                     <div className="font-medium text-center text-uvm-green my-3 lg:mt-6 text-2xl">
                       Latest publications
                     </div>
-                    <HighlightedPublicationListIndex/>
+                    <HighlightedPublicationListIndex removeAllPublicationDropdown/>
                     <ButtonToAllPublications/>
                   </div>
                 </FlexLayout.Item>

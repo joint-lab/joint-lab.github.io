@@ -36,7 +36,7 @@ function DropdownTitle({ label, vanilla, className }){
 }
 export function Dropdown({ children, label, vanilla, onlyIcon, disabled, orientation, className }) {
   return (
-    <Menu as="div" className="relative inline-block text-left z-50">
+    <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
         <>
           <div>
