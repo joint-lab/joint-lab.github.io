@@ -1,5 +1,13 @@
 [
     {
+        "title": "Flexible environments for hybrid collaboration: redesigning virtual working through the four orders of design",
+        "authors": "J. Meluso, S. Johnson, J. Bagrow",
+        "year": 2022,
+        "journalURL": "https://doi.org/10.1162/desi_a_00670",
+        "preprintURL": "https://osf.io/preprints/socarxiv/wehsk/",
+        "type": "article"
+    },
+    {
         "title": "Cutting through the noise to infer autonomous system topology",
         "authors": "K. G. Leyba, J. J. Daymude, J.-G. Young, M. E. J. Newman, J. Rexford, and S. Forrest",
         "year": 2022,
@@ -394,8 +402,11 @@
         "title": "A review & framework for modeling complex engineered system development processes",
         "authors": "J. Meluso, J. Austin-Breneman, J. P. Bagrow, and L. Hébert-Dufresne",
         "preprintURL": "https://arxiv.org/abs/2103.12820",
-        "year": 2021,
-        "type": "preprint"
+        "journalURL": "https://doi.org/10.1109/TSMC.2022.3163019",
+        "year": 2022,
+        "type": "article",
+        "date": 2022-04-11,
+        "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
     },
     {
         "title": "Impact and dynamics of hate and counter speech online",
