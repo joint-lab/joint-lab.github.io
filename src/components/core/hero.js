@@ -21,7 +21,7 @@ export function IndexHero({ title, className, children }){
                   <LSDIcon/>
                 <h1 className="text-gray-200 text-xl">LSD </h1>
                   <h1 className="text-gray-100 text-2xl">The Laboratory for Structure and Dynamics</h1>
-                  <p className="text-uvm-sky-blue text-lg">Our research focus on the coevolution of structure and dynamics in complex systems.</p>
+                  <p className="text-uvm-sky-blue text-lg">Our research focuses on the coevolution of structure and dynamics in complex systems.</p>
                 </div>
 
                 <div className="h-3/6 px-3 lg:px-6 py-6">

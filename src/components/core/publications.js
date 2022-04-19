@@ -18,7 +18,7 @@ import { capitalizeFirstLetter } from 'utils/capitalize';
 /*
 Main view for publication row.
 */
-function Publication({ title, year, authors, journal, conference, location, type, preprintURL, textURL, proceedingsURL, slidesURL, journalURL, isOpenAccess, flavor, software }){
+function Publication({ title, year, authors, journal, conference, location, type, preprintURL, textURL, proceedingsURL, slidesURL, journalURL, isOpenAccess, flavor, software, removeAllPublicationDropdown }){
   const { updateAuthors, filters } = useContext(PublicationsContext);
 
   return <div className='py-5'>
@@ -34,7 +34,7 @@ function Publication({ title, year, authors, journal, conference, location, type
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
                 <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-uvm-green'}>
-                  <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
+                  {removeAllPublicationDropdown?null:<Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':`With ${author.alias}`} onClick={()=>updateAuthors(author.alias)}/>}
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
                :
@@ -74,7 +74,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
             {authors.map((author, index)=>(<span key={author.alias}>
               {author.isLabMember?
                 <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-green-700':'hover:bg-gray-100 text-uvm-green'}>
-                  <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All publications'} onClick={()=>updateAuthors(author.alias)}/>
+                  <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':`With ${author.alias}`} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
                :
@@ -98,11 +98,11 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
 /*
 Uncontrolled list of highlighted publications. The data comes from PublicationsContext.
 */
-export function HighlightedPublicationListIndex(){
+export function HighlightedPublicationListIndex({ removeAllPublicationDropdown }){
   const { highlightedPublications } = useContext(PublicationsContext);
   return <div>
               <div className="grid grid-cols-1  gap-4">
-                {highlightedPublications.map(d=><Publication key={d.id} {...d}/>)}
+                {highlightedPublications.map(d=><Publication key={d.id} removeAllPublicationDropdown={removeAllPublicationDropdown} {...d}/>)}
               </div>
          
         </div>

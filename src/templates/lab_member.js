@@ -60,7 +60,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                         <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>}
 
                       {mdx.frontmatter.lab? 
-                        mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with {l}'s lab</div>):null
+                        mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with the {l}</div>):null
                       }
                       {/* Social */}
                       <div className='inline-flex space-x-6 text-lg sm:text-base mt-3 text-gray-800 0 sm:block sm:space-x-0 sm:divide-y text-center text-uvm-green'>

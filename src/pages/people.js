@@ -15,7 +15,7 @@ export default function Index({ data, location }){
   return <Page location={location} light>
             <SubHero title={'Lab members'}/>
             <PeopleGrid people={data.allCurrentMembers.edges} title="Active members"/>
-            <AlumniGrid people={data.alumni.edges} title="Alumnis" className="mb-6"/>
+            <AlumniGrid people={data.alumni.edges} title="Alumni" className="mb-6"/>
           </Page>;
 }
 
