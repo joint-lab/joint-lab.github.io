@@ -61,6 +61,16 @@
         "software": "https://github.com/aleckirkley/Clustering-network-populations"
     },
     {
+        "title": "Predicting the diversity of early epidemic spread on networks",
+        "authors": "A. J. Allen, M. C. Boudreau, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
+        "year": 2022,
+        "type": "article",
+        "date": "2022-02-16",
+        "journal": "Phys. Rev. Res. 4(1), 013123",
+        "preprintURL": "https://arxiv.org/abs/2107.03334",
+        "journalURL": "https://link.aps.org/doi/10.1103/PhysRevResearch.4.013123"
+    },
+    {
         "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
         "authors": "A. B. Kao, A. K. Hund, F. P. Santos, J.-G. Young, D. Bhat, J. Garland, R. A. Oomen, H. F. McCreery",
         "year": 2020,
@@ -426,13 +436,6 @@
         "title": "The penumbra of open source: projects outside of centralized platforms are longer maintained, more academic and more collaborative",
         "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. P. Bagrow",
         "preprintURL": "https://arxiv.org/abs/2106.15611",
-        "year": 2021,
-        "type": "preprint"
-    },
-    {
-        "title": "Predicting the diversity of early epidemic spread on networks",
-        "authors": "A. J. Allen, M. C. Boudreau, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
-        "preprintURL": "https://arxiv.org/abs/2107.03334",
         "year": 2021,
         "type": "preprint"
     },
