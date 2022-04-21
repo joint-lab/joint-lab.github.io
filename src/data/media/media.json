@@ -1,5 +1,14 @@
 [
     {
+        "title": "Uncertain Network Science: Estimation Techniques and Applications",
+        "description": "Invited Talk at NERCCS 2022: Fifth Northeast Regional Conference on Complex Systems",
+        "year": 2022,
+        "authors": "J.-G. Young",
+        "type": "communication",
+        "imageURL": "../../images/media/nerccs22_jgy_talk.png",
+        "url": "https://vimeo.com/699425219"
+    },
+    {
         "title": "Complexity podcast from the Santa Fe Institute",
         "year": 2020,
         "authors": "L. Hébert-Dufresne",
