@@ -488,13 +488,24 @@
         "type": "article"
     },
     {
+        "title": "Distinguishing in-groups and onlookers by language use",
+        "authors": "J. R. Minot, M. Z. Trujillo, S. F. Rosenblatt, G. de Anda Jáuregui, E. Moog, B. P. Samson, L. Hébert-Dufresne, and A. M. Roth",
+        "conference": "ACL Workshop Comp. Approaches Subjectivity, Sentiment, Social Media Analysis",
+        "year": 2022,
+        "journalURL": "https://aclanthology.org/2022.wassa-1.15.pdf",
+        "location": "Dublin, Ireland",
+        "isOpenAccess": true,
+        "type": "proceedings"
+    },
+    {
         "title": "When the echo chamber shatters: Examining the use of community-specific language post-subreddit ban",
-        "authors": "M. Z. Trujillo, S. F. Rosenblatt, G. de Anda Jáuregui, E. Moog, L. Hébert-Dufresne, and A. M. Roth",
+        "authors": "M. Z. Trujillo, S. F. Rosenblatt, G. de Anda Jáuregui, E. Moog, B. P. Samson, L. Hébert-Dufresne, and A. M. Roth",
         "conference": "ACL Workshop Online Abuse Harms",
         "year": 2021,
         "journalURL": "https://ieeexplore.ieee.org/document/9463079",
         "location": "Madrid, Spain",
         "preprintURL": "https://arxiv.org/abs/2106.16207",
+        "isOpenAccess": true,
         "type": "proceedings"
     },
     {
