@@ -12,7 +12,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { AiOutlineGithub, AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineBank, AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { IoMdMailOpen } from 'react-icons/io';
 
@@ -78,6 +78,11 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.twitterURL}>
                             <AiOutlineTwitter/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.twitterURL.split('/').slice(-1)}</span>
+                          </a>: null}
+                        {mdx.frontmatter.scholarURL? 
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.scholarURL}>
+                            <AiOutlineBank/>
+                            <span className='hidden sm:inline-block'>Google scholar</span>
                           </a>: null}
                         {mdx.frontmatter.email? 
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>
