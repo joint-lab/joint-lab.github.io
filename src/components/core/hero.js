@@ -28,7 +28,7 @@ export function IndexHero({ title, className, children }){
                   <CDLIcon/>
                   <h1 className="text-gray-200 text-xl">CDL</h1>
                   <h1 className="text-gray-100 text-2xl">The Complex Data Laboratory</h1>
-                  <p className="text-uvm-sky-blue text-lg">We make sense of complex data by briding the gap between statistics, computer science and complex systems.</p>
+                  <p className="text-uvm-sky-blue text-lg">We make sense of complex data by bridging the gap between statistics, computer science and complex systems.</p>
                 </div>
               </div>
             </div>
