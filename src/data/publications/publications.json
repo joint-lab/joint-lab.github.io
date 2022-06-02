@@ -1,20 +1,42 @@
 [
     {
-        "title": "Flexible environments for hybrid collaboration: redesigning virtual working through the four orders of design",
-        "authors": "J. Meluso, S. Johnson, J. Bagrow",
+        "title": "Network Onion Divergence: Network representation and comparison using nested configuration models with fixed connectivity, correlation and centrality patterns",
+        "authors": "L. Hébert-Dufresne, J.-G. Young, A. Daniels, and A. Allard",
         "year": 2022,
-        "journalURL": "https://doi.org/10.1162/desi_a_00670",
-        "preprintURL": "https://osf.io/preprints/socarxiv/wehsk/",
-        "type": "article"
+        "date": "2022-04-18",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2204.08444"
+    },
+    {
+        "title": "Spatial epidemiology and adaptive targeted sampling to manage the Chagas disease vector Triatoma dimidiata",
+        "authors": "B. K. M. Case, J.-G. Young, D. Penados, L. Hébert-Dufresne, and L. Stevens",
+        "year": 2022,
+        "date": "2022-06-02",
+        "journal": "PLOS Negl. Trop. Dis. 16, e0010436",
+        "type": "article",
+        "journalURL": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0010436",
+        "preprintURL": "https://arxiv.org/abs/2111.05964",
+        "software": "https://zenodo.org/record/6462160#.YmAsqlvMLvk"
     },
 	{
         "title": "Cutting through the noise to infer autonomous system topology",
         "authors": "K. G. Leyba, J. J. Daymude, J.-G. Young, M. E. J. Newman, J. Rexford, and S. Forrest",
         "year": 2022,
+        "date": "2022-05-01",
         "type": "proceedings",
         "conference": "INFOCOM 2022, IEEE Conference on Computer Communications",
         "location": "Virtual Conference",
         "preprintURL": "https://arxiv.org/abs/2201.07328"
+    },
+    {
+        "title": "Flexible environments for hybrid collaboration: redesigning virtual working through the four orders of design",
+        "authors": "J. Meluso, S. Johnson, J. Bagrow",
+        "year": 2022,
+        "date": "2022-01-02",
+        "journal": "Des. Issues 38, 55-69",
+        "journalURL": "https://doi.org/10.1162/desi_a_00670",
+        "preprintURL": "https://osf.io/preprints/socarxiv/wehsk/",
+        "type": "article"
     },
     {
         "title": "The network epidemiology of an Ebola epidemic",
@@ -23,14 +45,6 @@
         "date": "2021-10-16",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2111.08686"
-    },
-    {
-        "title": "Spatial epidemiology and adaptive targeted sampling to manage the Chagas disease vector Triatoma dimidiata",
-        "authors": "B. K. M. Case, J.-G. Young, D. Penados, L. Hébert-Dufresne, and L. Stevens",
-        "year": 2021,
-        "date": "2021-10-10",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2111.05964"
     },
     {
         "title": "Latent network models to account for noisy, multiply-reported social network data",
@@ -44,9 +58,11 @@
     {
         "title": "Impact and dynamics of hate and counter speech online",
         "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, M. Galesic",
-        "year": 2021,
-        "date": "2021-09-05",
-        "type": "preprint",
+        "year": 2022,
+        "date": "2022-01-24",
+        "type": "article",
+        "journal": "EPJ Data Sci. 11, 3",
+        "journalURL": "https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-021-00314-6",
         "preprintURL": "https://arxiv.org/abs/2009.08392"
     },
     {
@@ -66,7 +82,7 @@
         "year": 2022,
         "type": "article",
         "date": "2022-02-16",
-        "journal": "Phys. Rev. Res. 4(1), 013123",
+        "journal": "Phys. Rev. Res. 4, 013123",
         "preprintURL": "https://arxiv.org/abs/2107.03334",
         "journalURL": "https://link.aps.org/doi/10.1103/PhysRevResearch.4.013123"
     },
