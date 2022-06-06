@@ -78,9 +78,11 @@ export const IndexQuery = graphql`
       }
     }
     highlightPublications: allPublicationsJson(
-      sort: {fields: date}, limit: 4
+      sort: {fields: date, order: DESC}
+      filter: {date: {ne: null}}
+      limit: 4
     ) {
-      edges {
+      edges { 
         node {
           id
           location
