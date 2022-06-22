@@ -26,7 +26,9 @@
         "type": "proceedings",
         "conference": "INFOCOM 2022, IEEE Conference on Computer Communications",
         "location": "Virtual Conference",
-        "preprintURL": "https://arxiv.org/abs/2201.07328"
+        "preprintURL": "https://arxiv.org/abs/2201.07328",
+        "journalURL": "https://ieeexplore.ieee.org/document/9796874",
+        "software": "https://kirtusleyba.github.io/noisynets/"
     },
     {
         "title": "Flexible environments for hybrid collaboration: redesigning virtual working through the four orders of design",
