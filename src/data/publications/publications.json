@@ -1,5 +1,13 @@
 [
     {
+        "title": "Hypergraph reconstruction from noisy pairwise observations",
+        "authors": "S. Lizotte, J.-G. Young, and A. Allard",
+        "year": 2022,
+        "date": "2022-08-16",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2208.06503"
+    },
+    {
         "title": "The promise of cross-species coexpression analysis in studying the coevolution and ecology of host-symbiont interactions",
         "authors": "A. Hund, P. Tiffin, J.-G. Young, and D. Bolnick",
         "year": 2022,
