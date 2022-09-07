@@ -1,5 +1,15 @@
 [
     {
+        "title": "Book review: Advances in Network Clustering and Blockmodeling",
+        "authors": "J.-G. Young",
+        "year": 2022,
+        "date": "2022-08-30",
+        "type": "Book review",
+        "journal": "J. Soc. Struct. 23, 47",
+        "isOpenAccess": true,
+        "journalURL": "https://sciendo.com/article/10.21307/joss-2022-005"
+    },
+    {
         "title": "Hypergraph reconstruction from noisy pairwise observations",
         "authors": "S. Lizotte, J.-G. Young, and A. Allard",
         "year": 2022,
