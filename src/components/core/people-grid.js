@@ -44,8 +44,8 @@ function AlumniThumbnail({ firstName, lastName, role, nextRole, imageURL, slug, 
             <Link to={slug}>
               <div className="text-lg leading-6 font-medium space-y-1">
                 <h3 className="group-hover:underline">{firstName} {lastName}</h3>
-                <p className="text-gray-600">Left for: {nextRole}</p>
-                <p className="text-green-600">Previously: {role}</p>
+                <p className="text-gray-600">First moved to: {nextRole}</p>
+                <p className="text-green-600">Graduated as: {role}</p>
               </div>
             </Link>
         </li>
