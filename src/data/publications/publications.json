@@ -1,5 +1,13 @@
 [
     {
+        "title": "Compressing network populations with modal networks reveals structural diversity",
+        "authors": "A. Kirkley, A. Rojas, M. Rosvall, and J.-G. Young",
+        "year": 2022,
+        "date": "2022-09-28",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2209.13827"
+    },
+    {
         "title": "Book review: Advances in Network Clustering and Blockmodeling",
         "authors": "J.-G. Young",
         "year": 2022,
