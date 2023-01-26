@@ -1,5 +1,21 @@
 [
     {
+        "title": "Exact and rapid linear clustering of networks with dynamic programming",
+        "authors": "A. Patania, A. Allard, and J.-G. Young",
+        "year": 2023,
+        "date": "2023-01-25",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2301.10403"
+    },
+    {
+        "title": "Accurately summarizing an outbreak using epidemiological models takes time",
+        "authors": "B. K. M. Case, J.-G. Young, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-01-20",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2301.08799"
+    },
+    {
         "title": "Modeling the Heterogeneous Temporal Dynamics of Epidemics on Networks",
         "authors": "A. J. Allen",
         "year": 2022,
