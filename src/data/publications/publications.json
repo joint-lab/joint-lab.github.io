@@ -108,12 +108,13 @@
     },
     {
         "title": "Latent network models to account for noisy, multiply-reported social network data",
-        "authors": "C. De Bacco, M. Contisciani, J. Cardoso-Silva, H. Safdari, D. Baptista, T. Sweet, J.-G. Young, J. Koster, C. T. Ross, R. McElreath, D. Redhead, and E. A. Power",
-        "year": 2021,
-        "date": "2021-12-21",
-        "type": "preprint",
+        "authors": "C. De Bacco, M. Contisciani, J. Cardoso-Silva, H. Safdari, G. L. Borges, D. Baptista, T. Sweet, J.-G. Young, J. Koster, C. T. Ross, R. McElreath, D. Redhead, and E. A. Power",
+        "year": 2023,
+        "date": "2023-02-08",
+        "type": "article",
+	"journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
-        "software": "https://github.com/latentnetworks/vimure"
+        "software": "https://latentnetworks.github.io/vimure/"
     },
     {
         "title": "Impact and dynamics of hate and counter speech online",
