@@ -1,4 +1,10 @@
-[
+[   {
+	"title": "Temporal and probabilistic forecasts of epidemic interventions",
+	"authors": "M.C. Boudreau, A.J. Allen, N.J. Roberts, A. Allard, and L. Hébert-Dufresne",
+	"year": 2023,
+	"date": "2023-02-07",
+	"type": "preprint",
+	"preprintURL": "https://arxiv.org/abs/2302.03210"
     {
         "title": "The promise of cross-species coexpression analysis in studying the coevolution and ecology of host-symbiont interactions",
         "authors": "A. Hund, P. Tiffin, J.-G. Young, and D. Bolnick",
