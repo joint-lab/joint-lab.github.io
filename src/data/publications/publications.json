@@ -1,4 +1,41 @@
-[
+[   
+    {
+        "title": "XGI: A Python package for higher-order interaction networks",
+        "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
+        "year": 2023,
+        "date": "2023-05-17",
+        "journal": "JOSS, 8(85), 5162",
+        "type": "article",
+        "isOpenAccess": true,
+        "journalURL": "https://doi.org/10.21105/joss.05162",
+        "software": "https://github.com/ComplexGroupInteractions/xgi"
+    },
+    {
+        "title": "Filtering higher-order datasets",
+        "authors": "N. W. Landry, I. Amburg, M. Shi, and S. G. Aksoy",
+        "year": 2023,
+        "date": "2023-05-11",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2305.06910",
+        "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
+    },
+    {
+        "title": "Polarization in hypergraphs with community structure",
+        "authors": "N. W. Landry, and J. G. Restrepo",
+        "year": 2023,
+        "date": "2023-02-27",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2302.13967",
+        "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
+    },
+    {
+        "title": "Temporal and probabilistic forecasts of epidemic interventions",
+        "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-02-07",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2302.03210"
+    },
     {
         "title": "Exact and rapid linear clustering of networks with dynamic programming",
         "authors": "A. Patania, A. Allard, and J.-G. Young",
@@ -14,6 +51,18 @@
         "date": "2023-01-20",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2301.08799"
+    },
+    {
+        "title": "On limitations of uniplex networks for modeling multiplex contagion",
+        "authors": "N. W. Landry, and j. adams",
+        "year": 2023,
+        "date": "2022-06-02",
+        "journal": "PLoS ONE 18(1): e0279345",
+        "type": "article",
+        "isOpenAccess": true,
+        "journalURL": "https://doi.org/10.1371/journal.pone.0279345",
+        "preprintURL": "https://arxiv.org/abs/2204.12348",
+        "software": "https://github.com/nwlandry/multiplex-contagion"
     },
     {
         "title": "Modeling the Heterogeneous Temporal Dynamics of Epidemics on Networks",
@@ -112,7 +161,7 @@
         "year": 2023,
         "date": "2023-02-08",
         "type": "article",
-	"journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
+	    "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
         "software": "https://latentnetworks.github.io/vimure/"
     },
