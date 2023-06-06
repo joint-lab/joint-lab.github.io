@@ -100,7 +100,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
       const author = params.get('author');
       updateAuthors(author);
     }
-  }, [query]);
+  }, [query, updateAuthors]);
 
   const activeLabMembers = useMemo(()=>{
     if (people){

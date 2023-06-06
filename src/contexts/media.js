@@ -45,7 +45,7 @@ const MediaContextProvider = ({ children, people, media }) => {
     setFilters({...filters, date});
   }, [filters]);
 
-  const labMembers = useMemo(()=>people, []);
+  const labMembers = useMemo(()=>people, [people]);
 
   const filteredMedia = useMemo(()=>{
     if (!processedMedia) return [];

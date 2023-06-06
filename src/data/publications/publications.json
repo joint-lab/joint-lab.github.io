@@ -6,6 +6,56 @@
 	"type": "preprint",
 	"preprintURL": "https://arxiv.org/abs/2302.03210"
     {
+        "title": "Exact and rapid linear clustering of networks with dynamic programming",
+        "authors": "A. Patania, A. Allard, and J.-G. Young",
+        "year": 2023,
+        "date": "2023-01-25",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2301.10403"
+    },
+    {
+        "title": "Accurately summarizing an outbreak using epidemiological models takes time",
+        "authors": "B. K. M. Case, J.-G. Young, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-01-20",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2301.08799"
+    },
+    {
+        "title": "Modeling the Heterogeneous Temporal Dynamics of Epidemics on Networks",
+        "authors": "A. J. Allen",
+        "year": 2022,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1617/",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
+    {
+        "title": "Compressing network populations with modal networks reveals structural diversity",
+        "authors": "A. Kirkley, A. Rojas, M. Rosvall, and J.-G. Young",
+        "year": 2022,
+        "date": "2022-09-28",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2209.13827"
+    },
+    {
+        "title": "Book review: Advances in Network Clustering and Blockmodeling",
+        "authors": "J.-G. Young",
+        "year": 2022,
+        "date": "2022-08-30",
+        "type": "Book review",
+        "journal": "J. Soc. Struct. 23, 47",
+        "isOpenAccess": true,
+        "journalURL": "https://sciendo.com/article/10.21307/joss-2022-005"
+    },
+    {
+        "title": "Hypergraph reconstruction from noisy pairwise observations",
+        "authors": "S. Lizotte, J.-G. Young, and A. Allard",
+        "year": 2022,
+        "date": "2022-08-16",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2208.06503"
+    },
+    {
         "title": "The promise of cross-species coexpression analysis in studying the coevolution and ecology of host-symbiont interactions",
         "authors": "A. Hund, P. Tiffin, J.-G. Young, and D. Bolnick",
         "year": 2022,
@@ -64,12 +114,13 @@
     },
     {
         "title": "Latent network models to account for noisy, multiply-reported social network data",
-        "authors": "C. De Bacco, M. Contisciani, J. Cardoso-Silva, H. Safdari, D. Baptista, T. Sweet, J.-G. Young, J. Koster, C. T. Ross, R. McElreath, D. Redhead, and E. A. Power",
-        "year": 2021,
-        "date": "2021-12-21",
-        "type": "preprint",
+        "authors": "C. De Bacco, M. Contisciani, J. Cardoso-Silva, H. Safdari, G. L. Borges, D. Baptista, T. Sweet, J.-G. Young, J. Koster, C. T. Ross, R. McElreath, D. Redhead, and E. A. Power",
+        "year": 2023,
+        "date": "2023-02-08",
+        "type": "article",
+	"journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
-        "software": "https://github.com/latentnetworks/vimure"
+        "software": "https://latentnetworks.github.io/vimure/"
     },
     {
         "title": "Impact and dynamics of hate and counter speech online",
@@ -400,7 +451,7 @@
         "title": "Inférence et réseaux complexes",
         "authors": "J.-G. Young",
         "year": 2018,
-        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/31824",
+        "textURL": "http://hdl.handle.net/20.500.11794/31824",
         "type": "thesis",
         "degree": "Ph.D."
     },
@@ -408,7 +459,7 @@
         "title": "De la détection de la structure communautaire des réseaux complexes",
         "authors": "J.-G. Young",
         "year": 2014,
-        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/25472",
+        "textURL": "http://hdl.handle.net/20.500.11794/25472",
         "type": "thesis",
         "degree": "M.Sc."
     },
@@ -953,7 +1004,7 @@
         "title": "On the growth and structure of social systems following preferential attachment",
         "authors": "L. Hébert-Dufresne",
         "year": 2014,
-        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/25331",
+        "textURL": "http://hdl.handle.net/20.500.11794/25331",
         "type": "thesis",
         "degree": "Ph.D."
     },
@@ -961,7 +1012,7 @@
         "title": "La structure communautaire comme paradigme d'organisation des réseaux complexes",
         "authors": "L. Hébert-Dufresne",
         "year": 2011,
-        "textURL": "https://corpus.ulaval.ca/jspui/handle/20.500.11794/23165",
+        "textURL": "http://hdl.handle.net/20.500.11794/23165",
         "type": "thesis",
         "degree": "M.Sc."
     },
