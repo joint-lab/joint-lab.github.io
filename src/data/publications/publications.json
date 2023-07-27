@@ -39,9 +39,12 @@
     {
         "title": "Exact and rapid linear clustering of networks with dynamic programming",
         "authors": "A. Patania, A. Allard, and J.-G. Young",
+        "journal": "Proc. R. Soc. A 479, 2275",
         "year": 2023,
-        "date": "2023-01-25",
-        "type": "preprint",
+        "date": "2023-07-19",
+        "type": "article",
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rspa.2023.0159",
+        "software": "https://github.com/jg-you/dyvider",
         "preprintURL": "https://arxiv.org/abs/2301.10403"
     },
     {
@@ -75,9 +78,12 @@
     {
         "title": "Compressing network populations with modal networks reveals structural diversity",
         "authors": "A. Kirkley, A. Rojas, M. Rosvall, and J.-G. Young",
-        "year": 2022,
-        "date": "2022-09-28",
-        "type": "preprint",
+        "journal": "Commun. Phys. 6, 148",
+        "year": 2023,
+        "date": "2023-06-22",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1038/s42005-023-01270-5",
+        "software": "https://github.com/aleckirkley/MDL-network-population-clustering",
         "preprintURL": "https://doi.org/10.48550/arXiv.2209.13827"
     },
     {
@@ -197,10 +203,12 @@
         "journalURL": "https://link.aps.org/doi/10.1103/PhysRevResearch.4.013123"
     },
     {
-        "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
+        "title": "Opposing responses to scarcity emerge from functionally unique sociality drivers",
         "authors": "A. B. Kao, A. K. Hund, F. P. Santos, J.-G. Young, D. Bhat, J. Garland, R. A. Oomen, H. F. McCreery",
-        "year": 2020,
-        "type": "preprint",
+        "journal": "Am. Nat. 202, 3",
+        "year": 2023,
+        "type": "article",
+        "journalURL": "https://www.journals.uchicago.edu/doi/10.1086/725426",
         "preprintURL": "https://doi.org/10.1101/2020.03.17.994343"
     },
     {
