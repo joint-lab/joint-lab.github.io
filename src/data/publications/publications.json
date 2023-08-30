@@ -1,4 +1,12 @@
-[   
+[
+    {
+        "title": "Measuring Centralization of Online Platforms Through Size and Interconnection of Communities",
+        "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. Bagrow",
+        "year": 2023,
+        "date": "2023-07-27",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2307.15027"
+    },
     {
         "title": "XGI: A Python package for higher-order interaction networks",
         "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
@@ -569,9 +577,12 @@
     {
         "title": "The penumbra of open source: projects outside of centralized platforms are longer maintained, more academic and more collaborative",
         "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. P. Bagrow",
+        "journalURL": "https://doi.org/10.1140/epjds/s13688-022-00345-7",
         "preprintURL": "https://arxiv.org/abs/2106.15611",
-        "year": 2021,
-        "type": "preprint"
+        "year": 2022,
+        "date": "2022-05-21",
+        "journal": "EPJ Data Science",
+        "type": "article"
     },
     {
         "title": "Source-sink cooperation dynamics constrain institutional evolution in a group-structured society",
