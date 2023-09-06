@@ -1,5 +1,24 @@
 [   
     {
+        "title": "Multidisciplinary learning through collective performance favors decentralization",
+        "authors": "J. Meluso, and L. Hébert-Dufresne",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
+        "year": 2023,
+        "date": "2023-08-14",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1073/pnas.230356812",
+        "software": "https://github.com/meluso/multi-disciplinary-learning",
+        "preprintURL": "https://arxiv.org/abs/2208.11618"
+    },
+    {
+        "title": "How do managers evaluate individual contributions to team production? A theory and empirical test.",
+        "authors": "J. Uribe, S. Carnahan, J. Meluso, and J. Austin-Breneman",
+        "journal": "Strategic Management Journal 43, 12",
+        "year": 2022,
+        "type": "article",
+        "journalURL": "https://doi.org/10.1002/smj.3433"
+    },
+    {
         "title": "The simpliciality of higher-order networks",
         "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
         "year": 2023,
@@ -7,111 +26,6 @@
         "type": "preprint",
         "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
         "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-network"
-    },
-    {
-        "title": "XGI: A Python package for higher-order interaction networks",
-        "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
-        "year": 2023,
-        "date": "2023-05-17",
-        "journal": "JOSS, 8(85), 5162",
-        "type": "article",
-        "isOpenAccess": true,
-        "journalURL": "https://doi.org/10.21105/joss.05162",
-        "software": "https://github.com/ComplexGroupInteractions/xgi"
-    },
-    {
-        "title": "Filtering higher-order datasets",
-        "authors": "N. W. Landry, I. Amburg, M. Shi, and S. G. Aksoy",
-        "year": 2023,
-        "date": "2023-05-11",
-        "type": "preprint",
-        "preprintURL": "https://doi.org/10.48550/arXiv.2305.06910",
-        "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
-    },
-    {
-        "title": "Polarization in hypergraphs with community structure",
-        "authors": "N. W. Landry, and J. G. Restrepo",
-        "year": 2023,
-        "date": "2023-02-27",
-        "type": "preprint",
-        "preprintURL": "https://doi.org/10.48550/arXiv.2302.13967",
-        "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
-    },
-    {
-        "title": "Temporal and probabilistic forecasts of epidemic interventions",
-        "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
-        "year": 2023,
-        "date": "2023-02-07",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.03210"
-    },
-    {
-        "title": "TRACE-Omicron: Policy Counterfactuals to Inform Mitigation of COVID-19 Spread in the United States",
-        "authors": "D. O’Gara, S. F. Rosenblatt, L. Hébert-Dufresne, R. Purcell, M. Kasman, and R. A. Hammond",
-        "year": 2023,
-        "date": "2023-04-28",
-        "journal": "Adv. Theory Simul. 6, 2300147",
-        "type": "article",
-        "journalURL": "https://doi.org/10.1002/adts.202300147"
-    },
-    {
-        "title": "Hierarchical team structure and multidimensional localization (or siloing) on networks",
-        "authors": "L. Hébert-Dufresne, G. St-Onge, J. Meluso, J. Bagrow, and A. Allard",
-        "year": 2023,
-        "date": "2023-07-25",
-        "journal": "J. Phys. Complex., 4(035002)",
-        "type": "article",
-        "isOpenAccess": true,
-        "journalURL": "https://iopscience.iop.org/article/10.1088/2632-072X/ace602",
-        "software": "https://zenodo.org/record/7930362"
-    },
-    {
-        "title": "Heterogeneous transmission in groups induces a superlinear force of infection",
-        "authors": "G. St-Onge, L. Hébert-Dufresne, and A. Allard",
-        "year": 2023,
-        "date": "2023-02-26",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.13358"
-    },
-    {
-        "title": "Diverse Misinformation: Impacts of Human Biases on Detection of Deepfakes on Networks",
-        "authors": "J. Lovato, L. Hébert-Dufresne, J. St-Onge, R. Harp, G. Salazar Lopez, S. P. Rogers, I. Ul Haq, and J. Onaolapo",
-        "year": 2022,
-        "date": "2022-10-18",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2210.10026"
-    },
-    {
-        "title": "A network compression approach for quantifying the importance of temporal contact chronology",
-        "authors": "A. J. Allen, C. Moore, and L. Hébert-Dufresne",
-        "year": 2022,
-        "date": "2022-05-23",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2205.11566"
-    },
-    {
-        "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using general approximate master equations",
-        "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
-        "year": 2023,
-        "date": "2023-07-20",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2307.11268"
-    },
-    {
-        "title": "Modeling critical connectivity constraints in random and empirical networks",
-        "authors": "L. Hébert-Dufresne, M. Pósfai, and A. Allard",
-        "year": 2023,
-        "date": "2023-07-07",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2307.03559"
-    },
-    {
-        "title": "Measuring Centralization of Online Platforms Through Size and Interconnection of Communities",
-        "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. Bagrow",
-        "year": 2023,
-        "date": "2023-07-27",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2307.15027"
     },
     {
         "title": "XGI: A Python package for higher-order interaction networks",
@@ -245,7 +159,7 @@
         "preprintURL": "https://arxiv.org/abs/2111.05964",
         "software": "https://zenodo.org/record/6462160#.YmAsqlvMLvk"
     },
-	{
+    {
         "title": "Cutting through the noise to infer autonomous system topology",
         "authors": "K. G. Leyba, J. J. Daymude, J.-G. Young, M. E. J. Newman, J. Rexford, and S. Forrest",
         "year": 2022,
@@ -292,7 +206,7 @@
         "year": 2023,
         "date": "2023-02-08",
         "type": "article",
-	    "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
+        "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
         "software": "https://latentnetworks.github.io/vimure/"
     },
