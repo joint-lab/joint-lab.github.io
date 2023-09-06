@@ -1,5 +1,24 @@
 [   
     {
+        "title": "Multidisciplinary learning through collective performance favors decentralization",
+        "authors": "J. Meluso, and L. Hébert-Dufresne",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
+        "year": 2023,
+        "date": "2023-08-14",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1073/pnas.230356812",
+        "software": "https://github.com/meluso/multi-disciplinary-learning",
+        "preprintURL": "https://arxiv.org/abs/2208.11618"
+    },
+    {
+        "title": "How do managers evaluate individual contributions to team production? A theory and empirical test.",
+        "authors": "J. Uribe, S. Carnahan, J. Meluso, and J. Austin-Breneman",
+        "journal": "Strategic Management Journal 43, 12",
+        "year": 2022,
+        "type": "article",
+        "journalURL": "https://doi.org/10.1002/smj.3433"
+    },
+    {
         "title": "XGI: A Python package for higher-order interaction networks",
         "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
         "year": 2023,
