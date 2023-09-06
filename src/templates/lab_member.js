@@ -82,7 +82,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                         {mdx.frontmatter.scholarURL? 
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.scholarURL}>
                             <AiOutlineBank/>
-                            <span className='hidden sm:inline-block'>Google scholar</span>
+                            <span className='hidden sm:inline-block'>Google Scholar</span>
                           </a>: null}
                         {mdx.frontmatter.email? 
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>

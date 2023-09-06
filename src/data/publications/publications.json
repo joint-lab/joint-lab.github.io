@@ -19,6 +19,15 @@
         "journalURL": "https://doi.org/10.1002/smj.3433"
     },
     {
+        "title": "The simpliciality of higher-order networks",
+        "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
+        "year": 2023,
+        "date": "2023-08-26",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
+        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-network"
+    },
+    {
         "title": "XGI: A Python package for higher-order interaction networks",
         "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
         "year": 2023,
@@ -58,9 +67,12 @@
     {
         "title": "Exact and rapid linear clustering of networks with dynamic programming",
         "authors": "A. Patania, A. Allard, and J.-G. Young",
+        "journal": "Proc. R. Soc. A 479, 2275",
         "year": 2023,
-        "date": "2023-01-25",
-        "type": "preprint",
+        "date": "2023-07-19",
+        "type": "article",
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rspa.2023.0159",
+        "software": "https://github.com/jg-you/dyvider",
         "preprintURL": "https://arxiv.org/abs/2301.10403"
     },
     {
@@ -94,9 +106,12 @@
     {
         "title": "Compressing network populations with modal networks reveals structural diversity",
         "authors": "A. Kirkley, A. Rojas, M. Rosvall, and J.-G. Young",
-        "year": 2022,
-        "date": "2022-09-28",
-        "type": "preprint",
+        "journal": "Commun. Phys. 6, 148",
+        "year": 2023,
+        "date": "2023-06-22",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1038/s42005-023-01270-5",
+        "software": "https://github.com/aleckirkley/MDL-network-population-clustering",
         "preprintURL": "https://doi.org/10.48550/arXiv.2209.13827"
     },
     {
@@ -144,7 +159,7 @@
         "preprintURL": "https://arxiv.org/abs/2111.05964",
         "software": "https://zenodo.org/record/6462160#.YmAsqlvMLvk"
     },
-	{
+    {
         "title": "Cutting through the noise to infer autonomous system topology",
         "authors": "K. G. Leyba, J. J. Daymude, J.-G. Young, M. E. J. Newman, J. Rexford, and S. Forrest",
         "year": 2022,
@@ -155,6 +170,17 @@
         "preprintURL": "https://arxiv.org/abs/2201.07328",
         "journalURL": "https://ieeexplore.ieee.org/document/9796874",
         "software": "https://kirtusleyba.github.io/noisynets/"
+    },
+    {
+        "title": "The OCEAN mailing list data set: Network analysis spanning mailing lists and code repositories",
+        "authors": "M. Warrick, S. F. Rosenblatt, J.-G. Young, A. Casari, L. Hébert-Dufresne, and J. Bagrow",
+        "year": 2022,
+        "type": "proceedings",
+        "conference": " 2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR)",
+        "location": "Pittsburgh, PA, USA,",
+        "preprintURL": "https://arxiv.org/abs/2204.00603",
+        "journalURL": "https://doi.ieeecomputersociety.org/10.1145/3524842.3528479",
+        "software": "https://github.com/google/project-OCEAN"
     },
     {
         "title": "Flexible environments for hybrid collaboration: redesigning virtual working through the four orders of design",
@@ -180,7 +206,7 @@
         "year": 2023,
         "date": "2023-02-08",
         "type": "article",
-	    "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
+        "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
         "software": "https://latentnetworks.github.io/vimure/"
     },
@@ -216,10 +242,12 @@
         "journalURL": "https://link.aps.org/doi/10.1103/PhysRevResearch.4.013123"
     },
     {
-        "title": "Changes in group size during resource shifts reveal drivers of sociality across the tree of life",
+        "title": "Opposing responses to scarcity emerge from functionally unique sociality drivers",
         "authors": "A. B. Kao, A. K. Hund, F. P. Santos, J.-G. Young, D. Bhat, J. Garland, R. A. Oomen, H. F. McCreery",
-        "year": 2020,
-        "type": "preprint",
+        "journal": "Am. Nat. 202, 3",
+        "year": 2023,
+        "type": "article",
+        "journalURL": "https://www.journals.uchicago.edu/doi/10.1086/725426",
         "preprintURL": "https://doi.org/10.1101/2020.03.17.994343"
     },
     {
@@ -535,16 +563,20 @@
     {
         "title": "The role of directionality, heterogeneity and correlations in epidemic risk and spread",
         "authors": "A. Allard, C. Moore, S. V. Scarpino, B. M. Althouse, and L. Hébert-Dufresne",
-        "preprintURL": "https://arxiv.org/abs/2005.11283",
-        "year": 2020,
-        "type": "preprint"
+        "year": 2023,
+        "date": "2023-05-09",
+        "journal": "SIAM Review 65, 2",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1137/20M1383811"
     },
     {
         "title": "Coordinated support for local action: A modeling study of strategies to facilitate behavior adoption in urban poor communities of Liberia for sustained COVID-19 suppression",
         "authors": "L. A. Skrip, M. P. Fallah, J. Bedson, L. Hébert-Dufresne, and B. M. Althouse",
         "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.08.11.20172031v1",
-        "year": 2020,
-        "type": "preprint"
+        "year": 2021,
+        "journalURL": "https://www.sciencedirect.com/science/article/pii/S1755436521000736",
+        "type": "article",
+        "journal": "Epidemics"
     },
     {
         "title": "The unintended consequences of inconsistent pandemic control policies",
@@ -574,15 +606,22 @@
         "title": "Limits of individual consent and models of distributed consent in online social networks",
         "authors": "J. Lovato, A. Allard, R. Harp, L. Hébert-Dufresne",
         "preprintURL": "https://arxiv.org/abs/2006.16140",
-        "year": 2020,
-        "type": "preprint"
+        "conference": "FAccT '22: Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency",
+        "year": 2022,
+        "date": "2022-06-20",
+        "journalURL": "https://dl.acm.org/doi/10.1145/3531146.3534640",
+        "isOpenAccess": true,
+        "type": "proceedings"
     },
     {
         "title": "The penumbra of open source: projects outside of centralized platforms are longer maintained, more academic and more collaborative",
         "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. P. Bagrow",
+        "journalURL": "https://doi.org/10.1140/epjds/s13688-022-00345-7",
         "preprintURL": "https://arxiv.org/abs/2106.15611",
-        "year": 2021,
-        "type": "preprint"
+        "year": 2022,
+        "date": "2022-05-21",
+        "journal": "EPJ Data Science",
+        "type": "article"
     },
     {
         "title": "Source-sink cooperation dynamics constrain institutional evolution in a group-structured society",
@@ -594,16 +633,20 @@
     {
         "title": "Immunity-induced criticality of the genotype network of influenza A (H3N2) hemagglutinin",
         "authors": "B. J. M. Williams, C. B. Ogbunugafor, B. M. Althouse, and L. Hébert-Dufresne",
-        "preprintURL": "https://arxiv.org/abs/2109.12407",
-        "year": 2021,
-        "type": "preprint"
+        "year": 2022,
+        "journalURL": "https://onlinelibrary.wiley.com/doi/full/10.1002/adts.202300147",
+        "date": "2022-09-04",
+        "journal": "PNAS Nexus 1, 4",
+        "isOpenAccess": true,
+        "type": "article"
     },
     {
         "title": "Influential groups for seeding and sustaining hypergraph contagions",
         "authors": "G. St-Onge, I. Iacopini, V. Latora, A. Barrat, G. Petri, A. Allard, and L. Hébert-Dufresne",
-        "journal": "Commun. Phys. (in press)",
+        "journal": "Commun. Phys. 5, 25",
         "year": 2021,
-        "journalURL": "https://arxiv.org/abs/2105.07092",
+        "preprintURL": "https://arxiv.org/abs/2105.07092",
+        "journalURL": "https://www.nature.com/articles/s42005-021-00788-w",
         "isOpenAccess": true,
         "type": "article"
     },
@@ -619,9 +662,10 @@
     {
         "title": "Masculinity contest cultures and inclusive cultures: insights from an agent-based model of organizational socialization and promotion",
         "authors": "J. Meluso, L. Hébert-Dufresne, J. P. Bagrow, and R. Razzante",
-        "journal": "Res. Soc. Issues Manag. (in press)",
+        "journal": "Res. Soc. Issues Manag.",
         "year": 2021,
         "preprintURL": "https://bit.ly/meluso-et-al-mcc-ic",
+        "journalURL": "https://www.infoagepub.com/products/The-Future-of-Scholarship-on-Diversity-and-Inclusion-in-Organizations",
         "type": "article"
     },
     {
