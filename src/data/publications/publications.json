@@ -1,4 +1,12 @@
-[   
+[   {
+    "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
+    "authors": "A. Chawla, and N. Cheney",
+    "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
+    "year": 2023,
+    "date": "2023-07-14",
+    "type": "article",
+    "journalURL": "https://doi.org/10.1145/3583133.3590755"
+    },
     {
         "title": "Multidisciplinary learning through collective performance favors decentralization",
         "authors": "J. Meluso, and L. Hébert-Dufresne",
