@@ -1,5 +1,14 @@
 [   
     {
+        "title": "The simpliciality of higher-order networks",
+        "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
+        "year": 2023,
+        "date": "2023-08-26",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
+        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-network"
+    },
+    {
         "title": "XGI: A Python package for higher-order interaction networks",
         "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
         "year": 2023,
@@ -16,7 +25,7 @@
         "year": 2023,
         "date": "2023-05-11",
         "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2305.06910",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2305.06910",
         "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
     },
     {
@@ -25,7 +34,7 @@
         "year": 2023,
         "date": "2023-02-27",
         "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.13967",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2302.13967",
         "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
     },
     {
