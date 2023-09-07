@@ -1,11 +1,11 @@
 [   {
-    "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
-    "authors": "A. Chawla, and N. Cheney",
-    "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
-    "year": 2023,
-    "date": "2023-07-14",
-    "type": "article",
-    "journalURL": "https://doi.org/10.1145/3583133.3590755"
+        "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
+        "authors": "A. Chawla, and N. Cheney",
+        "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
+        "year": 2023,
+        "date": "2023-07-14",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1145/3583133.3590755"
     },
     {
         "title": "Multidisciplinary learning through collective performance favors decentralization",
@@ -604,13 +604,6 @@
         "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
     },
     {
-        "title": "Impact and dynamics of hate and counter speech online",
-        "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, and M. Galesic",
-        "preprintURL": "https://arxiv.org/abs/2009.08392",
-        "year": 2020,
-        "type": "preprint"
-    },
-    {
         "title": "Limits of individual consent and models of distributed consent in online social networks",
         "authors": "J. Lovato, A. Allard, R. Harp, L. Hébert-Dufresne",
         "preprintURL": "https://arxiv.org/abs/2006.16140",
@@ -751,15 +744,6 @@
         "type": "article"
     },
     {
-        "title": "The effectiveness of backward contact tracing in networks",
-        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-Y. Ahn",
-        "journal": "Nat. Phys. 17, 652",
-        "year": 2021,
-        "journalURL": "https://www.nature.com/articles/s41567-021-01187-2",
-        "preprintURL": "http://arxiv.org/abs/2005.02362",
-        "type": "article"
-    },
-    {
         "title": "Localization, epidemic transitions, and unpredictability of multistrain epidemics with an underlying genotype network",
         "authors": "B. J. M. Williams, G. St-Onge, and L. Hébert-Dufresne",
         "journal": "PLOS Comput. Biol. 17, e1008606",
@@ -793,7 +777,7 @@
         "authors": "B. Lee, J. P. Hanley, S. Nowak, J. H. T. Bates, and L. Hébert-Dufresne",
         "journal": "BMC Public Health",
         "year": 2020,
-        "journalURL": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000897",
+        "journalURL": "https://doi.org/10.1186/s12889-020-09799-8",
         "isOpenAccess": true,
         "type": "article"
     },
@@ -876,7 +860,7 @@
         "type": "proceedings"
     },
     {
-        "title": "Effective implementation of energy aware polarization diversity for IoT networks using eigenvector centrality",
+        "title": "Dynamics of beneficial epidemics        ",
         "authors": "A. Berdahl, C. Brelsford, C. De Bacco, M. Dumas, V. Ferdinand, J. A. Grochow, L. Hébert-Dufresne, Y. Kallus, C. P. Kempes, A. Kolchinsky, D. B. Larremore, E. Libby, E. A. Power, C. A. Stern, and B. D. Tracey",
         "journal": "Sci. Rep. 9, 15093",
         "year": 2019,
