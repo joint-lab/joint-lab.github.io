@@ -1,4 +1,13 @@
-[   {
+[   
+    {
+        "title": "Bayesian experimental design for control and surveillance in epidemiology",
+        "authors": "Bren Case",
+        "year": 2023,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1778/",
+        "type": "thesis",
+        "degree": "Ph.D."
+    },
+    {
         "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
         "authors": "A. Chawla, and N. Cheney",
         "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
