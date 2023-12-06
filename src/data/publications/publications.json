@@ -136,11 +136,13 @@
         "journalURL": "https://sciendo.com/article/10.21307/joss-2022-005"
     },
     {
-        "title": "Hypergraph reconstruction from noisy pairwise observations",
+        "title": "Hypergraph reconstruction from uncertain pairwise observations",
         "authors": "S. Lizotte, J.-G. Young, and A. Allard",
-        "year": 2022,
-        "date": "2022-08-16",
-        "type": "preprint",
+        "year": 2023,
+        "date": "2023-12-04",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1038/s41598-023-48081-w",
+        "software": "https://github.com/DynamicaLab/hypergraph-bayesian-reconstruction",
         "preprintURL": "https://arxiv.org/abs/2208.06503"
     },
     {
