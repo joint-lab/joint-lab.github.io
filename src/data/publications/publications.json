@@ -86,9 +86,12 @@
     {
         "title": "Accurately summarizing an outbreak using epidemiological models takes time",
         "authors": "B. K. M. Case, J.-G. Young, and L. Hébert-Dufresne",
+        "journal": "R. Soc. Open Sci.10, 230634",
         "year": 2023,
-        "date": "2023-01-20",
-        "type": "preprint",
+        "date": "2023-09-17",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1098/rsos.230634",
+        "software": "https://github.com/brendandaisy/epi-summaries-over-time",
         "preprintURL": "https://arxiv.org/abs/2301.08799"
     },
     {
