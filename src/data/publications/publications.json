@@ -8,6 +8,15 @@
         "degree": "Ph.D."
     },
     {
+        "title": "Paradoxes in the co-evolution of contagions and institutions",
+        "authors": "J. St-Onge, G. Burgio, S. F. Rosenblatt, T. Waring, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-08-14",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2310.03672",
+        "software": "https://github.com/jstonge/InstitutionalDynamics.jl/"
+    },
+    {
         "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
         "authors": "A. Chawla, and N. Cheney",
         "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
