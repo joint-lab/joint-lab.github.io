@@ -51,6 +51,19 @@
         "preprintURL": "https://arxiv.org/abs/2310.03672",
         "software": "https://github.com/jstonge/InstitutionalDynamics.jl/"
     },
+
+
+
+    {
+        "title": "Evolving Robust Facility Placements",
+        "authors": "W. H. W. Thompson, A. Friedrechsen, N. Cheney, C. Danforth, P.S. Dodds ",
+        "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
+        "year": 2023,
+        "date": "2023-07-14",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1145/3583133.3590712"
+    },
+
     {
         "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
         "authors": "A. Chawla, and N. Cheney",
