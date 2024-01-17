@@ -35,6 +35,33 @@
     },
     {
 
+        "title": "Bayesian experimental design for control and surveillance in epidemiology",
+        "authors": "B. K. M. Case",
+        "year": 2023,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1778/",
+        "type": "thesis",
+        "degree": "Ph.D."
+    },
+    {
+        "title": "Paradoxes in the co-evolution of contagions and institutions",
+        "authors": "J. St-Onge, G. Burgio, S. F. Rosenblatt, T. Waring, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-08-14",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2310.03672",
+        "software": "https://github.com/jstonge/InstitutionalDynamics.jl/"
+    },
+    {
+        "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
+        "authors": "A. Chawla, and N. Cheney",
+        "journal": "Proceedings of the Genetic and Evolutionary Computation Conference",
+        "year": 2023,
+        "date": "2023-07-14",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1145/3583133.3590755"
+    },
+    {
+
         "title": "Multidisciplinary learning through collective performance favors decentralization",
         "authors": "J. Meluso, and L. Hébert-Dufresne",
         "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
@@ -60,7 +87,7 @@
         "date": "2023-08-26",
         "type": "preprint",
         "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
-        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-network"
+        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-networks"
     },
     {
         "title": "XGI: A Python package for higher-order interaction networks",
@@ -83,12 +110,14 @@
         "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
     },
     {
-        "title": "Polarization in hypergraphs with community structure",
+        "title": "Opinion disparity in hypergraphs with community structure",
         "authors": "N. W. Landry, and J. G. Restrepo",
         "year": 2023,
-        "date": "2023-02-27",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.13967",
+        "date": "2023-09-27",
+        "type": "article",
+        "journal": "Phys. Rev. E 108, 034311",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.108.034311",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2302.13967",
         "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
     },
     {
@@ -113,9 +142,12 @@
     {
         "title": "Accurately summarizing an outbreak using epidemiological models takes time",
         "authors": "B. K. M. Case, J.-G. Young, and L. Hébert-Dufresne",
+        "journal": "R. Soc. Open Sci. 10, 230634",
         "year": 2023,
-        "date": "2023-01-20",
-        "type": "preprint",
+        "date": "2023-09-17",
+        "type": "article",
+        "journalURL": "https://doi.org/10.1098/rsos.230634",
+        "software": "https://github.com/brendandaisy/epi-summaries-over-time",
         "preprintURL": "https://arxiv.org/abs/2301.08799"
     },
     {
@@ -160,11 +192,14 @@
         "journalURL": "https://sciendo.com/article/10.21307/joss-2022-005"
     },
     {
-        "title": "Hypergraph reconstruction from noisy pairwise observations",
+        "title": "Hypergraph reconstruction from uncertain pairwise observations",
         "authors": "S. Lizotte, J.-G. Young, and A. Allard",
-        "year": 2022,
-        "date": "2022-08-16",
-        "type": "preprint",
+        "year": 2023,
+        "date": "2023-12-04",
+        "type": "article",
+        "journal": "Sci. Rep. 13, 21364",
+        "journalURL": "https://doi.org/10.1038/s41598-023-48081-w",
+        "software": "https://github.com/DynamicaLab/hypergraph-bayesian-reconstruction",
         "preprintURL": "https://arxiv.org/abs/2208.06503"
     },
     {
@@ -241,6 +276,7 @@
         "year": 2023,
         "date": "2023-02-08",
         "type": "article",
+        "journal": "J. R. Stat. Soc. A 186, 355",
         "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
         "software": "https://latentnetworks.github.io/vimure/"
@@ -600,7 +636,7 @@
         "authors": "A. Allard, C. Moore, S. V. Scarpino, B. M. Althouse, and L. Hébert-Dufresne",
         "year": 2023,
         "date": "2023-05-09",
-        "journal": "SIAM Review 65, 2",
+        "journal": "SIAM Rev. 65, 2",
         "type": "article",
         "journalURL": "https://doi.org/10.1137/20M1383811"
     },
@@ -611,7 +647,7 @@
         "year": 2021,
         "journalURL": "https://www.sciencedirect.com/science/article/pii/S1755436521000736",
         "type": "article",
-        "journal": "Epidemics"
+        "journal": "Epidemics, 37"
     },
     {
         "title": "The unintended consequences of inconsistent pandemic control policies",
@@ -629,13 +665,6 @@
         "type": "article",
         "date": "2022-04-11",
         "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
-    },
-    {
-        "title": "Impact and dynamics of hate and counter speech online",
-        "authors": "J. Garland, K. Ghazi-Zahedi, J.-G. Young, L. Hébert-Dufresne, and M. Galesic",
-        "preprintURL": "https://arxiv.org/abs/2009.08392",
-        "year": 2020,
-        "type": "preprint"
     },
     {
         "title": "Limits of individual consent and models of distributed consent in online social networks",
@@ -778,15 +807,6 @@
         "type": "article"
     },
     {
-        "title": "The effectiveness of backward contact tracing in networks",
-        "authors": "S. Kojaku, L. Hébert-Dufresne, E. Mones, S. Lehmann, and Y.-Y. Ahn",
-        "journal": "Nat. Phys. 17, 652",
-        "year": 2021,
-        "journalURL": "https://www.nature.com/articles/s41567-021-01187-2",
-        "preprintURL": "http://arxiv.org/abs/2005.02362",
-        "type": "article"
-    },
-    {
         "title": "Localization, epidemic transitions, and unpredictability of multistrain epidemics with an underlying genotype network",
         "authors": "B. J. M. Williams, G. St-Onge, and L. Hébert-Dufresne",
         "journal": "PLOS Comput. Biol. 17, e1008606",
@@ -820,7 +840,7 @@
         "authors": "B. Lee, J. P. Hanley, S. Nowak, J. H. T. Bates, and L. Hébert-Dufresne",
         "journal": "BMC Public Health",
         "year": 2020,
-        "journalURL": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000897",
+        "journalURL": "https://doi.org/10.1186/s12889-020-09799-8",
         "isOpenAccess": true,
         "type": "article"
     },
@@ -903,7 +923,7 @@
         "type": "proceedings"
     },
     {
-        "title": "Effective implementation of energy aware polarization diversity for IoT networks using eigenvector centrality",
+        "title": "Dynamics of beneficial epidemics        ",
         "authors": "A. Berdahl, C. Brelsford, C. De Bacco, M. Dumas, V. Ferdinand, J. A. Grochow, L. Hébert-Dufresne, Y. Kallus, C. P. Kempes, A. Kolchinsky, D. B. Larremore, E. Libby, E. A. Power, C. A. Stern, and B. D. Tracey",
         "journal": "Sci. Rep. 9, 15093",
         "year": 2019,
