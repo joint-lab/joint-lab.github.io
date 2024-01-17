@@ -19,7 +19,7 @@
     {
         "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
         "authors": "A. Chawla, and N. Cheney",
-        "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
+        "journal": "Proceedings of the Genetic and Evolutionary Computation Conference",
         "year": 2023,
         "date": "2023-07-14",
         "type": "article",
@@ -240,6 +240,7 @@
         "year": 2023,
         "date": "2023-02-08",
         "type": "article",
+        "journal": "J. R. Stat. Soc. A 186, 355",
         "journalURL": "https://doi.org/10.1093/jrsssa/qnac004",
         "preprintURL": "https://arxiv.org/abs/2112.11396",
         "software": "https://latentnetworks.github.io/vimure/"
@@ -599,7 +600,7 @@
         "authors": "A. Allard, C. Moore, S. V. Scarpino, B. M. Althouse, and L. Hébert-Dufresne",
         "year": 2023,
         "date": "2023-05-09",
-        "journal": "SIAM Review 65, 2",
+        "journal": "SIAM Rev. 65, 2",
         "type": "article",
         "journalURL": "https://doi.org/10.1137/20M1383811"
     },
@@ -610,7 +611,7 @@
         "year": 2021,
         "journalURL": "https://www.sciencedirect.com/science/article/pii/S1755436521000736",
         "type": "article",
-        "journal": "Epidemics"
+        "journal": "Epidemics, 37"
     },
     {
         "title": "The unintended consequences of inconsistent pandemic control policies",
