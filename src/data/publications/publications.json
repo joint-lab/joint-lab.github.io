@@ -1,4 +1,14 @@
-[
+
+[   
+
+	{
+        "title": "Temporal and probabilistic comparisons of epidemic interventions",
+        "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-10-19",
+        "type": "article",
+        "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w"
+    	},    
     {
         "title": "Invisible Labor in Open Source Software Ecosystems",
         "authors": "J. Meluso, A. Casari, K. McLaughlin, M. Z. Trujillo",
@@ -24,6 +34,7 @@
         "preprintURL": "https://arxiv.org/abs/2306.06794"
     },
     {
+
         "title": "Bayesian experimental design for control and surveillance in epidemiology",
         "authors": "B. K. M. Case",
         "year": 2023,
@@ -50,6 +61,7 @@
         "journalURL": "https://doi.org/10.1145/3583133.3590755"
     },
     {
+
         "title": "Multidisciplinary learning through collective performance favors decentralization",
         "authors": "J. Meluso, and L. Hébert-Dufresne",
         "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
