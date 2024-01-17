@@ -74,12 +74,14 @@
         "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
     },
     {
-        "title": "Polarization in hypergraphs with community structure",
+        "title": "Opinion disparity in hypergraphs with community structure",
         "authors": "N. W. Landry, and J. G. Restrepo",
         "year": 2023,
-        "date": "2023-02-27",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.13967",
+        "date": "2023-09-27",
+        "type": "article",
+        "journal": "Phys. Rev. E 108, 034311",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.108.034311",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2302.13967",
         "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
     },
     {
@@ -159,6 +161,7 @@
         "year": 2023,
         "date": "2023-12-04",
         "type": "article",
+        "journal": "Sci. Rep. 13, 21364",
         "journalURL": "https://doi.org/10.1038/s41598-023-48081-w",
         "software": "https://github.com/DynamicaLab/hypergraph-bayesian-reconstruction",
         "preprintURL": "https://arxiv.org/abs/2208.06503"
