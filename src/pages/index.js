@@ -92,7 +92,9 @@ export const IndexQuery = graphql`
       }
     }
     highlightPublications: allPublicationsJson(
-      sort: {fields: date}, limit: 4
+      filter: { date: { ne: null } }  # Add a filter to check for non-null dates
+      sort: { fields: date, order: DESC }, 
+      limit: 4
     ) {
       edges {
         node {
