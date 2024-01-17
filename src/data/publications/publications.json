@@ -1,3 +1,4 @@
+
 [   
 
 	{
@@ -8,7 +9,32 @@
         "type": "article",
         "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w"
     	},    
-	{
+    {
+        "title": "Invisible Labor in Open Source Software Ecosystems",
+        "authors": "J. Meluso, A. Casari, K. McLaughlin, M. Z. Trujillo",
+        "year": 2024,
+        "date": "2024-01-12",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2401.06889"
+    },
+    {
+        "title": "Measuring Centralization of Online Platforms Through Size and Interconnection of Communities",
+        "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. Bagrow",
+        "year": 2023,
+        "date": "2023-07-27",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2307.15027"
+    },
+    {
+        "title": "A blind spot for large language models: Supradiegetic linguistic information",
+        "authors": "J. W. Zimmerman, D. Hudon, K. Cramer, J. St. Onge, M. Fudolig, M. Z. Trujillo, C. M. Danforth, and P. S. Dodds",
+        "year": 2023,
+        "date": "2023-06-11",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2306.06794"
+    },
+    {
+
         "title": "Multidisciplinary learning through collective performance favors decentralization",
         "authors": "J. Meluso, and L. Hébert-Dufresne",
         "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
