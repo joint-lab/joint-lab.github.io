@@ -7,7 +7,9 @@
         "year": 2023,
         "date": "2023-10-19",
         "type": "article",
-        "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w"
+        "journal": "Bull. Math. Biol. 85, 118.",
+        "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w",
+        "preprintURL": "https://arxiv.org/abs/2302.03210"
     	},    
     {
         "title": "Invisible Labor in Open Source Software Ecosystems",
@@ -47,30 +49,26 @@
         "authors": "J. St-Onge, G. Burgio, S. F. Rosenblatt, T. Waring, and L. Hébert-Dufresne",
         "year": 2023,
         "date": "2023-08-14",
-        "type": "article",
+        "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2310.03672",
         "software": "https://github.com/jstonge/InstitutionalDynamics.jl/"
     },
-
-
-
     {
         "title": "Evolving Robust Facility Placements",
         "authors": "W. H. W. Thompson, A. Friedrechsen, N. Cheney, C. Danforth, P.S. Dodds ",
-        "journal": "Proc. Comp. Conf. on Genetic and Evolutionary Computation",
+        "journal": "Proceedings of the Genetic and Evolutionary Computation Conference",
         "year": 2023,
         "date": "2023-07-14",
-        "type": "article",
+        "type": "proceedings",
         "journalURL": "https://doi.org/10.1145/3583133.3590712"
     },
-
     {
         "title": "Neighbor-Hop Mutation for Genetic Algorithm in Influence Maximization",
         "authors": "A. Chawla, and N. Cheney",
         "journal": "Proceedings of the Genetic and Evolutionary Computation Conference",
         "year": 2023,
         "date": "2023-07-14",
-        "type": "article",
+        "type": "proceedings",
         "journalURL": "https://doi.org/10.1145/3583133.3590755"
     },
     {
@@ -132,14 +130,6 @@
         "journalURL": "https://doi.org/10.1103/PhysRevE.108.034311",
         "preprintURL": "https://doi.org/10.48550/arXiv.2302.13967",
         "software": "https://github.com/nwlandry/polarization-in-hypergraphs"
-    },
-    {
-        "title": "Temporal and probabilistic forecasts of epidemic interventions",
-        "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
-        "year": 2023,
-        "date": "2023-02-07",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2302.03210"
     },
     {
         "title": "Exact and rapid linear clustering of networks with dynamic programming",
