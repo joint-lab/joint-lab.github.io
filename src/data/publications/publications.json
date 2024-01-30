@@ -1,6 +1,4 @@
-
 [   
-
 	{
         "title": "Temporal and probabilistic comparisons of epidemic interventions",
         "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
@@ -11,6 +9,14 @@
         "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w",
         "preprintURL": "https://arxiv.org/abs/2302.03210"
     	},    
+    {
+        "title": "Robust interventions in network epidemiology",
+        "authors": "E. Weis",
+        "year": 2024,
+        "textURL": "https://scholarworks.uvm.edu/graddis/1813/",
+        "type": "thesis",
+        "degree": "M.Sc."
+    },
     {
         "title": "Invisible Labor in Open Source Software Ecosystems",
         "authors": "J. Meluso, A. Casari, K. McLaughlin, M. Z. Trujillo",
@@ -36,7 +42,6 @@
         "preprintURL": "https://arxiv.org/abs/2306.06794"
     },
     {
-
         "title": "Bayesian experimental design for control and surveillance in epidemiology",
         "authors": "B. K. M. Case",
         "year": 2023,
