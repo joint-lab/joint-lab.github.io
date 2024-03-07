@@ -1,4 +1,26 @@
 [   
+    {
+        "title": "The simpliciality of higher-order networks",
+        "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
+        "year": 2024,
+        "date": "2024-07-26",
+        "type": "journal",
+        "journal": "EPJ Data Sci. 13, 17",
+        "journalURL": "https://doi.org/10.1140/epjds/s13688-024-00458-1",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
+        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-networks"
+    },
+    {
+        "title": "Filtering higher-order datasets",
+        "authors": "N. W. Landry, I. Amburg, M. Shi, and S. G. Aksoy",
+        "year": 2024,
+        "date": "2024-02-13",
+        "type": "journal",
+        "journal": "J. Phys. Complex. 5 015006",
+        "preprintURL": "https://arxiv.org/abs/2305.06910",
+        "journalURL": "https://doi.org/10.1088/2632-072X/ad253a",
+        "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
+    },
 	{
         "title": "Temporal and probabilistic comparisons of epidemic interventions",
         "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
@@ -77,7 +99,6 @@
         "journalURL": "https://doi.org/10.1145/3583133.3590755"
     },
     {
-
         "title": "Multidisciplinary learning through collective performance favors decentralization",
         "authors": "J. Meluso, and L. Hébert-Dufresne",
         "journal": "Proc. Natl. Acad. Sci. U.S.A. 120, 34",
@@ -97,15 +118,6 @@
         "journalURL": "https://doi.org/10.1002/smj.3433"
     },
     {
-        "title": "The simpliciality of higher-order networks",
-        "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
-        "year": 2023,
-        "date": "2023-08-26",
-        "type": "preprint",
-        "preprintURL": "https://doi.org/10.48550/arXiv.2308.13918",
-        "software": "https://github.com/nwlandry/the-simpliciality-of-higher-order-networks"
-    },
-    {
         "title": "XGI: A Python package for higher-order interaction networks",
         "authors": "N. W. Landry, M. Lucas, I. Iacopini, G. Petri, A. C. Schwarze, A. Patania, and L. Torres",
         "year": 2023,
@@ -115,15 +127,6 @@
         "isOpenAccess": true,
         "journalURL": "https://doi.org/10.21105/joss.05162",
         "software": "https://github.com/ComplexGroupInteractions/xgi"
-    },
-    {
-        "title": "Filtering higher-order datasets",
-        "authors": "N. W. Landry, I. Amburg, M. Shi, and S. G. Aksoy",
-        "year": 2023,
-        "date": "2023-05-11",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2305.06910",
-        "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
     },
     {
         "title": "Opinion disparity in hypergraphs with community structure",
