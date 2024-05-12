@@ -1,4 +1,13 @@
-[   
+[
+    {
+        "title": "Complex contagions can outperform simple contagions for network reconstruction with dense networks or saturated dynamics",
+        "authors": "N. W. Landry, W. H. W. Thompson, L. Hébert-Dufresne, and J.-G. Young",
+        "year": 2024,
+        "date": "2024-04-30",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2405.00129",
+        "software": "https://github.com/nwlandry/complex-network-reconstruction"
+    },
     {
         "title": "The simpliciality of higher-order networks",
         "authors": "N. W. Landry, J.-G. Young, and N. Eikmeier",
@@ -21,7 +30,7 @@
         "journalURL": "https://doi.org/10.1088/2632-072X/ad253a",
         "software": "https://github.com/nwlandry/filtering-higher-order-datasets"
     },
-	{
+    {
         "title": "Temporal and probabilistic comparisons of epidemic interventions",
         "authors": "M. C. Boudreau, A. J. Allen, N. J. Roberts, A. Allard, and L. Hébert-Dufresne",
         "year": 2023,
@@ -30,7 +39,7 @@
         "journal": "Bull. Math. Biol. 85, 118.",
         "journalURL": "https://link.springer.com/article/10.1007/s11538-023-01220-w",
         "preprintURL": "https://arxiv.org/abs/2302.03210"
-    	},    
+    },
     {
         "title": "Robust interventions in network epidemiology",
         "authors": "E. Weis",
