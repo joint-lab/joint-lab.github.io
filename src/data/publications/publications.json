@@ -1,5 +1,14 @@
 [
     {
+        "title": "Symmetry-driven embedding of networks in hyperbolic space",
+        "authors": "S. Lizotte, J.-G. Young, and A. Allard",
+        "year": 2024,
+        "date": "2024-06-18",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2406.10711",
+        "software": "https://github.com/DynamicaLab/bigue"
+    },
+    {
         "title": "Complex contagions can outperform simple contagions for network reconstruction with dense networks or saturated dynamics",
         "authors": "N. W. Landry, W. H. W. Thompson, L. Hébert-Dufresne, and J.-G. Young",
         "year": 2024,
