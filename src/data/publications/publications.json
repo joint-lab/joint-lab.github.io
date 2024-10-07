@@ -12,8 +12,10 @@
         "title": "Complex contagions can outperform simple contagions for network reconstruction with dense networks or saturated dynamics",
         "authors": "N. W. Landry, W. H. W. Thompson, L. Hébert-Dufresne, and J.-G. Young",
         "year": 2024,
-        "date": "2024-04-30",
-        "type": "preprint",
+        "date": "2024-10-07",
+        "type": "journal",
+        "journal": "Phys. Rev. E 110, L042301",
+        "journalURL": "https://doi.org/10.1103/PhysRevE.110.L042301",
         "preprintURL": "https://doi.org/10.48550/arXiv.2405.00129",
         "software": "https://github.com/nwlandry/complex-network-reconstruction"
     },
