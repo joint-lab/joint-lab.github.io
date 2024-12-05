@@ -1,5 +1,14 @@
 [
     {
+        "title": "Governance as a complex, networked, democratic, satisfiability problem",
+        "authors": "L. Hébert-Dufresne, N. W. Landry, J. Lovato, J. St-Onge, J.-G. Young, M.-E. Couture-Ménard, S. Bernatchez, C. Choquette, and A. A. Cohen",
+        "year": 2024,
+        "date": "2024-12-04",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2412.03421",
+        "software": "https://doi.org/10.5281/zenodo.14257344"
+    },
+    {
         "title": "Pragmatic interventions against epidemics on networks",
         "authors": "S. F. Rosenblatt",
         "year": 2024,
