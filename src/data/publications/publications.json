@@ -1,4 +1,120 @@
 [
+    {   "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using generalized approximate master equations",
+        "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-07-20",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2307.11268"
+    },
+    {   "title": "Modeling critical connectivity constraints in random and empirical networks",
+        "authors": "L. Hébert-Dufresne, M. Pósfai, and A. Allard",
+        "year": 2023,
+        "date": "2023-07-07",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2307.03559"
+    },
+    {   "title": "Within-host infection dynamics with master equations and the method of moments: A case study of human papillomavirus in the epithelium",
+        "authors": "M. C. Boudreau, J. A. Cohen, and L. Hébert-Dufresne",
+        "year": 2024,
+        "date": "2024-08-09",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2408.05298"
+    },
+    {   "title": "On the uniform sampling of the configuration model with centrality constraints",
+        "authors": "F. Thibault, L. Hébert-Dufresne, and A. Allard",
+        "year": 2024,
+        "date": "2024-09-30",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2409.20493"
+    },
+    {   "title": "Optimization and performance analytics of global aircraft-based wastewater surveillance networks",
+        "authors": "G. St-Onge, J. T. Davis, L. Hébert-Dufresne, A. Allard, A. Urbinati, S. V. Scarpino, M. Chinazzi, and A. Vespignani",
+        "year": 2024,
+        "date": "2024-08-04",
+        "type": "preprint",
+        "preprintURL": "https://www.medrxiv.org/content/10.1101/2024.08.02.24311418v1"
+    },
+    {
+        "title": "Biomedical open source software: crucial packages and hidden heroes",
+        "authors": "A. Nesbitt, B. Veytsman, D. Mietchen, E. M. Brown, J. Howison, J. F. Pimentel, L. Hébert-Dufresne, and S. Druskat",
+        "year": 2024,
+        "date": "2024-04-10",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2404.06672"
+    },   
+    {
+        "title": "Stochastic diffusion using mean-field limits to approximate master equations",
+        "authors": "L. Hébert-Dufresne, M. M. Kling, S. F. Rosenblatt, S. N. Miller, P. A. Burnham, N. W. Landry, N.J. Gotelli, and B. J. McGill",
+        "year": 2024,
+        "date": "2024-08-14",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2408.07755"
+    },     
+    {
+        "title": "Self-reinforcing cascades: A spreading model for beliefs or products of varying intensity or quality",
+        "authors": "L. Hébert-Dufresne, J. Lovato, G. Burgio, J. P. Gleeson, S. Redner, and P. L. Krapivsky",
+        "year": 2024,
+        "date": "2024-11-01",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2411.00714"
+    }, 
+    {
+        "title": "Innovations through crop switching happen on the diverse margins of US agriculture",
+        "authors": "M. M. Kling, C. T. Brittain, G. L. Galford, T. M. Waring, L. Hébert-Dufresne, M. P. Dube, H. Sabzian, N. J. Gotelli, B. J. McGill, and M. T. Niles",
+        "year": 2024,
+        "date": "2024-07-27",
+        "type": "article",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 121, 42",
+        "journalURL": "https://www.pnas.org/doi/10.1073/pnas.2402195121"
+    },
+    {
+        "title": "The response of Canada’s health research ecosystem to the COVID-19 pandemic: a system-level program evaluation",
+        "authors": "F. Lamontagne, M.-H. Masse, C. Yarnell, F. Camirand-Lemyre, S. Lévesque, M.-P. Domingue, K. O’Hearn, I. Watpool, J. Hoogenes, S. Sprague, J. Ménard, S. Lemaire-Paquette, L. Hébert-Dufresne, D. Cook, P. Hébert, K. Rowan, N. Yada, K. Menon, R. Fowler, A. Fox-Robichaud, D. Boutin, J. Marshall and M. E. Kho",
+        "year": 2024,
+        "date": "2024-06-17",
+        "type": "article",
+        "journal": "Can. Med. Assoc. J. 196 (23) ",
+        "journalURL": "https://www.cmaj.ca/content/196/23/E779.short"
+    },
+    {
+        "title": "Network compression with configuration models and the minimum description length",
+        "authors": "L. Hébert-Dufresne, J.-G. Young, A. Kirkley, A. Daniels, and A. Allard",
+        "year": 2024,
+        "date": "2024-09-06",
+        "type": "article",
+        "journal": "Phys. Rev. E 110, 034305 ",
+        "journalURL": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.110.034305"
+    },
+    {
+        "title": "Diverse misinformation: Impacts of human biases on detection of deepfakes on networks",
+        "authors": "J. Lovato, L. Hébert-Dufresne, J. St-Onge, R. Harp, G. Salazar Lopez, S. P. Rogers, I. Ul Haq, and J. Onaolapo",
+        "year": 2024,
+        "date": "2024-05-18",
+        "type": "article",
+        "journal": "npj Complexity 1 (1)",
+        "preprintURL": "https://arxiv.org/abs/2210.10026",
+        "journalURL": "https://www.nature.com/articles/s44260-024-00006-y"
+    },
+    {
+        "title": "Compressing the chronology of a temporal network with graph commutators",
+        "authors": "A. J. Allen, C. Moore, and L. Hébert-Dufresne",
+        "year": 2024,
+        "date": "2024-02-15",
+        "type": "article",
+        "journal": "Phys. Rev. Lett. 132, 077402",
+        "preprintURL": "https://arxiv.org/abs/2205.11566",
+        "journalURL": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.077402"
+    },
+    {
+        "title": "Nonlinear bias toward complex contagion in uncertain transmission settings",
+        "authors": "G. St-Onge, L. Hébert-Dufresne, and A. Allard",
+        "year": 2023,
+        "date": "2023-12-28",
+        "type": "article",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 121(1)",
+        "preprintURL": "https://arxiv.org/abs/2302.13358",
+        "journalURL": "https://www.pnas.org/doi/10.1073/pnas.2312202121"
+    },
     {
         "title": "Governance as a complex, networked, democratic, satisfiability problem",
         "authors": "L. Hébert-Dufresne, N. W. Landry, J. Lovato, J. St-Onge, J.-G. Young, M.-E. Couture-Ménard, S. Bernatchez, C. Choquette, and A. A. Cohen",
@@ -42,7 +158,7 @@
         "software": "https://github.com/DynamicaLab/bigue"
     },
     {
-        "title": "Complex contagions can outperform simple contagions for network reconstruction with dense networks or saturated dynamics",
+        "title": "Reconstructing networks from simple and complex contagions",
         "authors": "N. W. Landry, W. H. W. Thompson, L. Hébert-Dufresne, and J.-G. Young",
         "year": 2024,
         "date": "2024-10-07",
@@ -103,10 +219,12 @@
     {
         "title": "Measuring Centralization of Online Platforms Through Size and Interconnection of Communities",
         "authors": "M. Z. Trujillo, L. Hébert-Dufresne, and J. Bagrow",
-        "year": 2023,
+        "year": 2024,
         "date": "2023-07-27",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2307.15027"
+        "type": "article",
+        "journal": "Online Social Networks and Media",
+        "preprintURL": "https://arxiv.org/abs/2307.15027",
+        "journalURL": "https://www.sciencedirect.com/science/article/abs/pii/S246869642400017X"
     },
     {
         "title": "A blind spot for large language models: Supradiegetic linguistic information",
@@ -127,10 +245,12 @@
     {
         "title": "Paradoxes in the co-evolution of contagions and institutions",
         "authors": "J. St-Onge, G. Burgio, S. F. Rosenblatt, T. Waring, and L. Hébert-Dufresne",
-        "year": 2023,
+        "year": 2024,
         "date": "2023-08-14",
-        "type": "preprint",
+        "type": "article",
+        "journal": "Proc. R. Soc. Lond. B 291:2028",
         "preprintURL": "https://arxiv.org/abs/2310.03672",
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rspb.2024.1117",
         "software": "https://github.com/jstonge/InstitutionalDynamics.jl/"
     },
     {
@@ -575,6 +695,15 @@
         "flavor": "Editor's pick"
     },
     {
+        "title": "Hierarchical team structure and multidimensional localization (or siloing) on networks",
+        "authors": "L. Hébert-Dufresne, G. St-Onge, J. Meluso, J. Bagrow, and A. Allard",
+        "journal": "J. Phys. Complex. 4 035002",
+        "year": 2023,
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2203.00745",
+        "journalURL": "https://iopscience.iop.org/article/10.1088/2632-072X/ace602",
+    },
+    {
         "title": "Complex networks as an emerging property of hierarchical preferential attachment",
         "authors": "L. Hébert-Dufresne, E. Laurence, A. Allard, J.-G. Young, L. J. Dubé",
         "journal": "Phys. Rev. E 92, 062809",
@@ -714,11 +843,21 @@
         "journal": "Epidemics, 37"
     },
     {
-        "title": "The unintended consequences of inconsistent pandemic control policies",
+        "title": "The unintended consequences of inconsistent closure policies and mobility restrictions during epidemics",
         "authors": "B. M. Althouse, B. Wallace, B. K. M. Case, S. V. Scarpino, A. Berdahl, E. R. White, and L. Hébert-Dufresne",
         "preprintURL": "https://www.medrxiv.org/content/10.1101/2020.08.21.20179473v1",
         "year": 2020,
-        "type": "preprint"
+        "date": "2023-12-04",
+        "type": "article",
+        "journalURL": "https://bmcglobalpublichealth.biomedcentral.com/articles/10.1186/s44263-023-00028-z"
+    },
+    {
+        "title": "Network analysis of patterns and relevance of enteric pathogen co-infections among infants in a diarrhea-endemic setting",
+        "authors": "E. R. Colgate, C. Klopfer, D. M. Dickson, B. Lee, M. J. Wargo, A. Alam, B. D. Kirkpatrick, and L. Hébert-Dufresne",
+        "year": 2023,
+        "date": "2023-11-22",
+        "type": "article",
+        "journalURL": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011624"
     },
     {
         "title": "A review & framework for modeling complex engineered system development processes",
@@ -755,8 +894,20 @@
         "title": "Source-sink cooperation dynamics constrain institutional evolution in a group-structured society",
         "authors": "L. Hébert-Dufresne, T. M. Waring, G. St-Onge, M. T. Niles, L. K. Corlew, M. P. Dube, S. J. Miller, N. Gotelli and B. J. McGill",
         "preprintURL": "https://arxiv.org/abs/2109.08106",
-        "year": 2021,
-        "type": "preprint"
+        "year": 2022,
+        "date": "2022-03-23",
+        "type": "article",
+        "journal": "Royal Society Open Science 9, 211743",
+        "journalURL": "https://royalsocietypublishing.org/doi/10.1098/rsos.211743"
+    },
+    {
+        "title": "Operationalizing cultural adaptation to climate change: contemporary examples from United States agriculture",
+        "authors": "T. Waring, M. Niles, M. Kling, S. Miller, L. Hébert-Dufresne, H. Sabzian Papi, N. Gotelli, and B. J. McGill",
+        "year": 2023,
+        "date": "2023-09-18",
+        "type": "article",
+        "journal": "Proc. R. Soc. Lond. B 378:1889",
+        "journalURL": "https://royalsocietypublishing.org/doi/full/10.1098/rstb.2022.0397"
     },
     {
         "title": "Immunity-induced criticality of the genotype network of influenza A (H3N2) hemagglutinin",
@@ -966,6 +1117,15 @@
         "journalURL": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007897",
         "preprintURL": "https://arxiv.org/abs/2005.07632",
         "isOpenAccess": true,
+        "type": "article"
+    },
+    {
+        "title": "TRACE-Omicron: Policy Counterfactuals to Inform Mitigation of COVID-19 Spread in the United States",
+        "authors": "D. O’Gara, S. F. Rosenblatt, L. Hébert-Dufresne, R. Purcell, M. Kasman, and R. A. Hammond",
+        "journal": "Advanced Theory and Simulations",
+        "year": 2023,
+        "journalURL": "https://onlinelibrary.wiley.com/doi/full/10.1002/adts.202300147",
+        "preprintURL": "https://arxiv.org/abs/2301.08175",
         "type": "article"
     },
     {
