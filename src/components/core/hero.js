@@ -14,7 +14,7 @@ export function IndexHero({ title, className, children }){
                 <h1 className="text-gray-200 text-xl  sm:mt-8 lg:mt-5">LSD + CDL</h1>
                 <h1 className="text-gray-100 font-bold text-3xl">The Joint Lab</h1>
                 <p className="text-uvm-sky-blue text-lg">Collaborative explorations across sciences with models and data</p>
-                <p className="uppercase text-gray-300 pt-2 text-sm">Hosted at the <a href="https://vermontcomplexsystems.org/">Vermont Complex System Center</a></p>
+                <p className="uppercase text-gray-300 pt-2 text-sm">Hosted at the <a href="https://vermontcomplexsystems.org/">Vermont Complex System Institute</a></p>
               </div>
               <div className="h-full lg:w-6/12 lg:mx-4">
                 <div className="h-3/6 px-3 lg:px-6 border-t lg:border-t-0 border-b border-dashed py-6">
