@@ -197,7 +197,15 @@ export function PublicationsList({ emptyView, hidePublicationCount }) {
  View to show the publications filters. The filter selection is passed to PublicationsContext.
 */
 export function PublicationFilters() {
-  const { filters, updateType, updateYear, publicationTypes, updateAuthors, labMembers } = useContext(PublicationsContext);
+  const { 
+    filters, 
+    updateType, 
+    updateYear, 
+    publicationTypes, 
+    updateAuthors, 
+    labMembers,
+    alumniMembers 
+  } = useContext(PublicationsContext);
   
   const { allPublicationsJson } = useStaticQuery(graphql`
     query distinctYears {
@@ -260,6 +268,23 @@ export function PublicationFilters() {
             }))}
           />
         </div>
+        
+        {/* Add alumni checkbox list */}
+        {alumniMembers.length > 0 && (
+          <div className="pt-8">
+            <CheckboxList 
+              title="Alumni" 
+              numValuesShown={5} 
+              values={alumniMembers.map(member => ({
+                name: member.alias, 
+                readOnly: true, 
+                checked: filters.authors.includes(member.alias), 
+                title: member.alias, 
+                onClick: (() => updateAuthors(member.alias))
+              }))}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback,  createContext } from "react";
+import React, { useState, useEffect, useMemo, useCallback, createContext } from "react";
 
 const PublicationsContext = createContext({publications: [], updateType:null, updateQuery: null, publicationTypes: [], filters: {}});
 
@@ -75,9 +75,13 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
       // If type is activated
       if (filters.types && filters.types.length>0){ _bool = _bool*(filters.types.includes(d.type))}
 
-      // Check the intersection between the authors and filters.authors
+      // Check if ANY of the selected authors is in the publication (OR logic)
       const authorsAliases = d.authors.map(d=>d.alias);
-      if (filters.authors && filters.authors.length>0){ _bool = _bool*(filters.authors.filter(a=> authorsAliases.includes(a)).length===filters.authors.length)}
+      if (filters.authors && filters.authors.length>0){ 
+        // Use OR logic: publication passes if ANY selected author is included
+        const hasAnySelectedAuthor = filters.authors.some(a => authorsAliases.includes(a));
+        _bool = _bool * (hasAnySelectedAuthor ? 1 : 0);
+      }
       if (filters.date){ _bool = _bool*(d.year>=filters.date[0])*(d.year<=filters.date[1])}
       return _bool
     })
@@ -92,9 +96,13 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
       // If type is activated
       if (filters.types && filters.types.length>0){ _bool = _bool*(filters.types.includes(d.type))}
 
-      // Check the intersection between the authors and filters.authors
+      // Check if ANY of the selected authors is in the publication (OR logic)
       const authorsAliases = d.authors.map(d=>d.alias);
-      if (filters.authors && filters.authors.length>0){ _bool = _bool*(filters.authors.filter(a=> authorsAliases.includes(a)).length===filters.authors.length)}
+      if (filters.authors && filters.authors.length>0){ 
+        // Use OR logic: publication passes if ANY selected author is included
+        const hasAnySelectedAuthor = filters.authors.some(a => authorsAliases.includes(a));
+        _bool = _bool * (hasAnySelectedAuthor ? 1 : 0);
+      }
       if (filters.date){ _bool = _bool*(d.year>=filters.date[0])*(d.year<=filters.date[1])}
       return _bool
     })
@@ -112,15 +120,54 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
     }
   }, [query, updateAuthors]);
 
+  // Get all unique author aliases from all publications
+  const allAuthorAliases = useMemo(() => {
+    if (!allPublications) return [];
+    // Create a set of all author aliases to ensure uniqueness
+    const uniqueAuthors = new Set();
+    allPublications.forEach(pub => {
+      const authorsList = pub.authors.replace(' and ', ' ').split(', ');
+      authorsList.forEach(author => uniqueAuthors.add(author.trim()));
+    });
+    return Array.from(uniqueAuthors);
+  }, [allPublications]);
+
   const activeLabMembers = useMemo(()=>{
     if (people){
-      return people.filter(d=>d.group!=="alumni")
+      // Only include active members who have at least one publication
+      return people.filter(d => 
+        d.group !== "alumni" && 
+        allAuthorAliases.includes(d.alias.trim())
+      );
     }
     return [];
-  }, [people]);
+  }, [people, allAuthorAliases]);
+
+  // Add alumni members who have publications
+  const alumniMembers = useMemo(()=>{
+    if (people){
+      // Only include alumni who have at least one publication
+      return people.filter(d => 
+        d.group === "alumni" && 
+        allAuthorAliases.includes(d.alias.trim())
+      );
+    }
+    return [];
+  }, [people, allAuthorAliases]);
 
   return (
-    <PublicationsContext.Provider value={{ publications, highlightedPublications: highlightPublications, filters, publicationTypes:publicationTypes, updateQuery, updateType, updateAuthors, updateYear, labMembers: activeLabMembers}}>
+    <PublicationsContext.Provider value={{ 
+      publications, 
+      highlightedPublications: highlightPublications, 
+      filters, 
+      publicationTypes: publicationTypes, 
+      updateQuery, 
+      updateType, 
+      updateAuthors, 
+      updateYear, 
+      labMembers: activeLabMembers,
+      alumniMembers: alumniMembers
+    }}>
       {children}
     </PublicationsContext.Provider>
   );
