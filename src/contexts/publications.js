@@ -20,6 +20,15 @@ function getUniquePublicationTypes(publications){
   return types.filter((val, index, self)=>self.indexOf(val)===index)
 }
 
+const sortPublications = (a, b) => {
+  if (a.year !== b.year) return b.year - a.year;
+  if (a.date && b.date) return b.date.localeCompare(a.date);
+  if (a.date) return -1; // a has full date, b doesn't
+  if (b.date) return 1;
+  return 0;
+};
+
+
 const PublicationsContextProvider = ({ children, query, people, allPublications, allHighlightPublications }) => {
 
   const processedPublications = useMemo(()=>splitAuthors(allPublications, people), [allPublications, people]);
@@ -72,9 +81,10 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
       if (filters.date){ _bool = _bool*(d.year>=filters.date[0])*(d.year<=filters.date[1])}
       return _bool
     })
-    const sortedFilteredPublications = filteredPublications.sort((a,b)=>b.year-a.year);
+    const sortedFilteredPublications = filteredPublications.sort(sortPublications);
     setPublications(sortedFilteredPublications);
-
+    
+    
     if (!processedHighlightedPublications){return;}
     // Filter highlightedPubalications
     const filteredHighlightedPublications = processedHighlightedPublications.filter(d=>{
@@ -88,7 +98,7 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
       if (filters.date){ _bool = _bool*(d.year>=filters.date[0])*(d.year<=filters.date[1])}
       return _bool
     })
-    const sortedFilteredHighlightedPublications = filteredHighlightedPublications.sort((a,b)=>b.year-a.year);
+    const sortedFilteredHighlightedPublications = filteredHighlightedPublications.sort(sortPublications);
     setHighlightPublications(sortedFilteredHighlightedPublications);
 
   }, [filters, processedHighlightedPublications, processedPublications])

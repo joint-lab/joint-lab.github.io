@@ -70,6 +70,7 @@ export const IndexQuery = graphql`
           flavor
           textURL
           year
+          date
           type
           software
           slidesURL
@@ -96,6 +97,7 @@ export const IndexQuery = graphql`
           flavor
           textURL
           year
+          date
           type
           software
           slidesURL
