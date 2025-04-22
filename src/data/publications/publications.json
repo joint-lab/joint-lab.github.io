@@ -1,33 +1,46 @@
 [
-    {   "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using generalized approximate master equations",
+    {
+        "title": "One pathogen does not an epidemic make: A review of interacting contagions, diseases, beliefs and stories",
+        "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, A. Allard, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
+        "year": 2025,
+        "date": "2025-10-21",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2504.15053"
+    },
+    {   
+        "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using generalized approximate master equations",
         "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
         "year": 2023,
         "date": "2023-07-20",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2307.11268"
     },
-    {   "title": "Modeling critical connectivity constraints in random and empirical networks",
+    {   
+        "title": "Modeling critical connectivity constraints in random and empirical networks",
         "authors": "L. Hébert-Dufresne, M. Pósfai, and A. Allard",
         "year": 2023,
         "date": "2023-07-07",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2307.03559"
     },
-    {   "title": "Within-host infection dynamics with master equations and the method of moments: A case study of human papillomavirus in the epithelium",
+    {   
+        "title": "Within-host infection dynamics with master equations and the method of moments: A case study of human papillomavirus in the epithelium",
         "authors": "M. C. Boudreau, J. A. Cohen, and L. Hébert-Dufresne",
         "year": 2024,
         "date": "2024-08-09",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2408.05298"
     },
-    {   "title": "On the uniform sampling of the configuration model with centrality constraints",
+    {   
+        "title": "On the uniform sampling of the configuration model with centrality constraints",
         "authors": "F. Thibault, L. Hébert-Dufresne, and A. Allard",
         "year": 2024,
         "date": "2024-09-30",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2409.20493"
     },
-    {   "title": "Optimization and performance analytics of global aircraft-based wastewater surveillance networks",
+    {   
+        "title": "Optimization and performance analytics of global aircraft-based wastewater surveillance networks",
         "authors": "G. St-Onge, J. T. Davis, L. Hébert-Dufresne, A. Allard, A. Urbinati, S. V. Scarpino, M. Chinazzi, and A. Vespignani",
         "year": 2024,
         "date": "2024-08-04",
