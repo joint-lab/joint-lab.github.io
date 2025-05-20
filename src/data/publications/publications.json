@@ -166,9 +166,11 @@
     {
         "title": "Symmetry-driven embedding of networks in hyperbolic space",
         "authors": "S. Lizotte, J.-G. Young, and A. Allard",
-        "year": 2024,
-        "date": "2024-06-18",
-        "type": "preprint",
+        "year": 2025,
+        "date": "2025-05-15",
+        "type": "journal",
+        "journal": "Commun. Phys. 8, 199",
+        "journalURL": "https://jgyoung.ca/10.1038/s42005-025-02122-0",
         "preprintURL": "https://doi.org/10.48550/arXiv.2406.10711",
         "software": "https://github.com/DynamicaLab/bigue"
     },
