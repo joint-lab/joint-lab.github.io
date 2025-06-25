@@ -1,9 +1,17 @@
 [
     {
+        "title": "Characteristic scales and adaptation in higher-order contagions",
+        "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
+        "year": 2025,
+        "date": "2025-05-20",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2505.14930"
+    },
+    {
         "title": "One pathogen does not an epidemic make: A review of interacting contagions, diseases, beliefs and stories",
         "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, A. Allard, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
         "year": 2025,
-        "date": "2025-10-21",
+        "date": "2025-04-21",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2504.15053"
     },
