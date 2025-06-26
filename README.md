@@ -221,7 +221,10 @@ This command will:
 - Ensure the file contains an array of publications
 - Verify that each publication has the required fields (title, authors, year, type)
 
-The validation runs automatically when you commit changes to publications.json via a pre-commit hook, but you can run it manually anytime to check your changes before committing.
+The validation runs automatically when you commit changes to publications.json via a pre-commit hook (using husky + lint-staged), but you can run it manually anytime to check your changes before committing.
+
+**Setup for automatic validation:**
+After cloning the repository, run `yarn install` to set up the pre-commit hooks. This will ensure that publications.json is automatically validated whenever you commit changes to it.
 
 - You can choose to use a new `type`. The website will add your new type to the filter bar. Typical values are `article, preprint, proceedings, other edited work, thesis`.
 
