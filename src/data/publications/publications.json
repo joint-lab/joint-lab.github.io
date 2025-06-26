@@ -3,9 +3,12 @@
         "title": "Characteristic scales and adaptation in higher-order contagions",
         "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
         "year": 2025,
-        "date": "2025-05-20",
-        "type": "preprint",
+        "date": "2025-05-17",
+        "type": "article",
+        "journal": "Nat Commun 16, 4589",
+        "journalURL": "https://www.nature.com/articles/s41467-025-59777-0"
         "preprintURL": "https://arxiv.org/abs/2505.14930"
+        "software": "https://github.com/giubuig/GAME-Generalized-Approximate-Master-Equations"
     },
     {
         "title": "One pathogen does not an epidemic make: A review of interacting contagions, diseases, beliefs and stories",
