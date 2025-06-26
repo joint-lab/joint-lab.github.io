@@ -1521,11 +1521,5 @@
         "type": "other edited work",
         "isOpenAccess": true,
         "journal": "Magazine de l'ACFAS"
-    },
-    {
-        "title": "Final test publication for pre-commit validation",
-        "authors": "Test Author",
-        "year": 2024,
-        "type": "test"
     }
 ]
