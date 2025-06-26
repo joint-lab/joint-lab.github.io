@@ -1,0 +1,2 @@
+# End-to-end test
+This file tests that the pre-commit hook works correctly with the new setup.
