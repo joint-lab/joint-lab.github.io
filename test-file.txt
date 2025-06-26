@@ -1,0 +1,2 @@
+# Test file for non-publications changes
+This file tests that pre-commit hook only runs when publications.json is modified.
