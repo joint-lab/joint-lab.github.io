@@ -1521,5 +1521,11 @@
         "type": "other edited work",
         "isOpenAccess": true,
         "journal": "Magazine de l'ACFAS"
+    },
+    {
+        "title": "Test publication for pre-commit hook",
+        "authors": "Test Author",
+        "year": 2024,
+        "type": "test"
     }
 ]
