@@ -28,11 +28,13 @@
     },
     {
         "title": "One pathogen does not an epidemic make: A review of interacting contagions, diseases, beliefs and stories",
-        "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, A. Allard, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
+        "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, V. Colizza, A. Allard, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
         "year": 2025,
-        "date": "2025-04-21",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2504.15053"
+        "date": "2025-09-01",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2504.15053",
+        "journal": "npj Complex. 2 (26)",
+        "journalURL": "https://www.nature.com/articles/s44260-025-00050-2"
     },
     {   
         "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using generalized approximate master equations",
@@ -131,7 +133,7 @@
         "year": 2024,
         "date": "2024-05-18",
         "type": "article",
-        "journal": "npj Complexity 1 (1)",
+        "journal": "npj Complex. 1 (5)",
         "preprintURL": "https://arxiv.org/abs/2210.10026",
         "journalURL": "https://www.nature.com/articles/s44260-024-00006-y"
     },
@@ -758,8 +760,9 @@
     {
         "title": "The path of complexity",
         "authors": "L. Hébert-Dufresne, A. Allard, J. Garland, E. A. Hobson, and L. Zaman",
-        "journal": "npj Complexity 1 (1), 5",
+        "journal": "npj Complex. 1 (4)",
         "year": 2024,
+        "date": "2024-04-17",
         "type": "article",
         "journalURL": "https://www.nature.com/articles/s44260-024-00004-0"
     },
