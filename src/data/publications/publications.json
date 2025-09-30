@@ -1,5 +1,14 @@
 [
     {
+        "title": "Message passing for epidemiological interventions on networks with loops",
+        "authors": "E. Weis, L. Hébert-Dufresne, and J.-G. Young",
+        "year": 2025,
+        "date": "2025-09-25",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2509.21596",
+        "software": "https://zenodo.org/records/14722576"
+    },
+    {
         "title": "Five misunderstandings in animal social network analysis",
         "authors": "D. Redhead, B. Kawam, J.-G. Young, D. Franks, C. S Philson, M. van Duijn, J. Hart, M. B. McElreath, R. McElreath, E. A. Power, C. Ross, S. Sosa, C. Steglich, M. Weiss, and L. J. N. Brent",
         "year": 2025,
