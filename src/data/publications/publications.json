@@ -1,5 +1,14 @@
 [
     {
+        "title": "Inferring signed social networks from contact patterns",
+        "authors": "D. Ferenczi, J.-G. Young, and L. Peel",
+        "year": 2026,
+        "date": "2026-01-15",
+        "type": "preprint",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2601.10565",
+        "software": "https://github.com/ferenczid/signed_net_inf/"
+    },
+    {
         "title": "Message passing for epidemiological interventions on networks with loops",
         "authors": "E. Weis, L. Hébert-Dufresne, and J.-G. Young",
         "year": 2025,
