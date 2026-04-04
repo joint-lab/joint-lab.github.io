@@ -30,7 +30,9 @@ function ButtonToAllPublications({ alias }){
 Template page for each lab member
 */
 export default function LabMemberPage({ data: {mdx, publications}, children, location }){
-  const image = getImage(mdx.frontmatter.imageURL)
+  const { firstName, lastName, imageURL, group, role, nextRole, lab, alias,
+          githubURL, personalURL, twitterURL, scholarURL, email } = mdx.frontmatter;
+  const image = getImage(imageURL)
 
   return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
           <Page location={location} light>
@@ -44,50 +46,48 @@ export default function LabMemberPage({ data: {mdx, publications}, children, loc
                   <div className='mb-4 sm:flex lg:block sticky top-0 lg:pt-6'>
 
                     <div className='w-full xs:w-2/6 lg:w-full px-12 max-w-xs sm:px-0 mx-auto mb-4'>
-                      {image ?<GatsbyImage image={image} alt={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
+                      {image ?<GatsbyImage image={image} alt={`${firstName} ${lastName}`} imgClassName="md:rounded shadow border-8 border-gray-700 "/>:null}
                       {!image?<div className='aspect-w-1 aspect-h-1 rounded-lg bg-gray-100'/>: null}
                     </div>
                     <div className='w-full text-center sm:text-left sm:w-4/6 lg:w-full px-3 sm:px-8 lg:px-0'>
-                      {/* Name & Role */}
-                      {mdx.frontmatter.group==="alumni"?
+                      {group==="alumni"?
                         <p className="text-sm uppercase text-uvm-green">Alumni</p>:null}
 
-                      <h4 className='font-bold text-xl sm:text-3xl lg:mb-1'>{mdx.frontmatter.firstName} {mdx.frontmatter.lastName}</h4>
-                      {mdx.frontmatter.nextRole?
-                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.nextRole}</p>:null}
-                      {mdx.frontmatter.group==="alumni"?
-                        <p className="text-base text-gray-600 text-medium mb-3">Previously {mdx.frontmatter.role}</p>:
-                        <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>}
+                      <h4 className='font-bold text-xl sm:text-3xl lg:mb-1'>{firstName} {lastName}</h4>
+                      {nextRole?
+                        <p className="text-lg text-medium mb-3">{nextRole}</p>:null}
+                      {group==="alumni"?
+                        <p className="text-base text-gray-600 text-medium mb-3">Previously {role}</p>:
+                        <p className="text-lg text-medium mb-3">{role}</p>}
 
-                      {mdx.frontmatter.lab?
-                        mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with the {l}</div>):null
+                      {lab?
+                        lab.map(l=><div key={l} className="text-gray-600">Affiliated with the {l}</div>):null
                       }
-                      {/* Social */}
                       <div className='inline-flex space-x-6 text-lg sm:text-base mt-3 text-gray-800 0 sm:block sm:space-x-0 sm:divide-y text-center text-uvm-green'>
-                        {mdx.frontmatter.githubURL?
-                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.githubURL}>
+                        {githubURL?
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={githubURL}>
                             <AiOutlineGithub/>
-                            <span className='hidden sm:inline-block'>{mdx.frontmatter.githubURL.split('/').slice(-1)}</span>
+                            <span className='hidden sm:inline-block'>{githubURL.split('/').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.personalURL?
-                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.personalURL}>
+                        {personalURL?
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={personalURL}>
                             <AiOutlineGlobal/>
-                            <span className='hidden sm:inline-block'>{mdx.frontmatter.personalURL.split('//').slice(-1)}</span>
+                            <span className='hidden sm:inline-block'>{personalURL.split('//').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.twitterURL?
-                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.twitterURL}>
+                        {twitterURL?
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={twitterURL}>
                             <AiOutlineTwitter/>
-                            <span className='hidden sm:inline-block'>{mdx.frontmatter.twitterURL.split('/').slice(-1)}</span>
+                            <span className='hidden sm:inline-block'>{twitterURL.split('/').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.scholarURL?
-                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.scholarURL}>
+                        {scholarURL?
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={scholarURL}>
                             <AiOutlineBank/>
                             <span className='hidden sm:inline-block'>Google Scholar</span>
                           </a>: null}
-                        {mdx.frontmatter.email?
-                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>
+                        {email?
+                          <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${email}`}>
                             <IoMdMailOpen/>
-                            <span className='hidden sm:inline-block'>{mdx.frontmatter.email}</span>
+                            <span className='hidden sm:inline-block'>{email}</span>
                           </a>: null}
                       </div>
                       <div className="hidden md:block lg:hidden">
@@ -118,7 +118,7 @@ export default function LabMemberPage({ data: {mdx, publications}, children, loc
                   <Container >
                     <h3 className='text-2xl'>{publications.totalCount>3? "Latest publications": "Publications"}</h3>
                     <PublicationsList hidePublicationCount/>
-                    <ButtonToAllPublications alias={mdx.frontmatter.alias}/>
+                    <ButtonToAllPublications alias={alias}/>
                   </Container>
                 </ContainerFull>
                 : null}
@@ -126,14 +126,15 @@ export default function LabMemberPage({ data: {mdx, publications}, children, loc
           </PublicationsContextProvider>
 }
 
-export const Head = ({ data: { mdx }, location }) => (
-  <Seo
-    title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`}
+export const Head = ({ data: { mdx }, location }) => {
+  const { firstName, lastName, imageURL } = mdx.frontmatter;
+  return <Seo
+    title={`${firstName} ${lastName}`}
     description={mdx.excerpt}
-    image={mdx.frontmatter.imageURL ? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src : null}
+    image={imageURL ? imageURL.childImageSharp.gatsbyImageData.images.fallback.src : null}
     pathname={location.pathname}
   />
-)
+}
 
 /*
   Includes elements in the query to get

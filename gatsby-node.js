@@ -114,17 +114,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Individual news pages
   const newsTemplate = path.resolve(`./src/templates/news.js`);
+  const pickNewsFields = (edge) => edge ? {
+    node: { frontmatter: edge.node.frontmatter, fields: { slug: edge.node.fields.slug } }
+  } : null;
   newsEdges.forEach(({ node }, index) => {
-    const previousNews = index === 0 ? null : newsEdges[index - 1];
-    const nextNews = index === newsEdges.length - 1 ? null : newsEdges[index + 1];
     createPage({
       path: node.fields.slug,
       component: `${newsTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
         id: node.id,
         page: Math.floor(index / newsPerPage) + 1,
-        previous: previousNews,
-        next: nextNews,
+        previous: pickNewsFields(newsEdges[index - 1]),
+        next: pickNewsFields(newsEdges[index + 1]),
       },
     });
   });
