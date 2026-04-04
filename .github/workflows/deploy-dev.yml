@@ -24,6 +24,16 @@ jobs:
           node-version: '24'
           cache: 'npm'
       - uses: actions/configure-pages@v6
+        with:
+          static_site_generator: gatsby
+      - uses: actions/cache@v4
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
       - run: npm ci
       - run: npx gatsby build
       - uses: actions/upload-pages-artifact@v4

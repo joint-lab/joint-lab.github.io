@@ -17,10 +17,8 @@ export const navigation = [
 
 export function Page({ children, location, contentOverNav, className, light }) {
   return (
-    <div>
-      <div className={classnames("min-h-screen flex flex-col", className)}>
-
-      <div className="">
+    <div className={classnames("min-h-screen flex flex-col", className)}>
+      <div>
         <Popover>
           <nav
             className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 z-10"
@@ -91,14 +89,13 @@ export function Page({ children, location, contentOverNav, className, light }) {
           </Transition>
         </Popover>
 
-        <main className="">
+        <main>
           { children }
         </main>
 
       </div>
       <div className='z-0 mt-auto'>
         <Footer/>
-      </div>
       </div>
     </div>
   )
