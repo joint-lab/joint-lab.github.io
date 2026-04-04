@@ -2,9 +2,10 @@ import React from "react";
 import { Page } from "components/core/layout";
 import { SubHero } from 'components/core/sub-hero';
 import { StaticImage } from "gatsby-plugin-image"
+import { Seo } from 'components/core/seo';
 
 /*
- URL: /lab 
+ URL: /lab
  Markdown style section with information on the lab.
 */
 export default function Index({ location }){
@@ -31,12 +32,12 @@ export default function Index({ location }){
                 <li>Analysis of open-source</li>
                </ul>
               </p>
-              
+
 
               <div className="w-full px-16 my-16 max-w-4xl mx-auto ">
                 <StaticImage src={"../images/lab/walk.png"} alt={"Lab members walking"} imgClassName="rounded-lg mb-2"/>
               </div>
-              
+
               <h1 className="text-4xl font-medium my-3">
                 Opportunities
               </h1>
@@ -52,7 +53,7 @@ export default function Index({ location }){
                 Not currently recruiting.
               </p>
               <h2  className="text-2xl font-medium my-3">
-                
+
               Ph.D.
               </h2>
               <p className="text-gray-600 max-w-md text-center mx-auto">
@@ -65,7 +66,9 @@ export default function Index({ location }){
                 Not currently recruiting.
               </p>
               <br/>
-              
+
             </div>
           </Page>;
 }
+
+export const Head = ({ location }) => <Seo title="Lab" pathname={location.pathname} />

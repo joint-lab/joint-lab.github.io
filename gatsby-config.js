@@ -10,27 +10,16 @@ module.exports = {
     twitter: "https://github.com/joint-lab"
   },
   plugins: [
-    "gatsby-plugin-styled-components",
     'gatsby-plugin-postcss',
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "XXXXX",
-      },
-    },
     'gatsby-plugin-sass',
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
     'gatsby-transformer-json',
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-mdx-source-name',
-    'gatsby-plugin-resolve-src',
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        typeName: `Json`, // a fixed string
+        extensions: [`.mdx`, `.md`],
       },
     },
     {

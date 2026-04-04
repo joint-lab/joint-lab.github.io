@@ -77,7 +77,7 @@ export function MediaFilters(){
     const { allMediaJson } = useStaticQuery(graphql`
     query distinctMediaYears {
       allMediaJson {
-        distinct(field: year)
+        distinct(field: { year: SELECT })
       }
     }
   `)

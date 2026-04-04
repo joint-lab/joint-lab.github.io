@@ -1,12 +1,11 @@
 import React, { Fragment, useState } from 'react'
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
 
 // Components
 import { Dialog, Transition } from '@headlessui/react'
 import { FiX } from 'react-icons/fi'
 
-export function SlideOver({ children, size, title, className, open, setOpen }) {
+export function SlideOver({ children, size = 'sm', title, className, open, setOpen }) {
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -64,27 +63,7 @@ export function SlideOver({ children, size, title, className, open, setOpen }) {
 }
 
 
-SlideOver.propTypes = {
-  title: PropTypes.string,
-  open: PropTypes.bool, 
-  setOpen: PropTypes.func,
-  icon: PropTypes.element, 
-  size: PropTypes.string,
-  children: PropTypes.node,
-  className: PropTypes.string,
-}
-
-// Spécifie les valeurs par défaut des props :
-SlideOver.defaultProps = {
-  size: 'sm',
-};
-
-export function UncontrolledSlideOver({ defaultOpen, ...props}) {
+export function UncontrolledSlideOver({ defaultOpen = false, ...props}) {
   const [open, setOpen] = useState(defaultOpen)
   return <SlideOver {...props} open={open} setOpen={setOpen}/>
 }
-
-// Spécifie les valeurs par défaut des props :
-UncontrolledSlideOver.defaultProps = {
-  defaultOpen: false
-};

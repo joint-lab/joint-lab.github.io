@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 // Components
 import { FiArrowRight } from  'react-icons/fi';
 import { JointIcon } from 'components/core/icons';
+import { Seo } from 'components/core/seo';
 
 // Data
 import { navigation } from 'components/core/layout';
@@ -39,7 +40,7 @@ function LinkToExistingPage({ name, description, Icon, href}){
 export default function NotFoundPage(){
   return <div className="bg-white">
       <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="max-w-xl mx-auto py-16 sm:py-24">
           <div className="flex w-full">
               <div className="mx-auto lg:pt-16">
@@ -68,4 +69,6 @@ export default function NotFoundPage(){
         </div>
       </main>
     </div>
-};
+}
+
+export const Head = ({ location }) => <Seo title="Page Not Found" pathname={location.pathname} />

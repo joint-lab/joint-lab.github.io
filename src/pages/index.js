@@ -7,15 +7,16 @@ import { IndexHero } from "components/core/hero";
 import { HighlightedNewsContainer } from 'components/core/highlighted-news';
 import { RowNewsContainer, ButtonToAllNews} from 'components/core/row-news';
 import { HighlightedPublicationListIndex, ButtonToAllPublications } from 'components/core/publications';
+import { Seo } from 'components/core/seo';
 
 // Contexts
 import { PublicationsContextProvider } from 'contexts/publications';
 
 
 export default function Index({ data, location }){
-  return <PublicationsContextProvider query={location.search} 
-                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))} 
-                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))} 
+  return <PublicationsContextProvider query={location.search}
+                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))}
+                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))}
                                       allPublications={[]}>
             <Page location={location} contentOverNav light>
               <IndexHero/>
@@ -46,6 +47,8 @@ export default function Index({ data, location }){
           </PublicationsContextProvider>;
 }
 
+export const Head = ({ location }) => <Seo pathname={location.pathname} />
+
 /*
  Get the latest news and some older ones.
  The rest of the archived news will be placed in /news/{page}. See gatsby-node.js.
@@ -55,9 +58,9 @@ export default function Index({ data, location }){
 export const IndexQuery = graphql`
   query {
     topNew: allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: {frontmatter: {date: DESC}}
       limit: 1
-      filter: {fileAbsolutePath: {}, fields: {source: {eq: "news"}}}
+      filter: {fields: {source: {eq: "news"}}}
     ) {
       edges {
         node {
@@ -68,15 +71,15 @@ export const IndexQuery = graphql`
           fields {
             slug
           }
-          excerpt(truncate: true, pruneLength: 250)
+          excerpt(pruneLength: 250)
         }
       }
     }
     highlightedNews: allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: {frontmatter: {date: DESC}}
       skip: 1
       limit: 2
-      filter: {fileAbsolutePath: {}, fields: {source: {eq: "news"}}}
+      filter: {fields: {source: {eq: "news"}}}
     ) {
       edges {
         node {
@@ -87,13 +90,13 @@ export const IndexQuery = graphql`
           fields {
             slug
           }
-          excerpt(truncate: true, pruneLength: 120)
+          excerpt(pruneLength: 120)
         }
       }
     }
     highlightPublications: allPublicationsJson(
-      filter: { date: { ne: null } }  # Add a filter to check for non-null dates
-      sort: { fields: date, order: DESC }, 
+      filter: { date: { ne: null } }
+      sort: { date: DESC }
       limit: 4
     ) {
       edges {
@@ -118,7 +121,7 @@ export const IndexQuery = graphql`
       }
     }
     people: allMdx(
-        sort: {fields: frontmatter___lastName}
+        sort: {frontmatter: {lastName: ASC}}
         filter: {fields: {source: {eq: "people"}}, frontmatter: {group: {ne: "alumni"}}}
       ) {
         edges {
@@ -135,10 +138,10 @@ export const IndexQuery = graphql`
         }
       }
     archivedNews: allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: {frontmatter: {date: DESC}}
       skip: 3
       limit: 10
-      filter: {fileAbsolutePath: {}, fields: {source: {eq: "news"}}}
+      filter: {fields: {source: {eq: "news"}}}
     ) {
       edges {
         node {
@@ -149,7 +152,7 @@ export const IndexQuery = graphql`
           fields {
             slug
           }
-          excerpt(truncate: true, pruneLength: 250)
+          excerpt(pruneLength: 250)
         }
       }
     }

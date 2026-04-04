@@ -5,9 +5,10 @@ import { graphql } from "gatsby"
 import { Page } from 'components/core/layout';
 import { PeopleGrid, AlumniGrid } from 'components/core/people-grid';
 import { SubHero } from 'components/core/sub-hero';
+import { Seo } from 'components/core/seo';
 
 /*
- URL: /people 
+ URL: /people
  Show a list of active members and alumnis.
  The data is provided by the graphql query.
 */
@@ -19,10 +20,12 @@ export default function Index({ data, location }){
           </Page>;
 }
 
+export const Head = ({ location }) => <Seo title="Lab Members" pathname={location.pathname} />
+
 export const IndexQuery = graphql`
   query {
     allCurrentMembers: allMdx(
-      sort: {fields: frontmatter___lastName}
+      sort: {frontmatter: {lastName: ASC}}
       filter: { fields: {source: {eq: "people"}}, frontmatter: {group: {ne: "alumni"}}}
     ) {
       edges {
@@ -54,7 +57,7 @@ export const IndexQuery = graphql`
       }
     }
     alumni: allMdx(
-      sort: {fields: frontmatter___lastName}
+      sort: {frontmatter: {lastName: ASC}}
       filter: { fields: {source: {eq: "people"}}, frontmatter: {group: {eq: "alumni"}}}
     ) {
       edges {
