@@ -5,14 +5,14 @@ import { graphql, Link } from "gatsby"
 // Components
 import { Page, Container, FlexLayout  } from "components/core/layout";
 import { MDXProvider } from "@mdx-js/react";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { FiArrowRight } from 'react-icons/fi';
 import { SubHero } from 'components/core/sub-hero';
+import { Seo } from 'components/core/seo';
 
 const shortcodes = { Link } // Provide mdx components
 
 function LinkToNews({ header, title, slug, date, className}){
-  return <div className={classnames("pt-4 w-full", className)}>  
+  return <div className={classnames("pt-4 w-full", className)}>
             <div className="text-gray-500 text-xs uppercase w-full">{header}</div>
             <Link to={slug}><div className='flex items-center space-x-1 text-green-700 hover:text-green-900 text-sm'><span className="inline-block truncate">{title}</span><span className="inline-block"><FiArrowRight/></span></div></Link>
             {date? <p className="text-sm text-gray-500">{date}</p>: null}
@@ -22,9 +22,9 @@ function LinkToNews({ header, title, slug, date, className}){
 /*
 Template page for each news
 */
-export default function ExtendedNewsPage({ data: {mdx}, location, pageContext }){
+export default function ExtendedNewsPage({ data: {mdx}, children, location, pageContext }){
 
-  return <Page location={location} light title={mdx.frontmatter.title} description={mdx.excerpt}>
+  return <Page location={location} light>
           <SubHero/>
           <Container className='mt-8 xl:mt-24 mb-8'>
             <div  className='text-center pb-8'>
@@ -43,7 +43,7 @@ export default function ExtendedNewsPage({ data: {mdx}, location, pageContext })
               <FlexLayout.Item size="lg">
                 <div className='space-y-8'>
                   <MDXProvider components={shortcodes}>
-                    <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
+                    {children}
                   </MDXProvider>
                 </div>
               </FlexLayout.Item>
@@ -57,6 +57,9 @@ export default function ExtendedNewsPage({ data: {mdx}, location, pageContext })
           </Page>
 }
 
+export const Head = ({ data: { mdx }, location }) => (
+  <Seo title={mdx.frontmatter.title} description={mdx.excerpt} pathname={location.pathname} />
+)
 
 /*
   Includes elements in the query to get news data.
@@ -66,12 +69,11 @@ export const query = graphql`
   query IdBasedNewsQuery($id: String) {
     mdx(id: { eq: $id }) {
       id
-      body
       frontmatter {
         title
         date(formatString: "MMMM Do, YYYY")
       }
-      excerpt(truncate: true, pruneLength: 120)
+      excerpt(pruneLength: 120)
 
     }
   }

@@ -210,7 +210,7 @@ export function PublicationFilters() {
   const { allPublicationsJson } = useStaticQuery(graphql`
     query distinctYears {
       allPublicationsJson {
-        distinct(field: year)
+        distinct(field: { year: SELECT })
       }
     }
   `);

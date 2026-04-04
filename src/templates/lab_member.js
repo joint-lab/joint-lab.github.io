@@ -9,9 +9,9 @@ import { EducationList, EducationItem } from 'components/core/education';
 import { ScholarshipList, ScholarshipItem } from 'components/core/scholarships';
 import { SubHero } from 'components/core/sub-hero';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Seo } from 'components/core/seo';
 
 import { MDXProvider } from "@mdx-js/react";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { AiOutlineGithub, AiOutlineBank, AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { IoMdMailOpen } from 'react-icons/io';
@@ -20,7 +20,7 @@ import { IoMdMailOpen } from 'react-icons/io';
 import { PublicationsContextProvider } from 'contexts/publications';
 
 // MDX components
-const shortcodes = { Link, List, ListItem, EducationList, EducationItem, ScholarshipList, ScholarshipItem } 
+const shortcodes = { Link, List, ListItem, EducationList, EducationItem, ScholarshipList, ScholarshipItem }
 
 function ButtonToAllPublications({ alias }){
   return <Link to={`/publications?author=${encodeURIComponent(alias)}`}><div className='flex items-center space-x-1 inline-flex text-uvm-green hover:opacity-90'><span>See all publications</span><FiArrowRight/></div></Link>
@@ -29,11 +29,11 @@ function ButtonToAllPublications({ alias }){
 /*
 Template page for each lab member
 */
-export default function LabMemberPage({ data: {mdx, publications}, location }){
+export default function LabMemberPage({ data: {mdx, publications}, children, location }){
   const image = getImage(mdx.frontmatter.imageURL)
 
   return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
-          <Page location={location} light title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`} description={mdx.excerpt} image={mdx.frontmatter.imageURL? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src: null}>
+          <Page location={location} light>
             <SubHero/>
             <Container className='mt-4 sm:mt-8 -mt-16'>
               <FlexLayout>
@@ -59,32 +59,32 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                         <p className="text-base text-gray-600 text-medium mb-3">Previously {mdx.frontmatter.role}</p>:
                         <p className="text-lg text-medium mb-3">{mdx.frontmatter.role}</p>}
 
-                      {mdx.frontmatter.lab? 
+                      {mdx.frontmatter.lab?
                         mdx.frontmatter.lab.map(l=><div key={l} className="text-gray-600">Affiliated with the {l}</div>):null
                       }
                       {/* Social */}
                       <div className='inline-flex space-x-6 text-lg sm:text-base mt-3 text-gray-800 0 sm:block sm:space-x-0 sm:divide-y text-center text-uvm-green'>
-                        {mdx.frontmatter.githubURL? 
+                        {mdx.frontmatter.githubURL?
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.githubURL}>
-                            <AiOutlineGithub/> 
+                            <AiOutlineGithub/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.githubURL.split('/').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.personalURL? 
+                        {mdx.frontmatter.personalURL?
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.personalURL}>
                             <AiOutlineGlobal/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.personalURL.split('//').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.twitterURL? 
+                        {mdx.frontmatter.twitterURL?
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.twitterURL}>
                             <AiOutlineTwitter/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.twitterURL.split('/').slice(-1)}</span>
                           </a>: null}
-                        {mdx.frontmatter.scholarURL? 
+                        {mdx.frontmatter.scholarURL?
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2" href={mdx.frontmatter.scholarURL}>
                             <AiOutlineBank/>
                             <span className='hidden sm:inline-block'>Google Scholar</span>
                           </a>: null}
-                        {mdx.frontmatter.email? 
+                        {mdx.frontmatter.email?
                           <a className="hover:opacity-80 flex space-x-2 items-center sm:py-2 " href={`mailto:${mdx.frontmatter.email}`}>
                             <IoMdMailOpen/>
                             <span className='hidden sm:inline-block'>{mdx.frontmatter.email}</span>
@@ -97,10 +97,10 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
                     </div>
                   </div>
                 </FlexLayout.Item>
-                <FlexLayout.Item size="lg"> 
+                <FlexLayout.Item size="lg">
                   <div className='mdx-content my-2 lg:my-0 lg:px-12 whitespace-pre-line space-y-3'>
                     <MDXProvider components={shortcodes}>
-                      <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
+                      {children}
                     </MDXProvider>
                   </div>
                 </FlexLayout.Item>
@@ -114,7 +114,7 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
 
               </Container>
               {publications.totalCount>0?
-                <ContainerFull className='bg-gray-50 border-t py-6 lg:py-12'> 
+                <ContainerFull className='bg-gray-50 border-t py-6 lg:py-12'>
                   <Container >
                     <h3 className='text-2xl'>{publications.totalCount>3? "Latest publications": "Publications"}</h3>
                     <PublicationsList hidePublicationCount/>
@@ -126,6 +126,15 @@ export default function LabMemberPage({ data: {mdx, publications}, location }){
           </PublicationsContextProvider>
 }
 
+export const Head = ({ data: { mdx }, location }) => (
+  <Seo
+    title={`${mdx.frontmatter.firstName} ${mdx.frontmatter.lastName}`}
+    description={mdx.excerpt}
+    image={mdx.frontmatter.imageURL ? mdx.frontmatter.imageURL.childImageSharp.gatsbyImageData.images.fallback.src : null}
+    pathname={location.pathname}
+  />
+)
+
 /*
   Includes elements in the query to get
   more data from lab members. The id comes from the pageContext. See gatsby_node.js.
@@ -134,7 +143,6 @@ export const query = graphql`
   query LabMemberQuery($id: String, $aliasRegex: String) {
     mdx(id: { eq: $id }) {
       id
-      body
       frontmatter {
         firstName
         lastName
@@ -154,11 +162,11 @@ export const query = graphql`
         email
         scholarURL
       }
-      excerpt(truncate: true, pruneLength: 120)
+      excerpt(pruneLength: 120)
 
     }
     publications: allPublicationsJson(
-      sort: {fields: year, order: DESC}
+      sort: {year: DESC}
       limit: 3
       filter: {authors: {regex: $aliasRegex}}
       ){

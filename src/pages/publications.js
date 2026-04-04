@@ -5,22 +5,23 @@ import { graphql } from "gatsby"
 import { Page, Container, ToolBar, TwoColumnLayout } from "components/core/layout";
 import { SlideOver } from "components/core/slide_over";
 import { PublicationsList, PublicationFilters } from 'components/core/publications';
-import { FiMoreHorizontal } from 'react-icons/fi'; 
+import { FiMoreHorizontal } from 'react-icons/fi';
 import { SubHero } from 'components/core/sub-hero';
+import { Seo } from 'components/core/seo';
 
 // Contexts
 import { PublicationsContextProvider } from 'contexts/publications';
 
 /*
- URL: /publications 
+ URL: /publications
  Show a list of publications with filtering.
  It uses a context to handle the filtering. The data comes from the graphql query.
 */
 export default function Index({ data, location }){
   const [open, setOpen] = useState(false);
-  return  <PublicationsContextProvider query={location.search} 
-                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))} 
-                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))} 
+  return  <PublicationsContextProvider query={location.search}
+                                      allHighlightPublications={data.highlightPublications.edges.map(n=>({...n.node}))}
+                                      people={data.people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))}
                                       allPublications={data.publications.edges.map(n=>({...n.node}))}>
             <Page location={location} light >
               <SubHero title="Publications"/>
@@ -50,11 +51,13 @@ export default function Index({ data, location }){
             </Page>
           </PublicationsContextProvider>
 }
-  
+
+export const Head = ({ location }) => <Seo title="Publications" pathname={location.pathname} />
+
 export const IndexQuery = graphql`
   query {
     publications: allPublicationsJson(
-      sort: {fields: year}
+      sort: {year: ASC}
     ) {
       edges {
         node {
@@ -79,11 +82,11 @@ export const IndexQuery = graphql`
       }
     }
     highlightPublications: allPublicationsJson(
-      sort: {fields: date, order: DESC}
+      sort: {date: DESC}
       filter: {date: {ne: null}}
       limit: 4
     ) {
-      edges { 
+      edges {
         node {
           id
           location
@@ -106,7 +109,7 @@ export const IndexQuery = graphql`
       }
     }
     people: allMdx(
-        sort: {fields: frontmatter___lastName}
+        sort: {frontmatter: {lastName: ASC}}
         filter: {fields: {source: {eq: "people"}}}
       ) {
         edges {

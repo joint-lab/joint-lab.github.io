@@ -6,6 +6,7 @@ import { Page, Container } from "components/core/layout";
 import { RowNewsContainer } from 'components/core/row-news';
 import { Paginate } from 'components/core/paginate';
 import { SubHero } from 'components/core/sub-hero';
+import { Seo } from 'components/core/seo';
 
 /*
 Template page for paginated news
@@ -22,16 +23,18 @@ export default function PaginatedNews({ data, location, pageContext}){
           </Page>
 }
 
+export const Head = ({ location }) => <Seo title="All News" pathname={location.pathname} />
+
 /*
   Fetch the news for the given page. See gatsby_node.js for context.
 */
 export const IndexQuery = graphql`
   query NewsQuery($limit: Int, $skip: Int) {
     allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: {frontmatter: {date: DESC}}
       limit: $limit
       skip: $skip
-      filter: {fileAbsolutePath: {}, fields: {source: {eq: "news"}}}
+      filter: {fields: {source: {eq: "news"}}}
     ) {
       edges {
         node {
@@ -42,10 +45,9 @@ export const IndexQuery = graphql`
           fields {
             slug
           }
-          excerpt(truncate: true, pruneLength: 120)
+          excerpt(pruneLength: 120)
         }
       }
     }
   }
 `;
-

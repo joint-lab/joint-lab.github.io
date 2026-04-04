@@ -5,15 +5,16 @@ import { graphql } from "gatsby"
 import { Page, Container, ToolBar, TwoColumnLayout } from "components/core/layout";
 import { SlideOver } from "components/core/slide_over";
 import { MediasList, MediaFilters } from 'components/core/media';
-import { FiMoreHorizontal } from 'react-icons/fi'; 
+import { FiMoreHorizontal } from 'react-icons/fi';
 import { SubHero } from 'components/core/sub-hero';
+import { Seo } from 'components/core/seo';
 
 // Contexts
 import { MediaContextProvider } from 'contexts/media';
 
 /*
- URL: /publications 
- Show a list of publications with filtering.
+ URL: /media
+ Show a list of media with filtering.
  It uses a context to handle the filtering. The data comes from the graphql query.
 */
 export default function Index({ data, location }){
@@ -50,11 +51,13 @@ export default function Index({ data, location }){
             </Page>
           </MediaContextProvider>
 }
-  
+
+export const Head = ({ location }) => <Seo title="Media" pathname={location.pathname} />
+
 export const IndexQuery = graphql`
   query {
     media: allMediaJson(
-      sort: {fields: year}
+      sort: {year: ASC}
     ) {
       edges {
         node {
@@ -79,7 +82,7 @@ export const IndexQuery = graphql`
       }
     }
     people: allMdx(
-        sort: {fields: frontmatter___lastName}
+        sort: {frontmatter: {lastName: ASC}}
         filter: {fields: {source: {eq: "people"}}}
       ) {
         edges {
