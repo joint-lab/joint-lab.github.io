@@ -1,5 +1,73 @@
 [
     {
+        "title": "Group dynamics shape contagion onsets and multistable active phases under collective reinforcement",
+        "authors": "S. Lamata-Otín, F. Malizia, L. A. Keating, G. St-Onge, V. Latora, and L. Hébert-Dufresne",
+        "year": 2026,
+        "date": "2026-03-25",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2603.28566"
+    },
+    {
+        "title": "Complete asymptotic type-token relationship for growing complex systems with inverse power-law count rankings",
+        "authors": "P. Rosillo-Rodes, L. Hébert-Dufresne, and P. S. Dodds",
+        "year": 2026,
+        "date": "2026-01-01",
+        "type": "article",
+        "journal": "Phys. Rev. Research 8, L012029",
+        "journalURL": "https://doi.org/10.1103/PhysRevResearch.8.L012029",
+        "preprintURL": "https://arxiv.org/abs/2411.07360"
+    },
+    {
+        "title": "Tracking dynamics of superspreading through contacts, exposures, and transmissions in edge-based network epidemics",
+        "authors": "A. S. Freedman, B. F. Nielsen, M. M. Nguyen, L. Hébert-Dufresne, and S. A. Levin",
+        "year": 2026,
+        "date": "2026-01-29",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2601.17763"
+    },
+    {
+        "title": "Loops, not groups: Long cycles are responsible for discontinuous phase transitions in higher-order network contagions",
+        "authors": "L. A. Keating and L. Hébert-Dufresne",
+        "year": 2025,
+        "date": "2025-11-24",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2511.15688"
+    },
+    {
+        "title": "Ethical Frameworks for Conducting Social Challenge Studies",
+        "authors": "P. Sen, L. Hébert-Dufresne, P. Bose, and J. Lovato",
+        "year": 2025,
+        "date": "2025-09-15",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2509.10578"
+    },
+    {
+        "title": "Hotspot model shows how location-based superspreading accelerates and reshapes epidemics",
+        "authors": "B. Wallace, D. T. Dimitrov, L. Hébert-Dufresne, and A. M. Berdahl",
+        "year": 2025,
+        "date": "2025-09-01",
+        "type": "article",
+        "journal": "PNAS Nexus 4(9), pgaf299",
+        "journalURL": "https://doi.org/10.1093/pnasnexus/pgaf299"
+    },
+    {
+        "title": "Adaptive behaviour during epidemics: a social risk appraisal approach to modelling dynamics",
+        "authors": "D. O'Gara, M. Kasman, L. Hébert-Dufresne, and R. A. Hammond",
+        "year": 2025,
+        "date": "2025-01-01",
+        "type": "article",
+        "journal": "J. R. Soc. Interface 22, 20240363",
+        "journalURL": "https://doi.org/10.1098/rsif.2024.0363"
+    },
+    {
+        "title": "Defining and classifying models of groups: The social ontology of higher-order networks",
+        "authors": "J. St-Onge, R. Harp, G. Burgio, T. M. Waring, J. Lovato, and L. Hébert-Dufresne",
+        "year": 2025,
+        "date": "2025-07-03",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2507.02758"
+    },
+    {
         "title": "Inferring signed social networks from contact patterns",
         "authors": "D. Ferenczi, J.-G. Young, and L. Peel",
         "year": 2026,
@@ -28,10 +96,12 @@
     {
         "title": "Sensitivity analysis of epidemic forecasting and spreading on networks with probability generating functions",
         "authors": "M. C. Boudreau, W. H. W. Thompson, C. Danforth, J.-G. Young, and L. Hébert-Dufresne",
-        "year": 2025,
-        "date": "2025-06-30",
-        "type": "preprint",
-        "preprintURL": "https://doi.org/10.48550/arXiv.2506.24103"
+        "year": 2026,
+        "date": "2026-01-01",
+        "type": "article",
+        "preprintURL": "https://doi.org/10.48550/arXiv.2506.24103",
+        "journal": "J. R. Soc. Interface 23(235)",
+        "journalURL": "https://doi.org/10.1098/rsif.2025.0025"
     },
     {
         "title": "Characteristic scales and adaptation in higher-order contagions",
@@ -54,7 +124,7 @@
         "journal": "npj Complex. 2 (26)",
         "journalURL": "https://www.nature.com/articles/s44260-025-00050-2"
     },
-    {   
+    {
         "title": "Adaptive hypergraphs and the characteristic scale of higher-order contagions using generalized approximate master equations",
         "authors": "G. Burgio, G. St-Onge, and L. Hébert-Dufresne",
         "year": 2023,
@@ -62,15 +132,17 @@
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2307.11268"
     },
-    {   
-        "title": "Modeling critical connectivity constraints in random and empirical networks",
+    {
+        "title": "Random graphs with specific degree distribution and giant component size",
         "authors": "L. Hébert-Dufresne, M. Pósfai, and A. Allard",
-        "year": 2023,
-        "date": "2023-07-07",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2307.03559"
+        "year": 2025,
+        "date": "2025-06-01",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2307.03559",
+        "journal": "Phys. Rev. Research 7, L022050",
+        "journalURL": "https://doi.org/10.1103/PhysRevResearch.7.L022050"
     },
-    {   
+    {
         "title": "Within-host infection dynamics with master equations and the method of moments: A case study of human papillomavirus in the epithelium",
         "authors": "M. C. Boudreau, J. A. Cohen, and L. Hébert-Dufresne",
         "year": 2024,
@@ -78,7 +150,7 @@
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2408.05298"
     },
-    {   
+    {
         "title": "On the uniform sampling of the configuration model with centrality constraints",
         "authors": "F. Thibault, L. Hébert-Dufresne, and A. Allard",
         "year": 2024,
@@ -86,13 +158,15 @@
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2409.20493"
     },
-    {   
-        "title": "Optimization and performance analytics of global aircraft-based wastewater surveillance networks",
+    {
+        "title": "Pandemic monitoring with global aircraft-based wastewater surveillance networks",
         "authors": "G. St-Onge, J. T. Davis, L. Hébert-Dufresne, A. Allard, A. Urbinati, S. V. Scarpino, M. Chinazzi, and A. Vespignani",
-        "year": 2024,
-        "date": "2024-08-04",
-        "type": "preprint",
-        "preprintURL": "https://www.medrxiv.org/content/10.1101/2024.08.02.24311418v1"
+        "year": 2025,
+        "date": "2025-02-01",
+        "type": "article",
+        "preprintURL": "https://www.medrxiv.org/content/10.1101/2024.08.02.24311418v1",
+        "journal": "Nat. Med. 31, 788-796",
+        "journalURL": "https://doi.org/10.1038/s41591-025-03501-4"
     },
     {
         "title": "Biomedical open source software: crucial packages and hidden heroes",
@@ -101,23 +175,27 @@
         "date": "2024-04-10",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2404.06672"
-    },   
+    },
     {
         "title": "Stochastic diffusion using mean-field limits to approximate master equations",
         "authors": "L. Hébert-Dufresne, M. M. Kling, S. F. Rosenblatt, S. N. Miller, P. A. Burnham, N. W. Landry, N.J. Gotelli, and B. J. McGill",
-        "year": 2024,
-        "date": "2024-08-14",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2408.07755"
-    },     
+        "year": 2025,
+        "date": "2025-09-01",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2408.07755",
+        "journal": "Royal Society Open Science 12(9), 250726",
+        "journalURL": "https://doi.org/10.1098/rsos.250726"
+    },
     {
         "title": "Self-reinforcing cascades: A spreading model for beliefs or products of varying intensity or quality",
         "authors": "L. Hébert-Dufresne, J. Lovato, G. Burgio, J. P. Gleeson, S. Redner, and P. L. Krapivsky",
-        "year": 2024,
-        "date": "2024-11-01",
-        "type": "preprint",
-        "preprintURL": "https://arxiv.org/abs/2411.00714"
-    }, 
+        "year": 2025,
+        "date": "2025-08-21",
+        "type": "article",
+        "preprintURL": "https://arxiv.org/abs/2411.00714",
+        "journal": "Phys. Rev. Lett. 135, 087401",
+        "journalURL": "https://doi.org/10.1103/PhysRevLett.135.087401"
+    },
     {
         "title": "Innovations through crop switching happen on the diverse margins of US agriculture",
         "authors": "M. M. Kling, C. T. Brittain, G. L. Galford, T. M. Waring, L. Hébert-Dufresne, M. P. Dube, H. Sabzian, N. J. Gotelli, B. J. McGill, and M. T. Niles",
@@ -517,6 +595,14 @@
         "journalURL": "https://doi.org/10.1162/desi_a_00670",
         "preprintURL": "https://osf.io/preprints/socarxiv/wehsk/",
         "type": "article"
+    },
+    {
+        "title": "Adaptive staffing can mitigate essential worker disease and absenteeism in an emerging epidemic",
+        "authors": "E. Aguilar, N. J. Roberts, I. Uralova, P. Mehta, L. Hébert-Dufresne, and B. D. Zusman",
+        "year": 2021,
+        "type": "article",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A. 118(34)",
+        "journalURL": "https://doi.org/10.1073/pnas.2105337118"
     },
     {
         "title": "The network epidemiology of an Ebola epidemic",
