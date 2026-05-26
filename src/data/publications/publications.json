@@ -33,7 +33,7 @@
     },
     {
         "title": "Group dynamics shape contagion onsets and multistable active phases under collective reinforcement",
-        "authors": "S. Lamata-Otín, F. Malizia, L. A. Keating, G. St-Onge, V. Latora, and L. Hébert-Dufresne",
+        "authors": "S. Lamata-Otín, F. Malizia, L. A. Keating, G. St-Onge, V. Latora, J. Gómez-Gardeñes, and L. Hébert-Dufresne",
         "year": 2026,
         "date": "2026-03-25",
         "type": "preprint",
@@ -68,9 +68,11 @@
     {
         "title": "Ethical Frameworks for Conducting Social Challenge Studies",
         "authors": "P. Sen, L. Hébert-Dufresne, P. Bose, and J. Lovato",
-        "year": 2025,
-        "date": "2025-09-15",
-        "type": "preprint",
+        "year": 2026,
+        "date": "2026-04-04",
+        "type": "article",
+        "journal": "Journal of Empirical Research on Human Research Ethics",
+        "journalURL": "https://doi.org/10.1177/15562646261437269",
         "preprintURL": "https://arxiv.org/abs/2509.10578"
     },
     {
@@ -203,9 +205,11 @@
     {
         "title": "Biomedical open source software: crucial packages and hidden heroes",
         "authors": "A. Nesbitt, B. Veytsman, D. Mietchen, E. M. Brown, J. Howison, J. F. Pimentel, L. Hébert-Dufresne, and S. Druskat",
-        "year": 2024,
-        "date": "2024-04-10",
-        "type": "preprint",
+        "year": 2026,
+        "date": "2026-05-13",
+        "type": "article",
+        "journal": "PLOS Comput. Biol. 22(5): e1014260",
+        "journalURL": "https://doi.org/10.1371/journal.pcbi.1014260",
         "preprintURL": "https://arxiv.org/abs/2404.06672"
     },
     {
