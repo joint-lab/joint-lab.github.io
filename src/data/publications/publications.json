@@ -1,5 +1,14 @@
 [
     {
+        "title": "Taste for Privacy: How Context, Identity, and Lived-Experience Shape Information Sharing Preferences",
+        "authors": "J. Lovato, L. Hébert-Dufresne, M. Ghasemizade, J. St-Onge, P. S. Dodds, L. Bloomfield, M. I. Fudolig, M. Price, and C. Danforth",
+        "year": 2026,
+        "date": "2026-04-29",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2604.22025",
+        "journal": "ACM Conference on Fairness, Accountability, and Transparency (FAccT 2026)"
+    },
+    {
         "title": "The impact of behavioral homophily and conformity on epidemic spreading in networks with large groups",
         "authors": "O. Ribordy, C. Granell, G. St-Onge, L. Hébert-Dufresne, A. Arenas, and A. Allard",
         "year": 2026,
