@@ -33,11 +33,11 @@ function Publication({ title, year, authors, journal, conference, location, type
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600">
         {authors.map((author, index) => (
-          <span key={author.alias}>
+          <span key={author.alias} className="whitespace-nowrap">
             {author.isLabMember ? (
-              <Dropdown 
-                label={author.alias} 
-                vanilla 
+              <Dropdown
+                label={author.alias}
+                vanilla
                 className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
               >
                 {removeAllPublicationDropdown ? null : (
@@ -90,14 +90,14 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600 mb-2">
         {authors.map((author, index) => (
-          <span key={author.alias}>
+          <span key={author.alias} className="whitespace-nowrap">
             {author.isLabMember ? (
-              <Dropdown 
-                label={author.alias} 
-                vanilla 
+              <Dropdown
+                label={author.alias}
+                vanilla
                 className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
               >
-                <Dropdown.Item 
+                <Dropdown.Item
                   className={filters.authors.includes(author.alias) ? 'text-red-600' : ''} 
                   name={filters.authors.includes(author.alias) ? 'Remove filter' : `With ${author.alias}`} 
                   onClick={() => updateAuthors(author.alias)}
