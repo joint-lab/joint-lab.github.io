@@ -15,6 +15,16 @@ import { PublicationsContext } from 'contexts/publications';
 // Utils
 import { capitalizeFirstLetter } from 'utils/capitalize';
 
+function getAuthorSeparator(index, authorCount) {
+  if (index === authorCount - 1) {
+    return '';
+  }
+
+  const separator = index === authorCount - 2 ? ', and' : ',';
+  // Word joiner keeps punctuation off the start of wrapped lines without forcing author names nowrap.
+  return `\u2060${separator}`;
+}
+
 /*
 Main view for publication row.
 */
@@ -33,7 +43,7 @@ function Publication({ title, year, authors, journal, conference, location, type
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600">
         {authors.map((author, index) => (
-          <span key={author.alias} className="whitespace-nowrap">
+          <span key={author.alias}>
             {author.isLabMember ? (
               <Dropdown
                 label={author.alias}
@@ -53,7 +63,7 @@ function Publication({ title, year, authors, journal, conference, location, type
               <span className="">{author.alias}</span>
             )}
             <span className="mr-1">
-              {(index === authors.length - 2) ? ', and' : ((index === authors.length - 1) ? '' : ',')}
+              {getAuthorSeparator(index, authors.length)}
             </span>
           </span>
         ))}
@@ -90,7 +100,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600 mb-2">
         {authors.map((author, index) => (
-          <span key={author.alias} className="whitespace-nowrap">
+          <span key={author.alias}>
             {author.isLabMember ? (
               <Dropdown
                 label={author.alias}
@@ -108,7 +118,7 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
               <span className="">{author.alias}</span>
             )}
             <span className="mr-1">
-              {(index === authors.length - 2) ? ', and' : ((index === authors.length - 1) ? '' : ',')}
+              {getAuthorSeparator(index, authors.length)}
             </span>
           </span>
         ))}
