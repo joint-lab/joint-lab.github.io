@@ -3,6 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ Two-tone overscroll (rubber-band) color on macOS. Chrome only paints a SOLID
+ background-color in the rubber-band area (gradients are ignored), so the
+ top-vs-bottom color swap is driven by a scroll listener in gatsby-browser.js.
+ This rule sets the initial / at-top color; the opaque body keeps the root color
+ hidden except during the bounce. The hero is a left-to-right gradient
+ (gray-700/600 -> gray-800) but Chrome can only paint a solid overscroll color,
+ so this is the gradient's midpoint to minimize the seam on both sides.
+*/
+html {
+	background-color: #303a48;
+}
+
+body {
+	background: #ffffff;
+}
+
 
 .text-uvm-green {
 	color: #007155;
