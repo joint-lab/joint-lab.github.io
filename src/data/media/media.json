@@ -1,5 +1,21 @@
 [
     {
+        "title": "Wastewater sampling could be key to early warning of new disease outbreaks",
+        "description": "The Guardian",
+        "year": 2025,
+        "authors": "L. Hébert-Dufresne",
+        "type": "news",
+        "url": "https://www.theguardian.com/science/2025/mar/05/wastewater-disease-flu-outbreaks"
+    },
+    {
+        "title": "Au temps de la Révolution française, des rumeurs propagées comme des virus",
+        "description": "Les années lumière, Radio-Canada",
+        "year": 2025,
+        "authors": "L. Hébert-Dufresne",
+        "type": "news",
+        "url": "https://ici.radio-canada.ca/ohdio/premiere/emissions/les-annees-lumiere/segments/rattrapage/2162914/modeliser-propagation-rumeurs-details-avec-gino-harel"
+    },
+    {
         "title": "Building Thriving Communities: Learning Through Research With African Open Source Communities",
         "description": "Invited Talk at OSCAFest 2023",
         "year": 2023,
