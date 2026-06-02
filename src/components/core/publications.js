@@ -14,16 +14,7 @@ import { PublicationsContext } from 'contexts/publications';
 
 // Utils
 import { capitalizeFirstLetter } from 'utils/capitalize';
-
-function getAuthorSeparator(index, authorCount) {
-  if (index === authorCount - 1) {
-    return '';
-  }
-
-  const separator = index === authorCount - 2 ? ', and' : ',';
-  // Word joiner keeps punctuation off the start of wrapped lines without forcing author names nowrap.
-  return `\u2060${separator}`;
-}
+import { getAuthorSeparator } from 'utils/authors';
 
 /*
 Main view for publication row.
@@ -43,29 +34,31 @@ function Publication({ title, year, authors, journal, conference, location, type
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600">
         {authors.map((author, index) => (
-          <span key={author.alias}>
-            {author.isLabMember ? (
-              <Dropdown
-                label={author.alias}
-                vanilla
-                className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
-              >
-                {removeAllPublicationDropdown ? null : (
-                  <Dropdown.Item 
-                    className={filters.authors.includes(author.alias) ? 'text-red-600' : ''} 
-                    name={filters.authors.includes(author.alias) ? 'Remove filter' : `With ${author.alias}`} 
-                    onClick={() => updateAuthors(author.alias)}
-                  />
-                )}
-                <Dropdown.Item name="Profile" href={author.info.slug} />
-              </Dropdown>
-            ) : (
-              <span className="">{author.alias}</span>
-            )}
-            <span className="mr-1">
+          <React.Fragment key={author.alias}>
+            {/* Name + its trailing comma stay on one line; the breakable space below wraps between authors. */}
+            <span className="whitespace-nowrap">
+              {author.isLabMember ? (
+                <Dropdown
+                  label={author.alias}
+                  vanilla
+                  className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
+                >
+                  {removeAllPublicationDropdown ? null : (
+                    <Dropdown.Item
+                      className={filters.authors.includes(author.alias) ? 'text-red-600' : ''}
+                      name={filters.authors.includes(author.alias) ? 'Remove filter' : `With ${author.alias}`}
+                      onClick={() => updateAuthors(author.alias)}
+                    />
+                  )}
+                  <Dropdown.Item name="Profile" href={author.info.slug} />
+                </Dropdown>
+              ) : (
+                <span>{author.alias}</span>
+              )}
               {getAuthorSeparator(index, authors.length)}
             </span>
-          </span>
+            {index < authors.length - 1 ? ' ' : null}
+          </React.Fragment>
         ))}
       </div>
       {journal ? <div className="text-gray-600 font-medium">{journal}</div> : null}
@@ -100,27 +93,29 @@ function HighlightPublication({ title, year, authors, journal, conference, locat
       <h3 className="font-medium sm:text-lg">{title}</h3>
       <div className="text-gray-600 mb-2">
         {authors.map((author, index) => (
-          <span key={author.alias}>
-            {author.isLabMember ? (
-              <Dropdown
-                label={author.alias}
-                vanilla
-                className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
-              >
-                <Dropdown.Item
-                  className={filters.authors.includes(author.alias) ? 'text-red-600' : ''} 
-                  name={filters.authors.includes(author.alias) ? 'Remove filter' : `With ${author.alias}`} 
-                  onClick={() => updateAuthors(author.alias)}
-                />
-                <Dropdown.Item name="Profile" href={author.info.slug} />
-              </Dropdown>
-            ) : (
-              <span className="">{author.alias}</span>
-            )}
-            <span className="mr-1">
+          <React.Fragment key={author.alias}>
+            {/* Name + its trailing comma stay on one line; the breakable space below wraps between authors. */}
+            <span className="whitespace-nowrap">
+              {author.isLabMember ? (
+                <Dropdown
+                  label={author.alias}
+                  vanilla
+                  className={filters.authors.includes(author.alias) ? 'bg-green-50 text-green-700' : 'hover:bg-gray-100 text-uvm-green'}
+                >
+                  <Dropdown.Item
+                    className={filters.authors.includes(author.alias) ? 'text-red-600' : ''}
+                    name={filters.authors.includes(author.alias) ? 'Remove filter' : `With ${author.alias}`}
+                    onClick={() => updateAuthors(author.alias)}
+                  />
+                  <Dropdown.Item name="Profile" href={author.info.slug} />
+                </Dropdown>
+              ) : (
+                <span>{author.alias}</span>
+              )}
               {getAuthorSeparator(index, authors.length)}
             </span>
-          </span>
+            {index < authors.length - 1 ? ' ' : null}
+          </React.Fragment>
         ))}
       </div>
       {journal ? <div className="text-gray-500">{journal}</div> : null}

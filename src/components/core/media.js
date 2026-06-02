@@ -14,6 +14,7 @@ import { MediaContext } from 'contexts/media';
 
 // Utils
 import { capitalizeFirstLetter } from 'utils/capitalize';
+import { getAuthorSeparator } from 'utils/authors';
 
 /*
 Main view for media row.
@@ -29,16 +30,19 @@ function Media({ title, description, year, authors, type, imageURL, youtubeID, u
           <Link to={url}><h3 className='font-medium sm:text-2xl mt-2 hover:underline'>{title}</h3></Link>
           {description?<p className="text-gray-600">{description}</p>:null}
           <div className='text-gray-600 mb-3'>
-            {authors.map((author, index)=>(<span key={author.alias}>
+            {authors.map((author, index)=>(<React.Fragment key={author.alias}>
+              {/* Name + its trailing comma stay on one line; the breakable space below wraps between authors. */}
+              <span className='whitespace-nowrap'>
               {author.isLabMember?
                 <Dropdown label={author.alias} vanilla className={filters.authors.includes(author.alias)? 'bg-green-50 text-uvm-green':'hover:bg-gray-100 text-green-600'}>
                   <Dropdown.Item className={filters.authors.includes(author.alias)? 'text-red-600': ''} name={filters.authors.includes(author.alias)? 'Remove filter':'All medias'} onClick={()=>updateAuthors(author.alias)}/>
                   <Dropdown.Item name='Profile' href={author.info.slug}/>
                 </Dropdown>
                :
-                <span className={''}>{author.alias}</span>
+                <span>{author.alias}</span>
               }
-              <span className='mr-1'>{(index===authors.length-2)? ', and': ((index===authors.length-1)? '': ',')}</span></span>))}
+              {getAuthorSeparator(index, authors.length)}</span>
+              {index < authors.length - 1 ? ' ' : null}</React.Fragment>))}
           </div>
 
           {image?<Link to={url}><GatsbyImage image={image} alt={title} imgClassName="rounded-lg mb-2"/></Link>:null}
