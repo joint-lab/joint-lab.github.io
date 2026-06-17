@@ -50,6 +50,14 @@
         "preprintURL": "https://arxiv.org/abs/2603.28566"
     },
     {
+        "title": "An Approximate-Master-Equation Formulation of the Watts Threshold Model on Hypergraphs",
+        "authors": "L. A. Keating, K.-I. Goh, and M. A. Porter",
+        "year": 2025,
+        "date": "2025-03-06",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2503.04020"
+    },
+    {
         "title": "Complete asymptotic type-token relationship for growing complex systems with inverse power-law count rankings",
         "authors": "P. Rosillo-Rodes, L. Hébert-Dufresne, and P. S. Dodds",
         "year": 2026,
@@ -115,8 +123,10 @@
         "title": "Inferring signed social networks from contact patterns",
         "authors": "D. Ferenczi, J.-G. Young, and L. Peel",
         "year": 2026,
-        "date": "2026-01-15",
-        "type": "preprint",
+        "date": "2026-06-16",
+        "type": "article",
+        "journal": "J. Phys. Complex. 7 025018",
+        "journalURL": "https://doi.org/10.1088/2632-072X/ae76ae",
         "preprintURL": "https://doi.org/10.48550/arXiv.2601.10565",
         "software": "https://github.com/ferenczid/signed_net_inf/"
     },
