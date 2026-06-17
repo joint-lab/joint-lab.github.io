@@ -154,8 +154,8 @@
         "date": "2026-01-01",
         "type": "article",
         "preprintURL": "https://doi.org/10.48550/arXiv.2506.24103",
-        "journal": "J. R. Soc. Interface 23(235)",
-        "journalURL": "https://doi.org/10.1098/rsif.2025.0025"
+        "journal": "J. R. Soc. Interface 23(235), 20250686",
+        "journalURL": "https://doi.org/10.1098/rsif.2025.0686"
     },
     {
         "title": "Characteristic scales and adaptation in higher-order contagions",
@@ -170,7 +170,7 @@
     },
     {
         "title": "One pathogen does not an epidemic make: A review of interacting contagions, diseases, beliefs and stories",
-        "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, V. Colizza, A. Allard, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
+        "authors": "L. Hébert-Dufresne, Y.-Y. Ahn, A. Allard, V. Colizza, J. W. Crothers, P. Sheridan Dodds, M. Galesic, F. Ghanbarnejad, D. Gravel, R. A. Hammond, K. Lerman, J. Lovato, J. J. Openshaw, S. Redner, S. V. Scarpino, G. St-Onge, T. R. Tangherlini, and J.-G. Young",
         "year": 2025,
         "date": "2025-09-01",
         "type": "article",
@@ -359,7 +359,7 @@
         "date": "2025-05-15",
         "type": "journal",
         "journal": "Commun. Phys. 8, 199",
-        "journalURL": "https://jgyoung.ca/10.1038/s42005-025-02122-0",
+        "journalURL": "https://doi.org/10.1038/s42005-025-02122-0",
         "preprintURL": "https://doi.org/10.48550/arXiv.2406.10711",
         "software": "https://github.com/DynamicaLab/bigue"
     },
