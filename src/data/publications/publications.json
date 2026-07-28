@@ -1,5 +1,13 @@
 [
     {
+        "title": "Dynastic dynamics: Modelling powerful naming choices with stochastic prestige",
+        "authors": "P. Rosillo-Rodes, S. Lamata-Otín, D. Soriano-Paños, L. Hébert-Dufresne, and P. S. Dodds",
+        "year": 2026,
+        "date": "2026-07-09",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2607.08689"
+    },
+    {
         "title": "Taste for Privacy: How Context, Identity, and Lived-Experience Shape Information Sharing Preferences",
         "authors": "J. Lovato, L. Hébert-Dufresne, M. Ghasemizade, J. St-Onge, P. S. Dodds, L. Bloomfield, M. I. Fudolig, M. Price, and C. Danforth",
         "year": 2026,
@@ -8,6 +16,14 @@
         "preprintURL": "https://arxiv.org/abs/2604.22025",
         "journal": "ACM Conference on Fairness, Accountability, and Transparency (FAccT 2026)",
         "journalURL": "https://doi.org/10.1145/3805689.3812311"
+    },
+    {
+        "title": "Artificial collectives of specialists and generalists excel at different tasks",
+        "authors": "J. Meluso, L. Hébert-Dufresne, C. Riedl, and H. O. Gao",
+        "year": 2026,
+        "date": "2026-06-18",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2606.20877"
     },
     {
         "title": "The impact of behavioral homophily and conformity on epidemic spreading in networks with large groups",
@@ -24,6 +40,14 @@
         "date": "2026-05-18",
         "type": "preprint",
         "preprintURL": "https://arxiv.org/abs/2605.18420"
+    },
+    {
+        "title": "Centering human cognition in epidemiological models",
+        "authors": "B. Beckage, L. J. Gross, A. Freedman, L. Hébert-Dufresne, K. Lacasse, S. Lenhart, C. M. Saad-Roy, and C. Sims",
+        "year": 2026,
+        "date": "2026-05-14",
+        "type": "preprint",
+        "preprintURL": "https://ecoevorxiv.org/repository/view/13023/"
     },
     {
         "title": "Simon's model does not produce Zipf's law: The fundamental rich-get-richer mechanism for any power-law size ranking",
@@ -72,7 +96,9 @@
         "authors": "A. S. Freedman, B. F. Nielsen, M. M. Nguyen, L. Hébert-Dufresne, and S. A. Levin",
         "year": 2026,
         "date": "2026-01-29",
-        "type": "preprint",
+        "type": "article",
+        "journal": "Bulletin of Mathematical Biology 88, 127",
+        "journalURL": "https://doi.org/10.1007/s11538-026-01685-5",
         "preprintURL": "https://arxiv.org/abs/2601.17763"
     },
     {
