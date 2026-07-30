@@ -1,5 +1,14 @@
 [
     {
+        "title": "Emergent contagion complexity: Disentangling mechanistic complexity from correlated heterogeneity",
+        "authors": "K. Tang, D. Kaiser, W. H. W. Thompson, J.-G. Young, L. Hébert-Dufresne, and N. W. Landry",
+        "year": 2026,
+        "date": "2026-07-27",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2607.25139",
+        "software": "https://github.com/kaiser-dan/heterogeneous-infection-kernels"
+    },
+    {
         "title": "Dynastic dynamics: Modelling powerful naming choices with stochastic prestige",
         "authors": "P. Rosillo-Rodes, S. Lamata-Otín, D. Soriano-Paños, L. Hébert-Dufresne, and P. S. Dodds",
         "year": 2026,
