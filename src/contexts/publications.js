@@ -38,35 +38,38 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
   const [highlightPublications, setHighlightPublications] = useState([]);
   const [filters, setFilters] = useState({authors: [], query: '', date: [0,9999], types: []});
 
+  // The updaters below use the functional form of setFilters so they keep a stable
+  // identity. Depending on `filters` would make them change on every filter update,
+  // which re-triggers any effect that lists them as a dependency.
   const updateQuery = useCallback((query)=>{
-    setFilters({...filters, query});
-  }, [filters]);
+    setFilters(filters=>({...filters, query}));
+  }, []);
 
   const updateType = useCallback((type)=>{
-    const filteredTypes = filters.types.filter(a=>a!==type);
-    if (filteredTypes.length===filters.types.length){
-      // Add alias
-      setFilters({...filters, types:[...filters.types, type]});
-    }
-    else {
-      setFilters({...filters, types:filteredTypes});
-    }
-  }, [filters]);
+    setFilters(filters=>{
+      const filteredTypes = filters.types.filter(a=>a!==type);
+      if (filteredTypes.length===filters.types.length){
+        // Add alias
+        return {...filters, types:[...filters.types, type]};
+      }
+      return {...filters, types:filteredTypes};
+    });
+  }, []);
 
   const updateAuthors = useCallback((authorAlias)=>{
-    const filteredAuthors = filters.authors.filter(a=>a!==authorAlias);
-    if (filteredAuthors.length===filters.authors.length){
-      // Add alias
-      setFilters({...filters, authors:[...filters.authors, authorAlias]});
-    }
-    else {
-      setFilters({...filters, authors:filteredAuthors});
-    }
-  }, [filters]);
+    setFilters(filters=>{
+      const filteredAuthors = filters.authors.filter(a=>a!==authorAlias);
+      if (filteredAuthors.length===filters.authors.length){
+        // Add alias
+        return {...filters, authors:[...filters.authors, authorAlias]};
+      }
+      return {...filters, authors:filteredAuthors};
+    });
+  }, []);
 
   const updateYear = useCallback((date)=>{
-    setFilters({...filters, date});
-  }, [filters]);
+    setFilters(filters=>({...filters, date}));
+  }, []);
 
   useEffect(()=>{
     // Filter allPublications
@@ -111,14 +114,14 @@ const PublicationsContextProvider = ({ children, query, people, allPublications,
 
   }, [filters, processedHighlightedPublications, processedPublications])
 
-  // Fetch the author as query parameter
+  // Fetch the author as query parameter. This assigns the selection rather than
+  // toggling it, so re-running the effect is a no-op instead of a flip-flop.
   useEffect(()=>{
     const params = new URLSearchParams(query);
-    if (params.has('author')){
-      const author = params.get('author');
-      updateAuthors(author);
-    }
-  }, [query, updateAuthors]);
+    if (!params.has('author')){return;}
+    const authors = params.getAll('author');
+    setFilters(filters=>({...filters, authors}));
+  }, [query]);
 
   // Get all unique author aliases from all publications
   const allAuthorAliases = useMemo(() => {
