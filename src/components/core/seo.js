@@ -1,25 +1,28 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import MetaImage from '../../images/meta-image.png';
+import { graphql, useStaticQuery } from 'gatsby';
+import organization from '../../data/organization.json';
+import defaultImage from '../../images/meta-image.png';
 
-const getSchemaOrgJSONLD = ({url, title, image, description}) => {
-  return [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      url,
-      name: title,
-      image: {
-        '@type': 'ImageObject',
-        url: image
-      },
-      description,
-      alternateName: title
-    }
-  ];
-};
+function getPageUrl(siteUrl, pathname) {
+  const url = new URL(pathname || '/', siteUrl);
+  url.search = '';
+  url.hash = '';
 
-export function Seo({ title, description, image, pathname, children }) {
+  if (!url.pathname.endsWith('/') && !url.pathname.endsWith('.html')) {
+    url.pathname += '/';
+  }
+
+  return url.href;
+}
+
+export function Seo({
+  title,
+  description,
+  image,
+  pathname,
+  noindex = false,
+  children,
+}) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -27,48 +30,57 @@ export function Seo({ title, description, image, pathname, children }) {
           title
           description
           siteUrl
-          twitter
         }
       }
     }
   `);
 
-  const siteTitle = title || site.siteMetadata.title;
-  const siteDescription = description || site.siteMetadata.description;
-  const siteUrl = site.siteMetadata.siteUrl;
-  const url = `${siteUrl}${pathname || ''}`;
-  const metaImage = `${siteUrl}${image || MetaImage}`;
-  const twitter = site.siteMetadata.twitter;
+  const metadata = site.siteMetadata;
+  const homeUrl = getPageUrl(metadata.siteUrl, '/');
+  const pageUrl = getPageUrl(metadata.siteUrl, pathname);
+  const pageTitle = title
+    ? `${title} | ${metadata.title}`
+    : `${metadata.title} | University of Vermont`;
+  const pageDescription = description || metadata.description;
+  const imageUrl = new URL(image || defaultImage, homeUrl).href;
+  const isHomePage = pageUrl === homeUrl;
+  const website = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: metadata.title,
+    url: homeUrl,
+    description: metadata.description,
+    publisher: organization,
+  };
 
-  const schemaOrgJSONLD = getSchemaOrgJSONLD({
-    url,
-    title: siteTitle,
-    image: metaImage,
-    description: siteDescription
-  });
+  // Escape opening brackets so content cannot terminate the script element.
+  const jsonLd = JSON.stringify(website).replace(/</g, '\u003c');
 
   return (
     <>
-      <title>{`${siteTitle} — ${siteDescription}`}</title>
-      <meta name="description" content={siteDescription} />
-      <meta name="image" content={metaImage} />
+      <html lang="en" />
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
+      {!noindex && <link rel="canonical" href={pageUrl} />}
+      {isHomePage && !noindex && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
+        />
+      )}
 
-      <script type="application/ld+json">
-        {JSON.stringify(schemaOrgJSONLD)}
-      </script>
-
-      <meta property="og:url" content={url} />
+      <meta property="og:site_name" content={metadata.title} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={siteDescription} />
-      <meta property="og:image" content={metaImage} />
+      <meta property="og:url" content={pageUrl} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      <meta property="og:image" content={imageUrl} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={twitter} />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={siteDescription} />
-      <meta name="twitter:image" content={metaImage} />
-
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
+      <meta name="twitter:image" content={imageUrl} />
       {children}
     </>
   );

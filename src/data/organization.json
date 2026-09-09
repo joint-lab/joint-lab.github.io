@@ -1,0 +1,23 @@
+{
+  "@type": "Organization",
+  "name": "The Joint Lab",
+  "url": "https://joint-lab.github.io/",
+  "sameAs": ["https://github.com/joint-lab"],
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Vermont",
+    "url": "https://www.uvm.edu/"
+  },
+  "subOrganization": [
+    {
+      "@type": "Organization",
+      "name": "Laboratory for Structure and Dynamics",
+      "alternateName": "LSD"
+    },
+    {
+      "@type": "Organization",
+      "name": "Complex Data Laboratory",
+      "alternateName": ["Complex Data Lab", "CDL"]
+    }
+  ]
+}

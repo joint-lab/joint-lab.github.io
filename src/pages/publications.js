@@ -52,7 +52,16 @@ export default function Index({ data, location }){
           </PublicationsContextProvider>
 }
 
-export const Head = ({ location }) => <Seo title="Publications" pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo
+    title="Publications"
+    description={
+      "Publications from the Laboratory for Structure and Dynamics and " +
+      "the Complex Data Laboratory at the University of Vermont."
+    }
+    pathname={location.pathname}
+  />
+);
 
 export const IndexQuery = graphql`
   query {

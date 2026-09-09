@@ -52,7 +52,16 @@ export default function Index({ data, location }){
           </MediaContextProvider>
 }
 
-export const Head = ({ location }) => <Seo title="Media" pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo
+    title="Media"
+    description={
+      "Talks and media coverage from the Laboratory for Structure and Dynamics " +
+      "and the Complex Data Laboratory at the University of Vermont."
+    }
+    pathname={location.pathname}
+  />
+);
 
 export const IndexQuery = graphql`
   query {

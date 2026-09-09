@@ -71,4 +71,13 @@ export default function Index({ location }){
           </Page>;
 }
 
-export const Head = ({ location }) => <Seo title="Lab" pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo
+    title="About the Lab"
+    description={
+      "Research and opportunities at the Laboratory for Structure and Dynamics " +
+      "and the Complex Data Laboratory at the University of Vermont."
+    }
+    pathname={location.pathname}
+  />
+);
