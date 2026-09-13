@@ -71,4 +71,6 @@ export default function NotFoundPage(){
     </div>
 }
 
-export const Head = ({ location }) => <Seo title="Page Not Found" pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo title="Page Not Found" pathname={location.pathname} noindex />
+);

@@ -3,13 +3,21 @@ require(`dotenv`).config({
 })
 
 module.exports = {
+  trailingSlash: "always",
   siteMetadata: {
     siteUrl: "https://joint-lab.github.io",
     title: "The Joint Lab",
-    description: "Collaborative explorations across sciences with models and data",
-    twitter: "https://github.com/joint-lab"
+    description:
+      "The Laboratory for Structure and Dynamics and the Complex Data Laboratory " +
+      "at the University of Vermont study complex systems, networks, and statistical inference.",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        serialize: ({ path }) => ({ url: path }),
+      },
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-sass',
     `gatsby-plugin-image`,

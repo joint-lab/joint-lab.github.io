@@ -23,7 +23,17 @@ export default function PaginatedNews({ data, location, pageContext}){
           </Page>
 }
 
-export const Head = ({ location }) => <Seo title="All News" pathname={location.pathname} />
+export const Head = ({ location, pageContext }) => (
+  <Seo
+    title={`News — Page ${pageContext.currentPage}`}
+    description={
+      "News from the Laboratory for Structure and Dynamics and " +
+      "the Complex Data Laboratory at the University of Vermont. " +
+      `Archive page ${pageContext.currentPage}.`
+    }
+    pathname={location.pathname}
+  />
+);
 
 /*
   Fetch the news for the given page. See gatsby_node.js for context.

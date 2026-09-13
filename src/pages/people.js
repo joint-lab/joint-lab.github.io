@@ -20,7 +20,16 @@ export default function Index({ data, location }){
           </Page>;
 }
 
-export const Head = ({ location }) => <Seo title="Lab Members" pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo
+    title="Lab Members"
+    description={
+      "Researchers and alumni of the Laboratory for Structure and Dynamics and " +
+      "the Complex Data Laboratory at the University of Vermont."
+    }
+    pathname={location.pathname}
+  />
+);
 
 export const IndexQuery = graphql`
   query {
