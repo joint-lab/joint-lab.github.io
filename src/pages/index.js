@@ -47,7 +47,14 @@ export default function Index({ data, location }){
           </PublicationsContextProvider>;
 }
 
-export const Head = ({ location }) => <Seo pathname={location.pathname} />
+export const Head = ({ location }) => (
+  <Seo pathname={location.pathname}>
+    <meta
+      name="google-site-verification"
+      content="Bi_1Wx16fIEJRcnBd3JahwbeYuMANBThE50PrPEglL4"
+    />
+  </Seo>
+);
 
 /*
  Get the latest news and some older ones.
