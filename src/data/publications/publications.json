@@ -1,5 +1,21 @@
 [
     {
+        "title": "Intermittency in Wind-Driven Fires",
+        "authors": "L. Hébert-Dufresne, A. Kumar, and S. Redner",
+        "year": 2026,
+        "date": "2026-09-18",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2609.22541"
+    },
+    {
+        "title": "Multiple latent orderings better predict language model preferences",
+        "authors": "A. Chawla, W. H. W. Thompson, and J.-G. Young",
+        "year": 2026,
+        "date": "2026-08-26",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2609.22170"
+    },
+    {
         "title": "Emergent contagion complexity: Disentangling mechanistic complexity from correlated heterogeneity",
         "authors": "K. Tang, D. Kaiser, W. H. W. Thompson, J.-G. Young, L. Hébert-Dufresne, and N. W. Landry",
         "year": 2026,
