@@ -1,5 +1,14 @@
 [
     {
+        "title": "Learning Social Influence with Unobserved Attention",
+        "authors": "W. H. W. Thompson, M. Tian, L. Huynh, A. Wiedemann, V. Modisette, P. S. Chodrow, and H. Z. Brooks",
+        "year": 2026,
+        "date": "2026-10-08",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2610.12616",
+        "software": "https://github.com/WillHWThompson/Learning-Opinions-With-Latent-Attention"
+    },
+    {
         "title": "Intermittency in Wind-Driven Fires",
         "authors": "L. Hébert-Dufresne, A. Kumar, and S. Redner",
         "year": 2026,
