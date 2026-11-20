@@ -1,5 +1,14 @@
 [
     {
+        "title": "Exact Bayesian layers via characteristic functions",
+        "authors": "W. H. W. Thompson, G. St-Onge, L. Hébert-Dufresne, and J.-G. Young",
+        "year": 2026,
+        "date": "2026-11-19",
+        "type": "preprint",
+        "preprintURL": "https://arxiv.org/abs/2611.26426",
+        "software": "https://github.com/WillHWThompson/cf-vi"
+    },
+    {
         "title": "Learning Social Influence with Unobserved Attention",
         "authors": "W. H. W. Thompson, M. Tian, L. Huynh, A. Wiedemann, V. Modisette, P. S. Chodrow, and H. Z. Brooks",
         "year": 2026,
