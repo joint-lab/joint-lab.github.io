@@ -129,7 +129,7 @@ export const IndexQuery = graphql`
     }
     people: allMdx(
         sort: {frontmatter: {lastName: ASC}}
-        filter: {fields: {source: {eq: "people"}}, frontmatter: {group: {ne: "alumni"}}}
+        filter: {fields: {source: {eq: "people"}}}
       ) {
         edges {
           node {
@@ -140,6 +140,7 @@ export const IndexQuery = graphql`
               firstName
               lastName
               alias
+              group
             }
           }
         }
