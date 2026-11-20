@@ -29,12 +29,14 @@ function ButtonToAllPublications({ alias }){
 /*
 Template page for each lab member
 */
-export default function LabMemberPage({ data: {mdx, publications}, children, location }){
+export default function LabMemberPage({ data: {mdx, publications, people}, children, location }){
   const { firstName, lastName, imageURL, group, role, nextRole, lab, alias,
           githubURL, personalURL, twitterURL, scholarURL, email } = mdx.frontmatter;
   const image = getImage(imageURL)
 
-  return <PublicationsContextProvider people={[]} allPublications={publications.edges.map(n=>({...n.node}))}>
+  return <PublicationsContextProvider
+          people={people.edges.map(n=>({...n.node.frontmatter, ...n.node.fields}))}
+          allPublications={publications.edges.map(n=>({...n.node}))}>
           <Page location={location} light>
             <SubHero/>
             <Container className='mt-4 sm:mt-8 -mt-16'>
@@ -190,6 +192,22 @@ export const query = graphql`
           software
           slidesURL
           title
+        }
+      }
+    }
+    people: allMdx(
+      sort: {frontmatter: {lastName: ASC}}
+      filter: {fields: {source: {eq: "people"}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            alias
+            group
+          }
         }
       }
     }
